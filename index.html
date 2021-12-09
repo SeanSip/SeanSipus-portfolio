@@ -5,24 +5,114 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
+  <link rel="stylesheet" href="style.css">
   <title>Sean's Portfolio</title>
-  <style>
-    h1 {
-      text-align: center;
-      color: royalblue;
-    }
-
-    body {
-      background-image: url(./karen-z-kwQ1fraRK4E-unsplash.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
-    }
-  </style>
 </head>
 
 <body>
-  <h1>Portfolio Coming Soon!🥸</h1>
+  <header>
+    <div class="wrapper">
+      <img src="./assets/logo3Edit.png" alt="">
+      <nav>
+        <ul>
+          <li><a href="#">projects</a></li>
+          <li><a href="#">about me</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <p>Hi there!</p>
+      <h1><span>i'm </span>sean</h1>
+      <p>A web developer and (sometimes) designer, with a passion for creating great, accesible and functional websites! </p>
+    </div>
+  </header>
+<!-- Project Section -->
+  <section>
+    <div class="wrapper">
+      <p>Portfolio</p>
+      <h2>Click on any of my projects to learn more!</h2>
+      <div class="projectContainer">
+        <img src="http://placekitten.com/200/300" alt="">
+        <img src="http://placekitten.com/200/300" alt="">
+        <img src="http://placekitten.com/200/300" alt="">
+        <img src="http://placekitten.com/200/300" alt="">
+      </div>
+    </div>
+  </section>
+<!-- End of Project Section -->
+
+<!-- About me Section -->
+  <section>
+    <div class="wrapper">
+      <div class="aboutMeContainer">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ut saepe nam atque odio recusandae tempore, cumque adipisci earum voluptatibus? Incidunt repellat voluptatum quia nihil fuga cum nostrum ullam! Quisquam aut quas molestiae assumenda officia.</p>
+      </div>
+      <aside class="portrait">
+        <div class="main">
+            <img class="topPhoto" src="http://placekitten.com/200/300" alt="">
+          <div class="box"></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <!-- End of About Me Section -->
+  
+  <!-- Proficiencies Section -->
+  <section class="pro">
+    <div class="wrapper">
+      <div class="mySkills">
+        <h2>My Toolkit</h2>
+        <ul class="icons">
+          <li><i class="fab fa-html5"></i><span>HTML 5</span></li>
+          <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
+          <li><i class="fab fa-sass"></i><span>Sass</span></li>
+          <li><i class="fab fa-js-square"></i><span>Javascript</span></li>
+          <li><i class="devicon-jquery-plain"></i><span>Jquery</span></li>
+          <li><i class="fab fa-react"></i><span>React</span></li>
+          <li><i class="devicon-firebase-plain"></i></i><span>Firebase</span></li>
+          <li><i class="fab fa-github"></i></i><span>Github</span></li>
+        </ul>
+      </div>
+    <!-- place all the icons for the languages I have learned  -->
+    </div>
+  </section>
+  <!-- End of Proficiencies Section -->
+
+  <!-- Contact Section -->
+  <section>
+  <div class="wrapper">
+    <div class="contactContainer">
+      <div class="MessageContainer">
+        <h2>Let's Connect!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus, explicabo vel temporibus asperiores quibusdam magni obcaecati odit eveniet harum similique, sequi omnis consequatur sunt rem ipsa et enim saepe consequuntur, fuga molestiae. Quibusdam incidunt quisquam quam porro praesentium saepe.</p>
+
+      </div>
+      <div class="formContainer">
+
+      <form action="https://formspree.io/f/meqnqekk" method="post">
+        <label for="email">Your Email</label>
+        <input name="Email" id="email" type="email">
+        <label for="name">Your Name</label>
+        <input type="name" name="Name" id="name">
+        <textarea type="message" name="Message" id="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- end of wrapper div -->
+  </section>
+
+  <footer class="footer">
+    <p>Developed and designed by Sean Sipus</p>
+  </footer>
+
 </body>
 
 </html>
