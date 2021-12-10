@@ -451,4 +451,9 @@ section#contact h2{
       flex: none;
     }
 
+    .projectContainer img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
   }
