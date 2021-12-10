@@ -424,3 +424,31 @@ section#contact h2{
     border-top: rgba(128, 128, 128, 0.26) 1px solid;
   }
 
+
+
+  @media (max-width: 630px) {
+    header li{
+      display: none;
+    }
+
+    header img {
+      display: none;
+    }
+
+    .projectContainer:nth-child(2){
+      flex-direction: column-reverse;
+    }
+
+    .projectContainer:nth-child(3){
+      flex-direction: column;
+    }
+
+    .projectContainer:nth-child(4){
+      flex-direction: column-reverse;
+    }
+
+    .projectContainer li {
+      flex: none;
+    }
+
+  }
