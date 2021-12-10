@@ -253,6 +253,7 @@ a, button {
   section#about {
    background-color: rgb(32, 31, 39);
    padding: 150px 0;
+   border-top: rgba(128, 128, 128, 0.26) 1px solid;
  }
 
  section#about h2 {
@@ -326,7 +327,10 @@ section#skills h2{
     display: block; 
     margin-top: 20px; 
     margin: 20px auto;
+    padding: 5px;
     color: white;
+    background: rgba(0, 0, 0, 0.602);
+    border-radius: 10px;
   }
 
 
