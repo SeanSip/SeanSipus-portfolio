@@ -101,7 +101,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   header nav {
     display: flex;
     justify-content: flex-end;
-    border: red 2px solid;
     text-transform: uppercase;
     margin: 50px;
   }
@@ -113,13 +112,12 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   header img {
     position: fixed;
     width: 10rem;
-    height: 10%;
+    height: auto;
     margin: 15px;
     
   }
 
   .headerText {
-    border: red 2px solid;
   }
 
   .container {
@@ -178,29 +176,39 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 
 /* Skills Section */
+section#skills{
+  background-image:linear-gradient(to bottom, rgba(5, 5, 0, 0.637), rgba(0, 0, 0, 0.568)), url(./assets/karen-z-kwQ1fraRK4E-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.pro {
-  background-color: black;
-  width: 100%;
+  
 }
 
+
 .mySkills ul {
-  border: 2px solid red;
-  background-color: black;
+  padding: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
   .icons li {
+    display: flex;
     margin: 20px 10px;
+    flex-direction: column;
+   
   }
 
   i {
     font-size: 5rem;
-    
   }
 
   .icons span {
     font-size: 1.5rem;
-    display: block;    
+    display: block; 
+    margin-top: 20px;
   }
 
 
