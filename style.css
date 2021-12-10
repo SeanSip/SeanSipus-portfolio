@@ -30,7 +30,7 @@ html {
   width: 90%;
 }
 
-a {
+a, button {
   transition: 0.2s ease-in;
 }
 
@@ -112,6 +112,7 @@ a {
   a{
     text-decoration: none;
     color: #ffffff;
+    
   }
   
 
@@ -131,6 +132,7 @@ a {
     text-transform: uppercase;
     padding-top: 30px;
     padding-right: 50px;
+   
   }
 
   header ul {
@@ -141,6 +143,17 @@ a {
   header li {
     margin: 0 20px;
   }
+
+  header a{
+    transition: ;
+  }
+
+  header a:hover{
+    color: #EFC570;
+    border-bottom: #EFC570 5px solid;
+    border-radius: 10px;
+  }
+
 
   header p {
     font-size: var(--font-size--large) ;
@@ -317,13 +330,11 @@ section#contact{
 }
 
 section#contact h2{
-  text-align: center;
   margin-bottom: 30px;
 }
 
 .contactContainer {
   display: flex;
-  border: red 2px solid;
   width: 100%;
 }
 
@@ -331,6 +342,12 @@ section#contact h2{
   display: flex;
   flex-direction: column;
   flex: 1 1 500px;
+}
+
+.messageContainer p {
+ margin: 20px auto ;
+
+
 }
 
 .formContainer {
@@ -347,6 +364,8 @@ section#contact h2{
 .formContainer textarea {
   resize: none;
   height: 200px;
+  padding: 10px;
+  margin-top: 5px;
 }
 
 .formContainer button {
@@ -354,13 +373,32 @@ section#contact h2{
   color: white;
   padding: 15px;
   border: 2px solid #EFC570;
+  border-radius: 3px;
   text-transform: uppercase;
+  font-weight: 700;
+}
+
+.formContainer button:hover{
+  cursor: pointer;
+  background-color: #EFC570;
+  color: black;
 }
 
 .formContainer input {
   margin: 5px 0;
   padding: 10px;
   border-radius: 4px;
+}
+
+.socials i {
+  color: white;
+  margin: 30px 20px;
+  transition: 0.2s ease-in;
+}
+
+.socials i:hover {
+  color: #EFC570;
+  cursor: pointer;
 }
 
 
