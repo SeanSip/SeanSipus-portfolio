@@ -94,17 +94,16 @@
 <!-- About me Section -->
   <section id="about">
     <div class="wrapper">
-      
+      <h2>get to know more <span>about</span> me</h2>
       <div class="aboutMeContainer">
-        <h2>get to know more <span>about</span> me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ut saepe nam atque odio recusandae tempore, cumque adipisci earum voluptatibus? Incidunt repellat voluptatum quia nihil fuga cum nostrum ullam! Quisquam aut quas molestiae assumenda officia.</p>
-      </div>
-      <aside class="portrait">
-        <div class="main">
-            <img class="topPhoto" src="./assets/lol2.png" alt="">
+        <div class="portrait">
+          <img class="topPhoto" src="./assets/lol2.png" alt="">
           <div class="box"></div>
         </div>
-      </aside>
+        <div class="aboutText">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque quas rem pariatur corporis odit totam molestiae a nobis reiciendis veritatis amet, vero eaque quia similique repellat ab quos. Et laudantium culpa obcaecati aliquid quidem nesciunt magnam autem, nobis blanditiis dolorum dolore recusandae fugit quas.</p>
+        </div>
+      </div>
     </div>
   </section>
   <!-- End of About Me Section -->
@@ -113,7 +112,7 @@
   <section id="skills">
     <div class="wrapper">
       <div class="mySkills">
-        <h2>My Toolkit</h2>
+        <h2>my evergrowing <span>toolkit</span></h2>
         <ul class="icons">
           <li><i class="fab fa-html5"></i><span>HTML 5</span></li>
           <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
@@ -133,19 +132,20 @@
   <!-- Contact Section -->
   <section id="contact">
   <div class="wrapper">
-    <h2>get in touch</h2>
     <div class="contactContainer">
       <div class="messageContainer">
-        <h2>Let's Connect!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus, explicabo vel temporibus asperiores quibusdam magni obcaecati odit eveniet harum similique, sequi omnis consequatur sunt rem ipsa et enim saepe consequuntur, fuga molestiae. Quibusdam incidunt quisquam quam porro praesentium saepe.</p>
+        <h2><span>contact</span> me!</h2>
+        <h3>Feel free to ask me anything!</h3>
+        <p>Especially if it has anything to do with Japan, or hockey! I am always interested to chat in just about anything.</p>
       </div>
       <div class="formContainer">
         <form action="https://formspree.io/f/meqnqekk" method="post">
-          <label for="email">Your Email</label>
-          <input name="Email" id="email" type="email">
-          <label for="name">Your Name</label>
-          <input type="name" name="Name" id="name">
-          <textarea type="message" name="Message" id="message"></textarea>
+          <label for="email" class="sr-only">Email</label>
+          <input name="Email" id="email" type="email" placeholder="Your email">
+          <label for="name" class="sr-only">Name</label>
+          <input type="name" name="Name" id="name" placeholder="Your name">
+          <label for="message" class="sr-only">Message</label>
+          <textarea type="message" name="Message" id="message" placeholder="Hi, Sean! I would like to know something fascinating about your time living in Japan. Please let me know if you are available to meet!"></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
