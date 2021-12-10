@@ -17,20 +17,19 @@
 <body>
   <header>
     <img src="./assets/logo3Edit.png" alt="">
+    <nav>
+      <ul>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
     <div class="wrapper">
-      <nav>
-        <ul>
-          <li></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
       <div class="container">
         <div class="headerText">
           <p>Hi there!</p>
-          <h1><span>i'm </span>sean</h1>
-          <p>A web developer and (sometimes) designer, with a passion for creating great, accesible and functional websites! </p>
+          <h1>i'm <span> sean</span></h1>
+          <p>A front-end web developer! </p>
         </div>
       </div>
     </div>
@@ -38,13 +37,55 @@
 <!-- Project Section -->
   <section id="projects">
     <div class="wrapper">
-      <p>Portfolio</p>
-      <h2>Click on any of my projects to learn more!</h2>
+      <h2>check out some of my <span>projects</span></h2>
       <div class="projectContainer">
-        <img src="https://placekitten.com/200/300" alt="">
-        <img src="https://placekitten.com/200/300" alt="">
-        <img src="https://placekitten.com/200/300" alt="">
-        <img src="https://placekitten.com/200/300" alt="">
+        <div class="projectText">
+          <h3>Captured</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi repudiandae, deleniti voluptatibus voluptates repellendus tempora assumenda magnam inventore ipsum suscipit ipsa aut pariatur tenetur officiis necessitatibus consectetur. Dolores sequi provident amet nobis quasi itaque expedita voluptatibus quod cupiditate aperiam.</p>
+          <div class="textIcons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-sass"></i>
+          </div>
+          <ul>
+            <li><a href="">Live Site</a></li>
+            <li><a href="">GitHub</a></li>
+          </ul>
+        </div>
+          <img class="project" src="./assets/project1.png" alt="">
+      </div>
+      <div class="projectContainer">
+        <img class="project" src="./assets/project2.png" alt="">
+         <div class="projectText">
+          <h3>Game of Thrones Trivia </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi repudiandae, deleniti voluptatibus voluptates repellendus tempora assumenda magnam inventore ipsum suscipit ipsa aut pariatur tenetur officiis necessitatibus consectetur. Dolores sequi provident amet nobis quasi itaque expedita voluptatibus quod cupiditate aperiam.</p>
+          <div class="textIcons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-js-square"></i>
+          </div>
+          <ul>
+            <li><a href="">Live Site</a></li>
+            <li><a href="">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="projectContainer">
+        <div class="projectText">
+          <h3>YBS Galatic</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi repudiandae, deleniti voluptatibus voluptates repellendus tempora assumenda magnam inventore ipsum suscipit ipsa aut pariatur tenetur officiis necessitatibus consectetur. Dolores sequi provident amet nobis quasi itaque expedita voluptatibus quod cupiditate aperiam.</p>
+          <div class="textIcons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-react"></i>
+          </div>
+          <ul>
+            <li><a href="">Live Site</a></li>
+            <li><a href="">GitHub</a></li>
+          </ul>
+        </div>
+          <img class="project" src="./assets/project3.png" alt="">
       </div>
     </div>
   </section>
@@ -55,7 +96,7 @@
     <div class="wrapper">
       
       <div class="aboutMeContainer">
-        <h2>About Me</h2>
+        <h2>get to know more <span>about</span> me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ut saepe nam atque odio recusandae tempore, cumque adipisci earum voluptatibus? Incidunt repellat voluptatum quia nihil fuga cum nostrum ullam! Quisquam aut quas molestiae assumenda officia.</p>
       </div>
       <aside class="portrait">
@@ -90,25 +131,23 @@
   <!-- End of Proficiencies Section -->
 
   <!-- Contact Section -->
-  <section>
+  <section id="contact">
   <div class="wrapper">
+    <h2>get in touch</h2>
     <div class="contactContainer">
-      <div class="MessageContainer">
+      <div class="messageContainer">
         <h2>Let's Connect!</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus, explicabo vel temporibus asperiores quibusdam magni obcaecati odit eveniet harum similique, sequi omnis consequatur sunt rem ipsa et enim saepe consequuntur, fuga molestiae. Quibusdam incidunt quisquam quam porro praesentium saepe.</p>
-
       </div>
       <div class="formContainer">
-
-      <form action="https://formspree.io/f/meqnqekk" method="post">
-        <label for="email">Your Email</label>
-        <input name="Email" id="email" type="email">
-        <label for="name">Your Name</label>
-        <input type="name" name="Name" id="name">
-        <textarea type="message" name="Message" id="message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-
+        <form action="https://formspree.io/f/meqnqekk" method="post">
+          <label for="email">Your Email</label>
+          <input name="Email" id="email" type="email">
+          <label for="name">Your Name</label>
+          <input type="name" name="Name" id="name">
+          <textarea type="message" name="Message" id="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </div>
@@ -118,7 +157,7 @@
   <footer class="footer">
     <p>Developed and designed by Sean Sipus</p>
   </footer>
-
+  <script src="./index.js"></script>
 </body>
 
 </html>
