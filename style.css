@@ -144,9 +144,7 @@ a, button {
     margin: 0 20px;
   }
 
-  header a{
-    transition: ;
-  }
+
 
   header a:hover{
     color: #EFC570;
@@ -184,7 +182,7 @@ a, button {
     justify-content: center;
     align-self: center;
     margin-top: 15%;
-    margin-bottom: 25%;
+    
   }
 
 /* Projects Section */
@@ -450,7 +448,7 @@ section#contact h2{
     .mobileLogo {
       display: block;
       position: relative;
-      width: 40rem;
+      width: 30rem;
       margin: 0 auto;
       opacity: 35%;
     }
