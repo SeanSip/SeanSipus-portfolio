@@ -164,7 +164,7 @@ a, button {
 
   .logo {
     position: fixed;
-    width: 13rem;
+    width: 15rem;
     height: auto;
     margin: 15px;
     z-index: 5;
@@ -485,3 +485,10 @@ section#contact h2{
     }
 
   }
+
+  @media (max-width: 1188px) {
+    .logo{
+      width: 8rem;
+    }
+  }
+  
