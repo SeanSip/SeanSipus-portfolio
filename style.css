@@ -173,6 +173,7 @@ a, button {
 
   .mobileLogo {
     display: none;
+    padding-bottom: 100px;
   }
 
 
@@ -189,7 +190,7 @@ a, button {
 
   section#projects{
     background-color: rgb(35, 35, 43);
-    padding: 200px 0;
+    padding: 100px 0;
   }
 
   section#projects h2 {
@@ -455,7 +456,7 @@ section#contact h2{
       position: relative;
       width: 30rem;
       margin: 0 auto;
-      opacity: 35%;
+      opacity: 75%;
     }
 
   
