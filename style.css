@@ -166,10 +166,12 @@ a, button {
 
   header img {
     position: fixed;
-    width: 10rem;
+    width: 13rem;
     height: auto;
     margin: 15px;
     z-index: 5;
+    opacity: 0.5;
+    
   }
 
   .container {
@@ -438,10 +440,14 @@ section#contact h2{
 
 
     header img {
-      display: none;
-
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30rem;
+      height: auto;
     }
 
+  
     .projectContainer:nth-child(2){
       flex-direction: column-reverse;
     }
