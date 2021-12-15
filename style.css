@@ -164,15 +164,19 @@ a, button {
     
   }
 
-  header img {
+  .logo {
     position: fixed;
     width: 13rem;
     height: auto;
     margin: 15px;
     z-index: 5;
     opacity: 0.5;
-    
   }
+
+  .mobileLogo {
+    display: none;
+  }
+
 
   .container {
     text-align: center;
@@ -439,12 +443,16 @@ section#contact h2{
     }
 
 
-    header img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 30rem;
-      height: auto;
+    .logo {
+      display: none;
+    }
+
+    .mobileLogo {
+      display: block;
+      position: relative;
+      width: 40rem;
+      margin: 0 auto;
+      opacity: 35%;
     }
 
   
