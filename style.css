@@ -103,7 +103,7 @@ a, button {
       color: #ffffff;
     }
 
-  li {
+   li {
     list-style: none;
     text-decoration: none;
     color: #ffffff;
@@ -435,6 +435,11 @@ section#contact h2{
 
 
   @media (max-width: 630px) {
+    header nav{
+      justify-content: center;
+      padding: 0;
+    }
+
     header li{
       font-size: var(--font-size--small);
       padding-top: 40px;
