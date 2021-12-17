@@ -36,6 +36,8 @@ a, button {
 
 
 
+
+
   /* font styling */
     :root{
       font-size: 62.5%;
@@ -234,6 +236,18 @@ a, button {
     padding: 10px 25px;
   }
 
+  .collaberation a{
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+    color: #EFC570;
+    text-transform: capitalize;
+    text-decoration: underline;
+    display: inline-block;
+    
+  }
+
    .projectText a:hover {
     background-color: #EFC570;
     color: black;
@@ -246,11 +260,6 @@ a, button {
     border: 8px #EFC570 solid;
     border-radius: 5px;
   }
-
- 
-
-
-
 
 
  /* About Me Section*/
@@ -288,8 +297,6 @@ a, button {
   .aboutText p{
     margin: auto;
   }
-
-
 
 
 
@@ -364,8 +371,6 @@ section#contact h2{
 
 .messageContainer p {
  margin: 20px auto ;
-
-
 }
 
 .formContainer {
@@ -394,6 +399,7 @@ section#contact h2{
   border-radius: 3px;
   text-transform: uppercase;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 .formContainer button:hover{
