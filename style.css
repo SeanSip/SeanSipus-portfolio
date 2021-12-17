@@ -487,6 +487,11 @@ section#contact h2{
       margin-bottom: 30px;
     }
 
+    .projectText  {
+      width: 100%;
+      margin: 0 auto;
+    }
+
     .contactContainer {
       flex-direction: column;
     }
