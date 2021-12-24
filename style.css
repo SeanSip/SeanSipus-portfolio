@@ -115,6 +115,10 @@ a, button {
     
   }
 
+  h2 span {
+    text-shadow: white 0px 2px;
+  }
+
   
   
   /* Header styles */
@@ -125,6 +129,18 @@ a, button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  header h1 span {
+    text-shadow: white 0px 4px;
+  }
+
+  header h1 {
+    text-shadow: #EFC570 0px 3px;
+  }
+
+  header p {
+    text-shadow: #EFC570 1px 2px;
   }
 
   header nav {
@@ -375,10 +391,12 @@ section#skills{
 
 section#skills h2{
   padding: 50px 0;
+
 }
 
 section#skills h3{
   text-transform: uppercase;
+  text-align: right;
 }
 
 
