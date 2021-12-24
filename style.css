@@ -145,7 +145,7 @@ a, button {
     
   }
 
-  header a:hover{
+  header a:hover, header a:focus{
     color: #EFC570;
     border-bottom: #EFC570 5px solid;
     border-radius: 10px;
@@ -225,13 +225,15 @@ a, button {
     transition: ease-in-out 0.4s;
   }
 
-  .logo:hover {
+  .logo:hover, .logo:focus {
     opacity: 1;
   }
 
-  .mobileLogo {
+
+  .logoHidden {
+    width: 200px;
     display: none;
-    padding-bottom: 100px;
+    
   }
 
 
@@ -304,7 +306,7 @@ a, button {
     
   }
 
-   .projectText a:hover {
+   .projectText a:hover, .projectText a:focus {
     background-color: #EFC570;
     color: black;
   }
@@ -367,6 +369,10 @@ section#skills{
 
 section#skills h2{
   padding: 50px 0;
+}
+
+section#skills h3{
+  text-transform: uppercase;
 }
 
 
@@ -458,7 +464,7 @@ section#contact h2{
   margin-top: 10px;
 }
 
-.formContainer button:hover{
+.formContainer button:hover, .formContainer button:focus{
   cursor: pointer;
   background-color: #EFC570;
   color: black;
@@ -476,7 +482,7 @@ section#contact h2{
   transition: 0.2s ease-in;
 }
 
-.socials i:hover {
+.socials i:hover{
   color: #EFC570;
   cursor: pointer;
 }
@@ -495,9 +501,17 @@ section#contact h2{
     border-top: rgba(128, 128, 128, 0.26) 1px solid;
   }
 
+  /* Media Queries */
+
   @media (max-width: 1130px) {
     .wrapper{
       width: 80%;
+    }
+  }
+
+  @media (max-width: 1188px) {
+    .logo{
+      width: 8rem;
     }
   }
 
@@ -512,6 +526,19 @@ section#contact h2{
     height: 4px;
     margin: 4px auto;
    }
+   
+   .hamburgerMenu.active .bar:nth-child(3){
+    transform:  rotate(45deg) translate(-11px);
+  }
+
+  .hamburgerMenu.active .bar:nth-child(2){
+    transform: translatex(-30px);
+    background: transparent;
+  }
+
+  .hamburgerMenu.active .bar:nth-child(1){
+    transform: rotate(-45deg) translate(-11px);
+  }
 
    .hamburgerMenu {
     padding-top: 30px;
@@ -529,16 +556,8 @@ section#contact h2{
     }
 
 
-    .logo {
+    .logo.active  {
       display: none;
-    }
-
-    .mobileLogo {
-      display: block;
-      position: relative;
-      width: 30rem;
-      margin: 0 auto;
-      opacity: 75%;
     }
 
   
@@ -573,50 +592,3 @@ section#contact h2{
     }
 
   }
-
-  @media (max-width: 1188px) {
-    .logo{
-      width: 8rem;
-    }
-  }
-  
-
-
-  /* adding hamburger menu
-  .hamburgerMenu{
-    display: block;
-  }
-
-  .hamburgerMenu.active .bar:nth-child(3){
-    transform:  rotate(45deg) translate(-13px);
-  }
-
-  .hamburgerMenu.active .bar:nth-child(2){
-    transform: translatex(-30px);
-    background: transparent;
-  }
-
-  .hamburgerMenu.active .bar:nth-child(1){
-    transform: rotate(-45deg) translate(-15px);
-  }
-
-  .navMenu{
-    position: fixed;
-    top: 0%;
-    right: 0%;
-    background-color: rgba(0, 0, 0, 0.918);
-    flex-direction: column;
-    width: 100%;
-    padding: 50px 0;
-    transform: scale(0%);
-  }
-
-.navMenu li {
-  margin: 20px auto;
-  text-align: center;
-}
-
-.navMenu.active {
-  transform: scale(100%);
-  transition: 0.3s;
-} */
