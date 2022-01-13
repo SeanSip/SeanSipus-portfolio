@@ -79,6 +79,9 @@ a, button {
       font-size: var(--font-size--default);
     }
 
+    .textThree span {
+      font-size: var(--font-size--medium);
+    }
 
     .icons span {
       font-weight: 300;
@@ -93,6 +96,7 @@ a, button {
     span {
       color: #EFC570;
     }
+
 
     h1, h2 {
       color: white;
@@ -141,6 +145,12 @@ a, button {
 
   header p {
     text-shadow: #EFC570 1px 2px;
+  }
+
+  .textThree span{
+    color: #ffffff;
+    text-shadow: #EFC570 1px 2px
+
   }
 
   header nav {
@@ -260,11 +270,12 @@ a, button {
 
 
   .container {
-    text-align: center;
     display: flex;
     justify-content: center;
-    align-self: center;
     padding-top: 25%;
+  }
+
+  .textTwo {
     
   }
 
