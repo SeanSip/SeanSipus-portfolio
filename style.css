@@ -270,11 +270,12 @@ a, button {
 
 
   .container {
-    text-align: center;
     display: flex;
     justify-content: center;
-    align-self: center;
     padding-top: 25%;
+  }
+
+  .textTwo {
     
   }
 

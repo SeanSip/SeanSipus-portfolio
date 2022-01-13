@@ -22,8 +22,15 @@ navClose.addEventListener("click", () => {
 
 //Typing animation 
 const typed = new Typed(".typingAnimation", {
-strings: ["Front", "End", "Web", "Developer"],
-typeSpeed: 120,
+strings: ["Front-end","","Web Developer", "", "", ""],
+typeSpeed: 40,
 backSpeed: 45,
 loop: true
 });
+
+const typedTwo = new Typed(".typingAnimationTwo", {
+  strings: ["me", "sean", "ショーン"],
+  typeSpeed: 120,
+  backSpeed: 100,
+  loop: true
+  });
