@@ -12,11 +12,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <title>Sean's Portfolio</title>
 </head>
 
 <body>
   <header>
+  <section id="home" class="home">
     <a href="/assets/SeanSipusResumeCohort37DarkTheme.pdf" download><img class="logo active" src="./assets/logo.png" alt=""></a>
     <div class="hamburgerMenu">
       <span class="bar"></span>
@@ -34,16 +36,19 @@
     </nav>
     
     <div class="wrapper">
+      <!-- home section start -->
       <div class="container">
         <div class="headerText">
-          <p>Hi there!</p>
-          <h1>i'm <span> sean</span></h1>
-          <p>A front-end web developer based in Toronto, Canada! </p>
+          <div class="textOne"><p>Hi there!</p></div>
+          <div class="textTwo"><h1>i'm <span> sean</span></h1></div>
+          <div class="textThree"><span class="typingAnimation"></span></div>
           
         </div>
       </div>
     </div>
+  </section>  
   </header>
+  
 <!-- Project Section -->
   <section id="projects">
     <div class="wrapper">
@@ -174,6 +179,7 @@
     <p>Developed and designed by <span>Sean Sipus</span></p>
   </footer>
   <script src="./index.js"></script>
+  
 </body>
 
 </html>

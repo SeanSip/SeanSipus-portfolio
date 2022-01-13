@@ -20,3 +20,10 @@ navClose.addEventListener("click", () => {
   logo.classList.toggle("active");
 })
 
+//Typing animation 
+const typed = new Typed(".typingAnimation", {
+strings: ["Front", "End", "Web", "Developer"],
+typeSpeed: 120,
+backSpeed: 45,
+loop: true
+});
