@@ -365,6 +365,10 @@ a, button {
    margin-bottom: 100px;
  }
 
+ #about .animatedText {
+  margin-bottom: 15px;
+  }
+
 
    /* Portrait */
    .portrait img{
@@ -623,4 +627,5 @@ section#contact h2{
       flex-direction: column;
     }
 
+    
   }
