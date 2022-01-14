@@ -574,10 +574,6 @@ section#contact h2{
       animation: fadein 3.5s;
     }
 
-    html {
-      animation: fadein 0.5s;
-      background-color: black;
-    }
 
 
   @keyframes flyin {
