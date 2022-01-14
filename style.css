@@ -359,6 +359,7 @@ a, button {
    background-color: rgb(32, 31, 39);
    padding: 150px 0;
    border-top: rgba(128, 128, 128, 0.26) 1px solid;
+   border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
  }
 
  section#about h2 {
