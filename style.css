@@ -600,6 +600,17 @@ section#contact h2{
     }
   }
 
+  @media (max-width: 1024px) {
+    header {
+      background-attachment: scroll;
+    }
+
+    section#skills {
+      background-attachment: scroll;
+    }
+
+  }
+
   @media (max-width: 830px) {
 
     /* about section */
