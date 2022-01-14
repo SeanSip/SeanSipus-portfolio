@@ -134,6 +134,7 @@ a, button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
   }
 
   header h1 span {
@@ -408,6 +409,7 @@ section#skills{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   padding: 70px 0;
 }
 
