@@ -29,7 +29,7 @@ loop: true
 });
 
 const typedTwo = new Typed(".typingAnimationTwo", {
-  strings: ["me", "sean", "ショーン"],
+  strings: ["Sean", "ショーン"],
   typeSpeed: 120,
   backSpeed: 100,
   loop: true
