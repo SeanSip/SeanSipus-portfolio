@@ -90,6 +90,7 @@ a, button {
 
     p {
       font-size: var(--font-size--default);
+  
     }
 
 
@@ -103,6 +104,9 @@ a, button {
       color: white;
       text-transform: uppercase;
     }
+
+   
+
 
     p {
       color: #ffffff;
@@ -136,6 +140,7 @@ a, button {
     background-position: center;
     background-attachment: fixed;
   }
+
 
   header h1 span {
     text-shadow: white 0px 4px;
@@ -548,6 +553,42 @@ section#contact h2{
     width: 100%;
     border-top: rgba(128, 128, 128, 0.26) 1px solid;
   }
+
+
+  /* animations */
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+    p{
+      animation: fadein 2s;
+    }
+
+    h1 {
+      animation: fadein 2.5s;
+    }
+
+    span {
+      animation: fadein 3.5s;
+    }
+
+    html {
+      animation: fadein 0.5s;
+      background-color: black;
+    }
+
+
+  @keyframes flyin {
+    from {left: -50%;}
+    to {left: 0%;}
+  }
+
+    .logo {
+      animation: flyin 2s;
+    }
+
 
   /* Media Queries */
 

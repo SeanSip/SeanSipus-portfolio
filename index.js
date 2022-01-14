@@ -4,6 +4,8 @@ const logo = document.querySelector('.logo')
 const navClose = document.querySelector('.navMenu')
 
 
+
+
 /* opens the modal for website navigation via the section anchor tag links when the hamburger icon is clicked */
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("active");
