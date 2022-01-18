@@ -26,7 +26,7 @@ html {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 90%;
 }
 
@@ -39,7 +39,7 @@ a, button {
   /* font styling */
     :root{
       font-size: 62.5%;
-    --font-size--default: 1.6rem;
+    --font-size--default: 1.8rem;
     --font-size--small: 2rem;
     --font-size--medium: 2.6rem;
     --font-size--large:3rem;
@@ -376,6 +376,7 @@ a, button {
 
  section#about h3 {
   text-transform:capitalize;
+  font-size: var(--font-size--large);
  }
 
  #about .animatedText {
@@ -387,7 +388,7 @@ a, button {
    .portrait img{
     border: #EFC570 7px solid;
     border-radius: 5px;
-    width: 70%;
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.856);
     z-index: 2;
   }
@@ -400,10 +401,16 @@ a, button {
   .aboutText {
     width: 100%;
     display: flex;
+    flex-direction: column;
   }
 
   .aboutText p{
     margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .aboutText a {
+    color: #EFC570;
   }
 
 
@@ -587,20 +594,47 @@ section#contact h2{
 
 
   /* Media Queries */
-
-  @media (max-width: 1130px) {
-    .wrapper{
-      width: 80%;
-    }
-  }
-
+  
   @media (max-width: 1188px) {
     .logo{
       width: 8rem;
     }
   }
+  @media (max-width: 1164px) {
+    .wrapper{
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+
+    .animatedText {
+      text-align: center;
+    }
+
+    .aboutMeContainer {
+      flex-direction: column;
+    }
+
+    .portrait{
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .portrait{
+      padding-bottom: 35px ;
+    }
+
+  }
+
 
   @media (max-width: 1024px) {
+
+    .wrapper{
+      width: 80%;
+    }
+
+
     header {
       background-attachment: scroll;
     }
@@ -609,23 +643,18 @@ section#contact h2{
       background-attachment: scroll;
     }
 
+
+
   }
 
   @media (max-width: 830px) {
 
     /* about section */
 
-    .animatedText {
-      text-align: center;
-    }
+   
 
     .aboutMeContainer{
       flex-direction: column;
-    }
-
-    .portrait{
-      display: flex;
-      padding-bottom: 35px ;
     }
 
     .portrait img{
@@ -715,9 +744,10 @@ section#contact h2{
     }
 
 
-    h3 {
+    section#about h3 {
+      text-transform:capitalize;
       font-size: var(--font-size--small);
-    }
+     }
 
   }
 
