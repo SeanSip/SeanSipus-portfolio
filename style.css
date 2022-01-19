@@ -707,6 +707,10 @@ section#contact h2{
      width: 70%;
    }
 
+   .icons li {
+    margin: 20px 40px;
+   }
+
    .bar {
     width: 25px;
     height: 4px;
@@ -747,6 +751,16 @@ section#contact h2{
     section#about h3 {
       text-transform:capitalize;
       font-size: var(--font-size--small);
+     }
+  }
+
+  @media (max-width: 512px ) {
+    .icons li {
+      margin: 10px 5px;
+     }
+
+     .icons span{
+       padding: 2px;
      }
 
   }
