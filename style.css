@@ -437,7 +437,7 @@ section#skills h3{
 
 
 .mySkills ul {
-  padding: 35px;
+  padding: 25px;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -446,7 +446,7 @@ section#skills h3{
 
   .icons li {
     display: flex;
-    margin: 20px 10px;
+    margin: 20px 50px;
     flex-direction: column;
     align-items: center;
   }
