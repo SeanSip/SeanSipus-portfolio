@@ -768,6 +768,10 @@ section#contact h2{
        margin: 0 auto;
      }
 
+     .formContainer form{
+       margin: 0;
+     }
+
   }
 
   @media (max-width: 370px) {
