@@ -763,6 +763,11 @@ section#contact h2{
        padding: 2px;
      }
 
+     .formContainer {
+       width: 100%;
+       margin: 0 auto;
+     }
+
   }
 
   @media (max-width: 370px) {
