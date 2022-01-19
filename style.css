@@ -772,6 +772,14 @@ section#contact h2{
        margin: 0;
      }
 
+     .socials {
+       padding-bottom: 35px;
+     }
+
+     .messageContainer p {
+       padding: 35px 0px;
+     }
+
   }
 
   @media (max-width: 370px) {
