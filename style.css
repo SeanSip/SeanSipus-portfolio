@@ -300,10 +300,6 @@ a, button {
     padding-top: 25%;
   }
 
-  .textTwo {
-    
-  }
-
 /* Projects Section */
 
   section#projects{
@@ -388,6 +384,7 @@ a, button {
  }
 
  section#about h2 {
+   text-align: center;
    margin-bottom: 100px;
  }
 
@@ -724,6 +721,17 @@ section#contact h2{
     
     section#contact{
       padding-bottom: 0;
+     }
+
+     section#contact h2 {
+       text-align: center;
+       padding-bottom: 50px;
+     }
+
+     
+
+     .socials {
+       text-align: center;
      }
   }
 
