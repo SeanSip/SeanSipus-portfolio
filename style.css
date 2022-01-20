@@ -8,7 +8,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-*{
+*, h1{
   margin: 0;
   padding: 0;
 }
@@ -21,6 +21,7 @@ img {
 html { 
   line-height: 1.6;
 }
+
 
 /* global styling */
 
@@ -44,7 +45,7 @@ a, button {
     --font-size--small: 2rem;
     --font-size--medium: 2.6rem;
     --font-size--large:3rem;
-    --font-size--extra:6.4rem;
+    --font-size--extra:10.8rem;
       font-family: 'Poppins', sans-serif; ;
   }
 
@@ -142,6 +143,13 @@ a, button {
     background-attachment: fixed;
   }
 
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    
+  }
 
   header h1 span {
     text-shadow: white 0px 4px;
@@ -158,7 +166,6 @@ a, button {
   .textThree span{
     color: #ffffff;
     text-shadow: #EFC570 1px 2px
-
   }
 
   header nav {
@@ -179,9 +186,8 @@ a, button {
   }
 
   header li {
-  
-    font-size: var(--font-size--extra);
-    padding: 4%;
+    font-size: 9rem;
+    padding: 50px;
   }
 
   header a:hover, header a:focus{
@@ -291,13 +297,6 @@ a, button {
     width: 200px;
     display: none;
     
-  }
-
-
-  .container {
-    display: flex;
-    justify-content: center;
-    padding-top: 25%;
   }
 
 /* Projects Section */
@@ -845,7 +844,16 @@ section#contact h2{
      section#contact {
        padding-bottom: 0px;
      }
+  }
 
+  @media (max-width: 394px) {
+    .headerContainer h1{
+      font-size: 5rem;
+    }
+
+    .headerContainer p, .headerContainer .textThree span {
+      font-size: 2rem;
+    }
   }
 
   @media (max-width: 370px) {
