@@ -195,7 +195,7 @@ a, button {
 
   .hamburgerMenu{
     display: block;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-right: 10px;
     padding: 20px;
     position: fixed;
@@ -208,7 +208,7 @@ a, button {
   .circle {
     position: fixed;
     right: 0;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-right:20px;
     width: 55px;
     height: 55px;
@@ -767,12 +767,11 @@ section#contact h2{
   }
 
    .hamburgerMenu {
-    padding-top: 30px;
-    padding-right: 15px;
+    padding: 15px;
    }
 
    .circle {
-    margin-top: 62px;
+    margin-top: 42px;
     margin-right:15px;
     width: 45px;
     height: 45px;
