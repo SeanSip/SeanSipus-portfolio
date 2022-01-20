@@ -806,6 +806,11 @@ section#contact h2{
       text-transform:capitalize;
       font-size: var(--font-size--small);
      }
+
+     section#contact h3 {
+       font-size: var(--font-size--small);
+     }
+
   }
 
 
