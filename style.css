@@ -39,6 +39,7 @@ a, button {
   /* font styling */
     :root{
       font-size: 62.5%;
+    --font-size--tiny: 1.6rem;
     --font-size--default: 1.8rem;
     --font-size--small: 2rem;
     --font-size--medium: 2.6rem;
@@ -194,12 +195,27 @@ a, button {
 
   .hamburgerMenu{
     display: block;
-    padding-top: 30px;
-    padding-right: 30px;
+    margin-top: 40px;
+    margin-right: 10px;
+    padding: 20px;
     position: fixed;
     right: 0;
     z-index: 10;
     cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .circle {
+    position: fixed;
+    right: 0;
+    margin-top: 50px;
+    margin-right:20px;
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    border-radius: 40px;
+    box-shadow: #EFC570 0 0 0 5px;
+    opacity: 50%;
   }
 
   .bar {
@@ -212,10 +228,11 @@ a, button {
     border-radius: 10px;
   }
 
+
   .navMenu{
     position: absolute;
     display: none;
-    background-color: rgba(0, 0, 0, 0.96);
+    background-color: rgba(0, 0, 0, 1);
     width: 100%;
     height: 100vh;
     padding: 80px 0;
@@ -226,10 +243,10 @@ a, button {
     /* Burger Menu Active Styling */
     .navMenu.active{
       display: block;
-      transform: scale(99%);
+      transform: scale(100%);
       transition: 0.3s;
       position: fixed;
-      box-shadow: #EFC570 0px 0px 10px 5px ;
+      border: #EFC570 10px solid ;
       top: 0;
     } 
 
@@ -291,7 +308,7 @@ a, button {
 
   section#projects{
     background-color: rgb(35, 35, 43);
-    padding: 100px 0;
+    padding: 150px 0;
   }
 
   section#projects h2 {
@@ -422,12 +439,12 @@ section#skills{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 section#skills h2{
-  padding: 50px 0;
-
+  padding-bottom: 80px;
+  text-align: center;
 }
 
 section#skills h3{
@@ -437,10 +454,8 @@ section#skills h3{
 
 
 .mySkills ul {
-  padding: 25px;
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -469,11 +484,12 @@ section#skills h3{
 
 
 
-/* contact section */
+/* Contact Section */
 
 section#contact{
   background-color: rgb(35, 35, 43);
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 section#contact h2{
@@ -493,6 +509,7 @@ section#contact h2{
 
 .messageContainer p {
  margin: 20px auto ;
+ padding-right: 50px;
 }
 
 .formContainer {
@@ -562,7 +579,7 @@ section#contact h2{
   }
 
 
-  /* animations */
+  /* Start of Animations */
 
   @keyframes fadein {
     from { opacity: 0; }
@@ -593,11 +610,12 @@ section#contact h2{
     }
 
 
-  /* Media Queries */
+  /* Start of Media Queries */
   
   @media (max-width: 1188px) {
     .logo{
       width: 8rem;
+      padding-top: 25px;
     }
   }
   @media (max-width: 1164px) {
@@ -634,24 +652,22 @@ section#contact h2{
       width: 80%;
     }
 
+    /* Header Section Media Queries */
 
     header {
       background-attachment: scroll;
     }
 
+    /* Skill Section Media Queries */
+
     section#skills {
       background-attachment: scroll;
     }
-
-
-
   }
 
   @media (max-width: 830px) {
 
-    /* about section */
-
-   
+    /* About Section Media Queries */
 
     .aboutMeContainer{
       flex-direction: column;
@@ -665,7 +681,13 @@ section#contact h2{
       margin: 0 auto;
     }
 
+    /* Skill Section Media Queries */
 
+    .icons li {
+      margin: 25px;
+    }
+
+    /* Poject Section Media Queries */
 
    
     .projectContainer:nth-child(2){
@@ -694,21 +716,35 @@ section#contact h2{
       margin: 0 auto;
     }
 
+    /* Contact Section Media Queries */
+
     .contactContainer {
       flex-direction: column;
     }
+    
+    section#contact{
+      padding-bottom: 0;
+     }
   }
 
 
 
-  @media (max-width: 630px) {
+  @media (max-width: 634px) {
    
    .wrapper{
      width: 70%;
    }
 
    .icons li {
-    margin: 20px 40px;
+    margin: 20px 10px;
+   }
+
+   .icons i {
+     font-size: 3.8rem;
+   }
+
+   .icons span{
+     font-size: 1.3rem;
    }
 
    .bar {
@@ -734,6 +770,17 @@ section#contact h2{
     padding-top: 30px;
     padding-right: 15px;
    }
+
+   .circle {
+    margin-top: 62px;
+    margin-right:15px;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border-radius: 40px;
+    box-shadow: #EFC570 0 0 0 3px;
+    opacity: 50%;
+   }
    
    
 
@@ -754,14 +801,17 @@ section#contact h2{
      }
   }
 
+
+
   @media (max-width: 512px ) {
     .icons li {
       margin: 10px 5px;
      }
 
-     .icons span{
-       padding: 2px;
+     .icons ul {
+       width: 110%;
      }
+
 
      .formContainer {
        width: 100%;
@@ -778,6 +828,10 @@ section#contact h2{
 
      .messageContainer p {
        padding: 35px 0px;
+     }
+
+     section#contact {
+       padding-bottom: 0px;
      }
 
   }
@@ -807,5 +861,21 @@ section#contact h2{
   @media (max-width: 320px) {
     .wrapper{
     width: 75%;
+    }
+
+    .icons i{
+      font-size: 4rem ;
+    }
+
+    .icons span{
+      font-size: 1.3rem;
+    }
+
+    .socials i{
+      font-size: 3.5rem;
+    }
+
+    footer p {
+      font-size: var(--font-size--tiny);
     }
   }
