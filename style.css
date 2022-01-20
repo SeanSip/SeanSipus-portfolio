@@ -398,14 +398,23 @@ a, button {
 
 
    /* Portrait */
+
+   .portrait {
+     display: flex;
+     
+     
+   }
+  
    .portrait img{
     border: #EFC570 7px solid;
     border-radius: 5px;
-    width: 90%;
     background-color: rgba(0, 0, 0, 0.856);
     z-index: 2;
+    align-content: center;
+    height: 70%;
+    
+    
   }
-  
 
   .aboutMeContainer{
     display: flex;
@@ -415,6 +424,7 @@ a, button {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 25px;
   }
 
   .aboutText p{
