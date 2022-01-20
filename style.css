@@ -401,15 +401,13 @@ a, button {
 
    .portrait {
      display: flex;
-     
-     
+     z-index:1;
    }
   
    .portrait img{
     border: #EFC570 7px solid;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.856);
-    z-index: 2;
     align-content: center;
     height: 70%;
     
