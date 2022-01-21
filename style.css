@@ -35,7 +35,11 @@ a, button {
   transition: 0.2s ease-in;
 }
 
-
+/* alt text styling */
+img {
+  color: #ffffff;
+  text-align: center;
+}
 
   /* font styling */
     :root{
@@ -53,6 +57,7 @@ a, button {
     body, label{
       font-size: var(--font-size--default);
     }
+
 
     h1 {
       font-size: var(--font-size--extra);
