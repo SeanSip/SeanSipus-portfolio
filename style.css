@@ -657,9 +657,9 @@ section#contact h2{
 
   @media (max-width: 1024px) {
 
-    .wrapper{
+    /* .wrapper{
       width: 80%;
-    }
+    } */
 
     /* Header Section Media Queries */
 
@@ -757,9 +757,9 @@ section#contact h2{
 
   @media (max-width: 634px) {
    
-   .wrapper{
+   /* .wrapper{
      width: 70%;
-   }
+   } */
 
    .icons li {
     margin: 20px 10px;
@@ -898,9 +898,9 @@ section#contact h2{
 }
 
   @media (max-width: 320px) {
-    .wrapper{
+    /* .wrapper{
     width: 75%;
-    }
+    } */
 
     .icons i{
       font-size: 4rem ;
