@@ -624,7 +624,7 @@ section#contact h2{
   @media (max-width: 1188px) {
     .logo{
       width: 8rem;
-      padding-top: 25px;
+      margin-top: 25px;
     }
   }
   @media (max-width: 1164px) {
