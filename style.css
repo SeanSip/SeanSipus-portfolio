@@ -870,6 +870,10 @@ section#contact h2{
        padding: 35px 0px;
      }
 
+     .messageContainer .socials i {
+       font-size: 4rem;
+     }
+
      section#contact {
        padding-bottom: 0px;
      }
@@ -882,6 +886,10 @@ section#contact h2{
 
     .headerContainer p, .headerContainer .textThree span {
       font-size: 2rem;
+    }
+    .messageContainer .socials i {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 
