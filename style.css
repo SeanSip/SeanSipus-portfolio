@@ -350,10 +350,10 @@ img {
   }
 
 
-  .projectText a {
+  .btn {
     margin: 10px;
     border: 2px solid #EFC570;;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px 25px;
   }
 
