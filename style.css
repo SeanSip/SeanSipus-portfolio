@@ -25,6 +25,14 @@ html {
 
 /* global styling */
 
+
+
+
+.aboutMeContainer a:focus{
+outline: 2px #EFC570 solid;    
+}
+
+
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -200,17 +208,16 @@ img {
   }
 
 
-  .navMenu .socials a:hover {
+  .navMenu .socials a:hover, .navMenu .socials a:focus {
     border-bottom: none;
     text-shadow: #ffffff 0px 0px 30px ;
-    
-    
   }
 
   /* Burger Menu Styles */
   
 
   .hamburgerMenu{
+    transition: 0.5s;
     display: block;
     margin-top: 35px;
     margin-right: 10px;
@@ -220,8 +227,17 @@ img {
     z-index: 10;
     cursor: pointer;
     border-radius: 50px;
+    background: none;
+    border-style: none;
   }
 
+  .hamburgerMenu:hover, .hamburgerMenu:focus-visible{
+    scale: 120%;
+    box-shadow: #EFC570 0px 0px 100px 0px;
+    background-color: #efc57032;  
+  outline: none;
+  }
+  
   .circle {
     position: fixed;
     right: 0;
@@ -542,6 +558,11 @@ section#contact h2{
   height: 200px;
   padding: 10px;
   margin-top: 5px;
+  border-radius: 5px;
+}
+
+textarea:focus, input:focus{
+  outline: #EFC570 3px solid;
 }
 
 .formContainer button {
@@ -573,9 +594,17 @@ section#contact h2{
   transition: 0.2s ease-in;
 }
 
-.socials i:hover{
+.socials i:hover, .socials i:focus{
   color: #EFC570;
   cursor: pointer;
+}
+
+.socials a:focus{
+  transition: 0s;
+  outline: #EFC570 solid 2px;
+  border-radius: 5px;
+  padding-top: 2.5rem;
+  text-shadow: #EFC570 0px 0px 30px
 }
 
 
