@@ -265,7 +265,7 @@ img {
   .navMenu{
     position: absolute;
     display: none;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(32, 31, 39);
     width: 100%;
     height: 100vh;
     transform: scale(0%);
@@ -330,6 +330,7 @@ img {
   section#projects{
     background-color: rgb(35, 35, 43);
     padding: 150px 0;
+    border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
   }
 
   section#projects h2 {
@@ -520,6 +521,7 @@ section#contact{
   background-color: rgb(35, 35, 43);
   padding-top: 100px;
   padding-bottom: 100px;
+  border-top: rgba(128, 128, 128, 0.26) 1px solid;
 }
 
 section#contact h2{
@@ -615,7 +617,7 @@ textarea:focus, input:focus{
     align-items: center;
     justify-content: center;
     height: 50px;
-    background-color: rgb(35, 35, 43);
+    background-color: rgb(32, 31, 39);
     color: white;
     width: 100%;
     border-top: rgba(128, 128, 128, 0.26) 1px solid;
