@@ -14,7 +14,7 @@ hamburgerMenu.addEventListener("click", () => {
 })
 
 /* closes the hamburger menu navigation overlay modal when an anchor tag link is clicked */
-navClose.addEventListener("click", () => {
+navClose.addEventListener( () => {
   navClose.classList.remove("active");
   // toggles the hamburger menu icon from an X back to hamburger menu when an anchor link is clicked
   hamburgerMenu.classList.toggle("active");
