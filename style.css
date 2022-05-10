@@ -763,6 +763,10 @@ textarea:focus, input:focus{
       flex-direction: column-reverse;
     }
 
+    .projectContainer:nth-child(5){
+      flex-direction: column;
+    }
+
     .projectContainer li {
       flex: none;
     }
