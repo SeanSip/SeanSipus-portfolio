@@ -711,7 +711,7 @@ textarea:focus, input:focus{
     }
   }
 
-  @media (max-width: 919px) {
+  @media (max-width: 938px) {
 
     .messageContainer .socials i {
       margin-left: 12px;
@@ -720,7 +720,7 @@ textarea:focus, input:focus{
 
   }
 
-  @media (max-width: 830px) {
+  @media (max-width: 875px) {
 
     /* Header Section Media Queries */
 
@@ -794,6 +794,10 @@ textarea:focus, input:focus{
 
      .socials {
        text-align: center;
+     }
+
+     .messageContainer p {
+       padding-right: 0px;
      }
 
      .messageContainer .socials i {
