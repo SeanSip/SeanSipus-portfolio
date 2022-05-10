@@ -22,6 +22,10 @@ navClose.addEventListener("click", () => {
   logo.classList.toggle("active");
 })
 
+hamburgerMenu.addEventListener("click", function(){
+  openNav()
+})
+
 //Typing animation 
 const typed = new Typed(".typingAnimation", {
 strings: ["Front-end","","Web Developer", "", "", ""],

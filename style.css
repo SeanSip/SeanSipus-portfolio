@@ -164,6 +164,8 @@ img {
     
   }
 
+  
+
   header h1 span {
     text-shadow: white 0px 4px;
   }
@@ -232,10 +234,8 @@ img {
   }
 
   .hamburgerMenu:hover, .hamburgerMenu:focus-visible{
-    scale: 120%;
-    box-shadow: #EFC570 0px 0px 100px 0px;
-    background-color: #efc57032;  
-  outline: none;
+    transform: scale(110%);
+    outline: none;
   }
   
   .circle {
@@ -250,6 +250,7 @@ img {
     box-shadow: #EFC570 0 0 0 5px;
     opacity: 50%;
   }
+
 
   .bar {
     transition: 0.5s;
@@ -696,9 +697,6 @@ textarea:focus, input:focus{
 
   @media (max-width: 1024px) {
 
-    /* .wrapper{
-      width: 80%;
-    } */
 
     /* Header Section Media Queries */
 
@@ -711,6 +709,15 @@ textarea:focus, input:focus{
     section#skills {
       background-attachment: scroll;
     }
+  }
+
+  @media (max-width: 919px) {
+
+    .messageContainer .socials i {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
   }
 
   @media (max-width: 830px) {
@@ -785,11 +792,14 @@ textarea:focus, input:focus{
        padding-bottom: 50px;
      }
 
-     
-
      .socials {
        text-align: center;
      }
+
+     .messageContainer .socials i {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 
 
@@ -875,9 +885,14 @@ textarea:focus, input:focus{
 
   }
 
+  @media (max-width: 580px ) {
+    .messageContainer .socials i {
+      font-size: 4rem;
+    }
+  }
 
 
-  @media (max-width: 512px ) {
+  @media (max-width: 518px ) {
     .icons li {
       margin: 10px 5px;
      }
@@ -905,7 +920,7 @@ textarea:focus, input:focus{
      }
 
      .messageContainer .socials i {
-       font-size: 4rem;
+       font-size: 3.2rem;
      }
 
      section#contact {
@@ -925,6 +940,22 @@ textarea:focus, input:focus{
       margin-left: 10px;
       margin-right: 10px;
     }
+  }
+
+  @media (max-width: 459px ) {
+    .messageContainer .socials i {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  @media (max-width: 398px) {
+    .messageContainer .socials i {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 3rem;
+    }
+
   }
 
   @media (max-width: 370px) {
@@ -965,6 +996,10 @@ textarea:focus, input:focus{
 
     .socials i{
       font-size: 3.5rem;
+    }
+
+    .messageContainer .socials i {
+      font-size: 2.4rem;
     }
 
     footer p {
