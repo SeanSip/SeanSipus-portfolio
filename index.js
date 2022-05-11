@@ -20,6 +20,7 @@ for (i = 0; i < menuItem.length; i++) {
     hamburgerMenu.classList.toggle("open");
     navMenu.classList.toggle("open");
     logo.classList.toggle("open");
+    closeText.classList.toggle("open")
   })
 }
 
