@@ -1,30 +1,28 @@
 const hamburgerMenu = document.querySelector('.hamburgerMenu');
+const menuItem = document.querySelectorAll('.select');
 const navMenu = document.querySelector('.navMenu');
 const logo = document.querySelector('.logo')
-const navClose = document.querySelector('.navMenu')
+const closeText = document.querySelector('.closeTxt')
 
 
-
-
-/* opens the modal for website navigation via the section anchor tag links when the hamburger icon is clicked */
+// open nav menu
 hamburgerMenu.addEventListener("click", () => {
-  hamburgerMenu.classList.toggle("active");
-  navMenu.classList.toggle("active");
-  logo.classList.toggle("active");
-})
+  hamburgerMenu.classList.toggle("open");
+  navMenu.classList.toggle("open");
+  logo.classList.toggle("open");
+  closeText.classList.toggle("open")
+});
 
-/* closes the hamburger menu navigation overlay modal when an anchor tag link is clicked */
-navClose.addEventListener("click", () => {
-  navClose.classList.remove("active");
-  // toggles the hamburger menu icon from an X back to hamburger menu when an anchor link is clicked
-  hamburgerMenu.classList.toggle("active");
-  // this function makes sure to remove the icon from the navigation overlay modal when in mobile view
-  logo.classList.toggle("active");
-})
 
-hamburgerMenu.addEventListener("click", function(){
-  openNav()
-})
+// to close nav when nav menu option is clicked
+for (i = 0; i < menuItem.length; i++) {
+  menuItem[i].addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("open");
+    navMenu.classList.toggle("open");
+    logo.classList.toggle("open");
+  })
+}
+
 
 //Typing animation 
 const typed = new Typed(".typingAnimation", {
