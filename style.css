@@ -287,7 +287,6 @@ img {
   }
 
   nav{
-    transition: all 0.2s ease;
     display: flex;
     margin: 0 auto;
     justify-content: flex-end;
@@ -308,8 +307,8 @@ img {
     .navMenu.open{
       display: block;
       position: fixed;
-      border-top: #EFC570 3px solid ;
-      border-bottom: #EFC570 3px solid ;
+      border-top: #EFC570 10px solid ;
+      border-bottom: #EFC570 10px solid ;
       left: 0;
     } 
 
