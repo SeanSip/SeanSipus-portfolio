@@ -48,6 +48,7 @@ img {
   /* font styling */
     :root{
       font-size: 62.5%;
+    --font-size--extraTiny: 1.4rem;
     --font-size--tiny: 1.6rem;
     --font-size--default: 1.8rem;
     --font-size--small: 2rem;
@@ -985,6 +986,10 @@ textarea:focus, input:focus{
       margin-left: 15px;
       margin-right: 15px;
     }
+
+    footer p {
+      font-size: var(--font-size--tiny);
+    }
   }
 
   @media (max-width: 398px) {
@@ -1020,6 +1025,10 @@ textarea:focus, input:focus{
     .socials i{
       margin: 10px;
     }
+
+    footer p {
+      font-size: var(--font-size--extraTiny);
+    }
 }
 
   @media (max-width: 320px) {
@@ -1044,7 +1053,5 @@ textarea:focus, input:focus{
       font-size: 2.4rem;
     }
 
-    footer p {
-      font-size: var(--font-size--tiny);
-    }
+   
   }
