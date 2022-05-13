@@ -336,9 +336,9 @@ img {
 
   .logo {
     position: fixed;
-    width: 15rem;
+    width: 13rem;
     height: auto;
-    margin: 15px;
+    margin: 5px;
     z-index: 5;
     opacity: 0.5;
     transition: ease-in-out 0.4s;
@@ -690,7 +690,7 @@ textarea:focus, input:focus{
   @media (max-width: 1188px) {
     .logo{
       width: 8rem;
-      margin-top: 35px;
+      margin-top: 20px;
     }
   }
   @media (max-width: 1164px) {
@@ -908,7 +908,7 @@ textarea:focus, input:focus{
 
 
     .logo.open  {
-      display: none;
+      width: 6.2rem;
     }
 
 
@@ -1001,6 +1001,11 @@ textarea:focus, input:focus{
   }
 
   @media (max-width: 370px) {
+
+    /* header section */
+    .textTwo h1 {
+      font-size: 4.5rem;
+    }
     
     /* project section */
     .projectText li {
