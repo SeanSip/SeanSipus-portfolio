@@ -344,6 +344,11 @@ img {
     transition: ease-in-out 0.4s;
   }
 
+  .logo.open {
+    margin-top: 15px;
+    width: 11rem;
+  }
+
   .logo:hover, .logo:focus {
     opacity: 1;
   }
