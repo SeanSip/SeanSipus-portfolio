@@ -451,11 +451,12 @@ img {
 
  section#about h3 {
   text-transform:capitalize;
-  font-size: var(--font-size--large);
+  
  }
 
  #about .animatedText {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  font-size: var(--font-size--large);
   }
 
 
@@ -464,16 +465,15 @@ img {
    .portrait {
      display: flex;
      z-index:1;
+     align-items: center;
+     flex-direction: column;
    }
   
    .portrait img{
     border: #EFC570 7px solid;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.856);
-    align-content: center;
-    height: 70%;
-    
-    
+    width: 89%;
   }
 
   .aboutMeContainer{
@@ -715,13 +715,14 @@ textarea:focus, input:focus{
     }
 
     .portrait{
-      width: 70%;
       margin: 0 auto;
-    }
-
-    .portrait{
       padding-bottom: 35px ;
     }
+
+    .portrait img{
+      width: 70%;
+    }
+
 
   }
 
@@ -936,6 +937,11 @@ textarea:focus, input:focus{
 
 
   @media (max-width: 518px ) {
+
+    #about .animatedText {
+      font-size: var(--font-size--medium);
+    }
+
     .icons li {
       margin: 10px 5px;
      }
@@ -971,6 +977,24 @@ textarea:focus, input:focus{
      }
   }
 
+  @media (max-width: 459px ) {
+    .messageContainer .socials i {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    footer p {
+      font-size: var(--font-size--tiny);
+    }
+  }
+
+  @media (max-width: 414px) {
+
+    #about .animatedText {
+      font-size: var(--font-size--small);
+    }
+  }
+
   @media (max-width: 394px) {
     .headerContainer h1{
       font-size: 5rem;
@@ -985,16 +1009,6 @@ textarea:focus, input:focus{
     }
   }
 
-  @media (max-width: 459px ) {
-    .messageContainer .socials i {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    footer p {
-      font-size: var(--font-size--tiny);
-    }
-  }
 
   @media (max-width: 398px) {
     .messageContainer .socials i {
@@ -1042,6 +1056,10 @@ textarea:focus, input:focus{
 
   @media (max-width: 320px) {
 
+    #about .animatedText {
+      font-size: var(--font-size--tiny);
+    }
+
     header ul {
       margin-top: 50px;
     }
@@ -1061,6 +1079,4 @@ textarea:focus, input:focus{
     .messageContainer .socials i {
       font-size: 2.4rem;
     }
-
-   
   }
