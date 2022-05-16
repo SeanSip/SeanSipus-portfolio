@@ -20,11 +20,11 @@ img {
 
 html { 
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-#projects {
-  overflow-x: hidden ;
-}
+
+
 
 
 /* global styling */
@@ -365,12 +365,106 @@ img {
     
   }
 
+  /* Scroll Down Button */
+
+  .scrollBtn {
+    position: absolute;
+    cursor: pointer;
+    bottom: 20%;
+    height: 80px;
+    width: 50px;
+    border: 3px solid #EFC570;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.446);
+  }
+  
+  .scrollBtn::before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 15px;
+    border: 2px solid #EFC570;
+    background-color:#EFC570 ;
+    top: 10%;
+    left: 50%;
+    margin-left:-7.5px ;
+    border-radius: 8px;
+    animation: scrollDown 2s ease-in-out infinite;
+    animation-delay: .7s;
+  }
+  
+  .scrollBtn::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #EFC570;
+    top: 10%;
+    left: 50%;
+    margin-left: -7.5px;
+    border-radius: 2px; 
+    top: 30%;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrollDownArrow 2s ease-in-out infinite;
+    
+  }
+
+  /* Scroll Button Key Frame Animations */
+  @keyframes scrollDown{
+    0%{
+      opacity: 0;
+    }
+    30%{
+      opacity: 1;
+      height: 30px;
+    }
+    60%{
+      height: 20px;
+    }
+    80%{
+      height: 15px;
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+      top: 70%;
+    }
+  }
+  
+  @keyframes scrollDownArrow{
+    0%{
+      opacity: 0;
+    }
+    15%{
+     
+    }
+    30%{
+      opacity: 1;
+    
+    }
+    60%{
+      opacity: 1;
+    }
+    75%{
+      
+    }
+    100%{
+      opacity: 0;
+      top: 75%;
+    }
+  }
+
 /* Projects Section */
 
   section#projects{
     background-color: rgb(35, 35, 43);
     padding: 150px 0;
     border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
+    overflow-x: hidden ;
   }
 
   section#projects h2 {
