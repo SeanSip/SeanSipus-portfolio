@@ -380,7 +380,7 @@ img {
   .projectContainer {
     display: flex;
     max-width: 100%;
-    margin: 250px 0;
+    margin: 150px 0;
   }
 
   .projectText {
