@@ -462,7 +462,7 @@ img {
 
   section#projects{
     background-color: rgb(35, 35, 43);
-    padding: 150px 0;
+    padding: 150px 0px 25px 0px;
     border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
     overflow-x: hidden ;
   }
