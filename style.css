@@ -218,7 +218,7 @@ img {
     padding: 20px;
     position: fixed;
     right: 0;
-    z-index: 10;
+    z-index: 100;
     cursor: pointer;
     border-radius: 50px;
     background: none;
@@ -250,6 +250,7 @@ img {
     border-radius: 40px;
     box-shadow: #EFC570 0 0 0 5px;
     opacity: 50%;
+    z-index: 2;
   }
 
 
@@ -698,10 +699,12 @@ textarea:focus, input:focus{
 
   .fadeIn.appear {
     opacity: 1;
+    
   }
 
   .fromRight {
     transform: translateX(100%);
+    
   }
 
   .fromLeft {
