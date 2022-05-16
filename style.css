@@ -528,7 +528,7 @@ img {
 
 
   .projectContainer img {
-    width: 40%;
+    width: 500px;
     border: 8px #EFC570 solid;
     border-radius: 5px;
   }
@@ -849,6 +849,57 @@ textarea:focus, input:focus{
       width: 70%;
     }
 
+        /* Poject Section Media Queries */
+
+   
+        .projectContainer:nth-child(2){
+          flex-direction: column-reverse;
+        }
+    
+        .projectContainer:nth-child(3){
+          flex-direction: column;
+        }
+    
+        .projectContainer:nth-child(4){
+          flex-direction: column-reverse;
+        }
+    
+        .projectContainer:nth-child(5){
+          flex-direction: column;
+        }
+    
+        .projectContainer li {
+          flex: none;
+        }
+    
+        .projectContainer img {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+    
+        .projectText  {
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .projectContainer img {
+          width: 400px;
+          margin: 0px auto 50px auto;
+        }
+
+        .projectText {
+          align-items: center;
+          width: 85%;
+        }
+
+        .projectText p {
+          margin: 20px 0;
+        }
+
+        .projectText ul {
+          justify-content: center;
+        }
+
 
   }
 
@@ -888,9 +939,6 @@ textarea:focus, input:focus{
 
     /* About Section Media Queries */
 
-    .aboutMeContainer{
-      flex-direction: column;
-    }
 
     .portrait img{
       z-index: 0;
@@ -906,38 +954,7 @@ textarea:focus, input:focus{
       margin: 25px;
     }
 
-    /* Poject Section Media Queries */
 
-   
-    .projectContainer:nth-child(2){
-      flex-direction: column-reverse;
-    }
-
-    .projectContainer:nth-child(3){
-      flex-direction: column;
-    }
-
-    .projectContainer:nth-child(4){
-      flex-direction: column-reverse;
-    }
-
-    .projectContainer:nth-child(5){
-      flex-direction: column;
-    }
-
-    .projectContainer li {
-      flex: none;
-    }
-
-    .projectContainer img {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    .projectText  {
-      width: 100%;
-      margin: 0 auto;
-    }
 
     /* Contact Section Media Queries */
 
