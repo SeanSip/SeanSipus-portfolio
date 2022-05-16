@@ -22,6 +22,10 @@ html {
   line-height: 1.6;
 }
 
+body {
+  overflow-x: hidden ;
+}
+
 
 /* global styling */
 
@@ -376,7 +380,7 @@ img {
   .projectContainer {
     display: flex;
     max-width: 100%;
-    margin: 100px 0;
+    margin: 250px 0;
   }
 
   .projectText {
@@ -666,10 +670,6 @@ textarea:focus, input:focus{
     to   { opacity: 1; }
   }
 
-    p{
-      animation: fadein 2s;
-    }
-
     h1 {
       animation: fadein 2.5s;
     }
@@ -688,6 +688,35 @@ textarea:focus, input:focus{
     .logo {
       animation: flyin 2s;
     }
+
+  /* Start of Scroll Event Animations */
+
+  .fadeIn {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+
+  .fadeIn.appear {
+    opacity: 1;
+  }
+
+  .fromRight {
+    transform: translateX(100%);
+  }
+
+  .fromLeft {
+    transform: translateX(-100%);
+  }
+
+  .fromLeft, .fromRight {
+    transition: opacity 250ms ease-in,transform 400ms ease-in;
+    opacity: 0 ;
+  }
+
+  .fromLeft.appear, .fromRight.appear {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
 
   /* Start of Media Queries */

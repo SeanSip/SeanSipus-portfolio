@@ -39,3 +39,36 @@ const typedTwo = new Typed(".typingAnimationTwo", {
   backSpeed: 100,
   loop: true
   });
+
+  //Scroll events 
+
+  const fades = document.querySelectorAll(".fadeIn");
+  const sliders = document.querySelectorAll(".slideIn")
+
+  const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -550px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver 
+  (function(
+    entries
+  ) {
+    entries.forEach(entry => {
+      console.log(entry.target);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("appear");
+      } else {
+        entry.target.classList.remove("appear");
+      } 
+    });
+  },
+  appearOptions);
+
+fades.forEach(fade => {
+  appearOnScroll.observe(fade);
+});
+
+sliders.forEach(slider => {
+  appearOnScroll.observe(slider);
+});
