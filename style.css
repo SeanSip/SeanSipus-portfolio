@@ -626,9 +626,10 @@ section#skills h3{
 
   .icons li {
     display: flex;
-    margin: 20px 50px;
     flex-direction: column;
     align-items: center;
+    min-width: 15%;
+    margin: 35px 0;
   }
 
   i {
@@ -1125,7 +1126,15 @@ textarea:focus, input:focus{
     footer p {
       font-size: var(--font-size--tiny);
     }
+
+    /* Skills Section */
+
+    .icons li {
+      min-width: 35%;
+    }
+
   }
+
 
   @media (max-width: 414px) {
 
@@ -1178,11 +1187,7 @@ textarea:focus, input:focus{
       display: block;
     }
 
-    /* toolkit section */
     
-    ul.icons {
-      padding: 20px;
-    }    
 
     .socials i{
       margin: 10px;
