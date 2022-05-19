@@ -41,7 +41,6 @@ const typedTwo = new Typed(".typingAnimationTwo", {
   });
 
   //Scroll events 
-
   const fades = document.querySelectorAll(".fadeIn");
   const sliders = document.querySelectorAll(".slideIn")
 
@@ -55,11 +54,11 @@ const typedTwo = new Typed(".typingAnimationTwo", {
     entries
   ) {
     entries.forEach(entry => {
-      console.log(entry.target);
-      if (entry.isIntersecting) {
-        entry.target.classList.add("appear");
+      if (!entry.isIntersecting) {
+        return;
       } else {
-        entry.target.classList.remove("appear");
+        entry.target.classList.toggle("appear");
+        appearOnScroll.unobserve(entry.target);
       } 
     });
   },
