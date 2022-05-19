@@ -852,6 +852,10 @@ textarea:focus, input:focus{
 
         /* Poject Section Media Queries */
 
+        .projectContainer {
+          margin: 75px 0;
+        }
+
    
         .projectContainer:nth-child(2){
           flex-direction: column-reverse;
