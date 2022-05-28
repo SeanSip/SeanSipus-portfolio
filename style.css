@@ -980,6 +980,10 @@ textarea:focus, input:focus{
        text-align: center;
      }
 
+     .messageContainer {
+      flex: 1 1 300px;
+     }
+
      .messageContainer p {
        padding-right: 0px;
      }
