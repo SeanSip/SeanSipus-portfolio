@@ -715,6 +715,10 @@ section#about h3 {
   margin-bottom: 20px;
 }
 
+.aboutText p:last-of-type {
+  margin-bottom: 0;
+}
+
 .aboutText a {
   color: #efc570;
 }
