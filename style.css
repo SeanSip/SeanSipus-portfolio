@@ -751,22 +751,21 @@ section#about h3 {
 }
 
 /* Portrait */
+.aboutMeContainer {
+  display: flex;
+}
 
 .portrait {
   display: flex;
   z-index: 1;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .portrait img {
   border: #efc570 7px solid;
   border-radius: 5px;
-  width: 95%;
-}
-
-.aboutMeContainer {
-  display: flex;
 }
 
 .aboutText {
