@@ -656,6 +656,64 @@ h1 {
   }
 }
 
+/* About Me Section*/
+
+section#about {
+  background-color: rgb(32, 31, 39);
+  padding: 150px 0;
+  border-top: rgba(128, 128, 128, 0.26) 1px solid;
+  border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
+}
+
+section#about h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+section#about h3 {
+  text-transform: capitalize;
+}
+
+#about .animatedText {
+  margin-bottom: 5px;
+  font-size: var(--font-size--large);
+}
+
+/* Portrait */
+.aboutMeContainer {
+  display: flex;
+}
+
+.portrait {
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.portrait img {
+  border: #efc570 7px solid;
+  border-radius: 5px;
+}
+
+.aboutText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.aboutText p {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.aboutText a {
+  color: #efc570;
+}
+
 /* Projects Section */
 
 section#projects {
@@ -725,63 +783,6 @@ section#projects h2 {
   width: 500px;
   border: 8px #efc570 solid;
   border-radius: 5px;
-}
-
-/* About Me Section*/
-
-section#about {
-  background-color: rgb(32, 31, 39);
-  padding: 150px 0;
-  border-top: rgba(128, 128, 128, 0.26) 1px solid;
-  border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
-}
-
-section#about h2 {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-section#about h3 {
-  text-transform: capitalize;
-}
-
-#about .animatedText {
-  margin-bottom: 5px;
-  font-size: var(--font-size--large);
-}
-
-/* Portrait */
-.aboutMeContainer {
-  display: flex;
-}
-
-.portrait {
-  display: flex;
-  z-index: 1;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.portrait img {
-  border: #efc570 7px solid;
-  border-radius: 5px;
-}
-
-.aboutText {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 25px;
-}
-
-.aboutText p {
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.aboutText a {
-  color: #efc570;
 }
 
 /* Skills Section */
@@ -1037,11 +1038,16 @@ span {
 
   .portrait {
     margin: 0 auto;
-    padding-bottom: 35px;
+    padding-bottom: 15px;
   }
 
   .portrait img {
     width: 75%;
+  }
+
+  .aboutText {
+    margin-left: 0px;
+    padding: 20px;
   }
 
   /* Poject Section Media Queries */
