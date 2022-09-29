@@ -762,7 +762,6 @@ section#about h3 {
 .portrait img {
   border: #efc570 7px solid;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.856);
   width: 95%;
 }
 
@@ -1180,7 +1179,7 @@ span {
 
 @media (max-width: 750px) {
   .portrait img {
-    width: 95%;
+    width: 90%;
   }
 }
 
