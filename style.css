@@ -414,17 +414,11 @@ header li {
   font-size: 3.5rem;
 }
 
-header a:hover,
-header a:focus {
+li a:hover,
+li a:focus {
   color: #efc570;
   border-bottom: #efc570 5px solid;
   border-radius: 10px;
-}
-
-.navMenu .socials a:hover,
-.navMenu .socials a:focus {
-  border-bottom: none;
-  text-shadow: #ffffff 0px 0px 30px;
 }
 
 /* Burger Menu Styles */
@@ -532,6 +526,7 @@ nav {
 .socials i {
   color: white;
   transition: 0.2s ease-in;
+  padding: 0px 15px;
 }
 
 .socials i:hover,
@@ -540,15 +535,10 @@ nav {
   cursor: pointer;
 }
 
-.socials a {
-  padding: 0px 15px;
-}
-
 .socials a:focus {
   transition: 0s;
-  outline: #efc570 solid 2px;
+  outline: #efc570 solid 5px;
   border-radius: 5px;
-  text-shadow: #efc570 0px 0px 30px;
 }
 
 /* Burger Menu Open Styling */
@@ -1131,7 +1121,6 @@ span {
     background-attachment: scroll;
   }
 }
-
 
 @media (max-width: 875px) {
   /* Header Section Media Queries */
