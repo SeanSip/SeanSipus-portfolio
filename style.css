@@ -517,7 +517,28 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Burger Menu open Styling */
+/* Social Icon Styling (For nav menu & contact section)*/
+.socials i {
+  color: white;
+  margin-right: 25px;
+  transition: 0.2s ease-in;
+}
+
+.socials i:hover,
+.socials i:focus {
+  color: #efc570;
+  cursor: pointer;
+}
+
+.socials a:focus {
+  transition: 0s;
+  outline: #efc570 solid 2px;
+  border-radius: 5px;
+  padding-top: 2.5rem;
+  text-shadow: #efc570 0px 0px 30px;
+}
+
+/* Burger Menu Open Styling */
 .navMenu.open {
   display: block;
   position: fixed;
@@ -865,6 +886,7 @@ section#contact h2 {
 
 .messageContainer {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   flex: 1 1 500px;
 }
@@ -919,26 +941,6 @@ input:focus {
   margin: 5px 0;
   padding: 10px;
   border-radius: 4px;
-}
-
-.socials i {
-  color: white;
-  margin: 30px 20px;
-  transition: 0.2s ease-in;
-}
-
-.socials i:hover,
-.socials i:focus {
-  color: #efc570;
-  cursor: pointer;
-}
-
-.socials a:focus {
-  transition: 0s;
-  outline: #efc570 solid 2px;
-  border-radius: 5px;
-  padding-top: 2.5rem;
-  text-shadow: #efc570 0px 0px 30px;
 }
 
 /* Footer Styles */
@@ -1155,12 +1157,16 @@ span {
 
   /* Contact Section Media Queries */
 
+  section#contact {
+    padding-bottom: 0;
+  }
+
   .contactContainer {
     flex-direction: column;
   }
 
-  section#contact {
-    padding-bottom: 0;
+  .formContainer {
+    margin-top: 20px;
   }
 
   section#contact h2 {
