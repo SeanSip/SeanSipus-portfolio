@@ -337,8 +337,8 @@ h2 {
   text-transform: uppercase;
 }
 h2 {
-text-align: center;
-margin-bottom: 100px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 p {
@@ -759,6 +759,15 @@ section#projects {
 .projectContainer {
   display: flex;
   max-width: 100%;
+  margin: 100px auto;
+}
+
+.projectContainer:first-of-type {
+  margin-top: 0px;
+}
+
+.projectContainer:last-of-type {
+  margin-bottom: 0px;
 }
 
 .projectText {
@@ -827,7 +836,6 @@ section#skills {
   background-attachment: fixed;
 }
 
-
 section#skills h3 {
   text-transform: uppercase;
   text-align: right;
@@ -869,7 +877,6 @@ section#contact {
   background-color: rgb(35, 35, 43);
   border-top: rgba(128, 128, 128, 0.26) 1px solid;
 }
-
 
 .contactContainer {
   display: flex;
@@ -1151,7 +1158,6 @@ span {
 
   .contactContainer {
     flex-direction: column;
-    
   }
 
   .formContainer {
