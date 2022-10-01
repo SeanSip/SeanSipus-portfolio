@@ -518,6 +518,10 @@ nav {
 }
 
 /* Social Icon Styling (For nav menu & contact section)*/
+.socials {
+  display: flex;
+}
+
 .socials i {
   color: white;
   margin-right: 25px;
@@ -875,9 +879,6 @@ section#contact {
   border-top: rgba(128, 128, 128, 0.26) 1px solid;
 }
 
-section#contact h2 {
-  margin-bottom: 30px;
-}
 
 .contactContainer {
   display: flex;
@@ -889,10 +890,6 @@ section#contact h2 {
   justify-content: space-between;
   flex-direction: column;
   flex: 1 1 500px;
-}
-
-.messageContainer p {
-  margin: 20px auto;
   padding-right: 50px;
 }
 
@@ -1163,23 +1160,24 @@ span {
 
   .contactContainer {
     flex-direction: column;
+    
   }
 
   .formContainer {
     margin-top: 20px;
   }
 
-  section#contact h2 {
+  .messageContainer h2 {
     text-align: center;
-    padding-bottom: 50px;
   }
 
   .socials {
-    text-align: center;
+    justify-content: center;
   }
 
   .messageContainer {
     flex: 1 1 300px;
+    padding-right: 0px;
   }
 
   .messageContainer p {
