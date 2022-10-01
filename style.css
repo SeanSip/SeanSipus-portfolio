@@ -336,6 +336,7 @@ h2 {
   color: white;
   text-transform: uppercase;
 }
+
 h2 {
   text-align: center;
   margin-bottom: 70px;
@@ -525,11 +526,11 @@ nav {
 /* Social Icon Styling (For nav menu & contact section)*/
 .socials {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .socials i {
   color: white;
-  margin-right: 25px;
   transition: 0.2s ease-in;
 }
 
@@ -539,11 +540,15 @@ nav {
   cursor: pointer;
 }
 
+.socials a {
+  padding: 0px 15px;
+}
+
 .socials a:focus {
   transition: 0s;
   outline: #efc570 solid 2px;
   border-radius: 5px;
-  padding-top: 2.5rem;
+  /* padding-top: 2.5rem; */
   text-shadow: #efc570 0px 0px 30px;
 }
 
@@ -1128,12 +1133,6 @@ span {
   }
 }
 
-@media (max-width: 938px) {
-  .messageContainer .socials i {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-}
 
 @media (max-width: 875px) {
   /* Header Section Media Queries */
