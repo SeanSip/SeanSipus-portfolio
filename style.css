@@ -874,6 +874,11 @@ section#contact {
   border-top: rgba(128, 128, 128, 0.26) 1px solid;
 }
 
+.contactContainer h2 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
 .contactContainer {
   display: flex;
   width: 100%;
