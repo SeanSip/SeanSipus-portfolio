@@ -876,24 +876,32 @@ section#contact {
 
 .contactContainer h2 {
   margin-bottom: 0px;
-  text-align: left;
+  text-align: center;
 }
 
 .contactContainer {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .messageContainer {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   flex-direction: column;
-  flex: 1 1 500px;
-  padding-right: 50px;
+}
+
+.messageContainer i {
+  font-size: xx-large;
+}
+
+.messageContainer a {
+  margin: 25px 0;
 }
 
 .formContainer {
-  flex: 1 10 500px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .formContainer form {
@@ -1153,38 +1161,12 @@ span {
 
   /* Contact Section Media Queries */
 
-  section:last-of-type {
-    padding-bottom: 0px;
-  }
-
   .contactContainer {
     flex-direction: column;
   }
 
   .formContainer {
     margin-top: 20px;
-  }
-
-  .messageContainer h2 {
-    text-align: center;
-  }
-
-  .socials {
-    justify-content: center;
-  }
-
-  .messageContainer {
-    flex: 1 1 300px;
-    padding-right: 0px;
-  }
-
-  .messageContainer p {
-    padding-right: 0px;
-  }
-
-  .messageContainer .socials i {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 
@@ -1258,15 +1240,8 @@ span {
   }
 }
 
-@media (max-width: 580px) {
-  /* Contact Section  */
-  .messageContainer .socials i {
-    font-size: 4rem;
-  }
-}
-
 @media (max-width: 518px) {
-  #about .animatedText {
+  .portrait .animatedText {
     font-size: var(--font-size--medium);
   }
 
@@ -1277,31 +1252,9 @@ span {
   .icons ul {
     width: 110%;
   }
-
-  .formContainer {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .formContainer form {
-    margin: 0;
-  }
-
-  .socials {
-    padding-bottom: 25px;
-  }
-
-  .messageContainer .socials i {
-    font-size: 3.2rem;
-  }
 }
 
 @media (max-width: 459px) {
-  .messageContainer .socials i {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
   footer p {
     font-size: var(--font-size--tiny);
   }
@@ -1314,7 +1267,7 @@ span {
 }
 
 @media (max-width: 414px) {
-  #about .animatedText {
+  .portrait .animatedText {
     font-size: var(--font-size--small);
   }
 }
@@ -1328,19 +1281,8 @@ span {
   .headerContainer .textThree span {
     font-size: 2rem;
   }
-  .messageContainer .socials i {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }
 
-@media (max-width: 398px) {
-  .messageContainer .socials i {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 3rem;
-  }
-}
 
 @media (max-width: 370px) {
   /* header section */
@@ -1371,7 +1313,7 @@ span {
 }
 
 @media (max-width: 320px) {
-  #about .animatedText {
+  .portrait .animatedText {
     font-size: var(--font-size--tiny);
   }
 
@@ -1389,9 +1331,5 @@ span {
 
   .socials i {
     font-size: 3.5rem;
-  }
-
-  .messageContainer .socials i {
-    font-size: 2.4rem;
   }
 }
