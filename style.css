@@ -537,7 +537,7 @@ nav {
 
 .socials a:focus {
   transition: 0s;
-  outline: #efc570 solid 5px;
+  outline: #efc570 solid 3px;
   border-radius: 5px;
 }
 
