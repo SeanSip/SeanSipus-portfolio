@@ -700,11 +700,7 @@ section#about {
   border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
 }
 
-section#about h3 {
-  text-transform: capitalize;
-}
-
-#about .animatedText {
+.animatedText {
   margin-bottom: 5px;
   font-size: var(--font-size--large);
 }
@@ -836,7 +832,7 @@ section#skills {
   background-attachment: fixed;
 }
 
-section#skills h3 {
+.mySkills h3 {
   text-transform: uppercase;
   text-align: right;
 }
@@ -1152,8 +1148,8 @@ span {
 
   /* Contact Section Media Queries */
 
-  section#contact {
-    padding-bottom: 0;
+  section:last-of-type {
+    padding-bottom: 0px;
   }
 
   .contactContainer {
@@ -1255,15 +1251,6 @@ span {
   .logo.open {
     width: 6.2rem;
   }
-
-  section#about h3 {
-    text-transform: capitalize;
-    font-size: var(--font-size--small);
-  }
-
-  section#contact h3 {
-    font-size: var(--font-size--small);
-  }
 }
 
 @media (max-width: 580px) {
@@ -1301,10 +1288,6 @@ span {
 
   .messageContainer .socials i {
     font-size: 3.2rem;
-  }
-
-  section#contact {
-    padding-bottom: 0px;
   }
 }
 
