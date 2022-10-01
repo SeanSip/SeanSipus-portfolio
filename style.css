@@ -326,6 +326,7 @@ p {
   font-size: var(--font-size--default);
 }
 
+/* General Font Stylings */
 span {
   color: #efc570;
 }
@@ -334,6 +335,10 @@ h1,
 h2 {
   color: white;
   text-transform: uppercase;
+}
+h2 {
+text-align: center;
+margin-bottom: 100px;
 }
 
 p {
@@ -695,11 +700,6 @@ section#about {
   border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
 }
 
-section#about h2 {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
 section#about h3 {
   text-transform: capitalize;
 }
@@ -756,14 +756,9 @@ section#projects {
   overflow-x: hidden;
 }
 
-section#projects h2 {
-  text-align: center;
-}
-
 .projectContainer {
   display: flex;
   max-width: 100%;
-  margin-top: 150px;
 }
 
 .projectText {
@@ -832,10 +827,6 @@ section#skills {
   background-attachment: fixed;
 }
 
-section#skills h2 {
-  padding-bottom: 80px;
-  text-align: center;
-}
 
 section#skills h3 {
   text-transform: uppercase;
