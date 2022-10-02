@@ -533,6 +533,7 @@ nav {
 .socials i:focus {
   color: #efc570;
   cursor: pointer;
+  text-shadow: #efc570 0px 0px 35px;
 }
 
 .socials a:focus {
@@ -886,6 +887,7 @@ section#contact {
 
 .messageContainer i {
   font-size: xx-large;
+  
 }
 
 .messageContainer a {
@@ -909,6 +911,9 @@ section#contact {
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
+  background-color: rgb(35, 35, 43);
+  color: #ffffff;
+  border: #efc570 2px solid;
 }
 
 textarea:focus,
@@ -938,6 +943,9 @@ input:focus {
   margin: 5px 0;
   padding: 10px;
   border-radius: 4px;
+  background-color: rgb(35, 35, 43);
+  color: #ffffff;
+  border: #efc570 2px solid;
 }
 
 /* Footer Styles */
