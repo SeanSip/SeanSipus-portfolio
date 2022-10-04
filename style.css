@@ -437,7 +437,7 @@ a.logo,
 
 a.logo {
   height: 13rem;
-  margin: 5px;  
+  margin: 5px;
 }
 
 a.logo.open {
@@ -448,7 +448,7 @@ a.logo.open {
   opacity: 1;
 }
 
-.logo:focus{
+.logo:focus {
   outline: #efc570 5px solid;
   border-radius: 80px;
   opacity: 1;
@@ -606,10 +606,6 @@ h1 {
   outline: #efc570 solid 3px;
   border-radius: 5px;
 }
-
-
-
-
 
 /* Scroll Down Button Styles */
 
@@ -1054,7 +1050,13 @@ span {
 
 @media (max-width: 1188px) {
   .logo img {
+  width: 8rem;
+  }
+
+  a.logo {
     width: 8rem;
+    height: 8rem;
+    margin-top: 15px;
   }
 }
 @media (max-width: 1164px) {
@@ -1253,7 +1255,6 @@ span {
   .navMenu .socials i {
     font-size: 2.5rem;
   }
-
 }
 
 @media (max-width: 518px) {
