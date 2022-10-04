@@ -255,7 +255,7 @@ section {
   padding: 100px 0;
 }
 
-a,
+.navMenu a,
 button {
   transition: 0.2s ease-in;
 }
@@ -421,6 +421,40 @@ li a:focus {
   border-radius: 10px;
 }
 
+/* Logo Styles*/
+
+a.logo,
+.logo img {
+  position: fixed;
+  width: 13rem;
+  z-index: 5;
+  transition: ease-in-out 0.4s;
+}
+
+.logo img {
+  opacity: 0.5;
+}
+
+a.logo {
+  height: 13rem;
+  margin: 5px;  
+}
+
+a.logo.open {
+  scale: 80%;
+}
+
+.logo img:hover {
+  opacity: 1;
+}
+
+.logo:focus{
+  outline: #efc570 5px solid;
+  border-radius: 80px;
+  opacity: 1;
+  box-shadow: #efc570 0px 0px 120px 25px;
+}
+
 /* Burger Menu Styles */
 
 .hamburgerMenu {
@@ -517,31 +551,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Social Icon Styling (For nav menu & contact section)*/
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.socials i {
-  color: white;
-  transition: 0.2s ease-in;
-  padding: 0px 15px;
-}
-
-.socials i:hover,
-.socials i:focus {
-  color: #efc570;
-  cursor: pointer;
-  text-shadow: #efc570 0px 0px 35px;
-}
-
-.socials a:focus {
-  transition: 0s;
-  outline: #efc570 solid 3px;
-  border-radius: 5px;
-}
-
 /* Burger Menu Open Styling */
 .navMenu.open {
   display: block;
@@ -573,27 +582,36 @@ h1 {
   align-content: center;
 }
 
-.logo {
-  position: fixed;
-  width: 13rem;
-  height: auto;
-  margin: 5px;
-  z-index: 5;
-  opacity: 0.5;
-  transition: ease-in-out 0.4s;
+/* Social Icon Styling (For nav menu & contact section)*/
+.socials {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.logo.open {
-  margin-top: 15px;
-  width: 10rem;
+.socials i {
+  color: white;
+  transition: 0.2s ease-in;
+  padding: 0px 15px;
 }
 
-.logo:hover,
-.logo a img:focus {
-  opacity: 1;
+.socials i:hover,
+.socials i:focus {
+  color: #efc570;
+  cursor: pointer;
+  text-shadow: #efc570 0px 0px 35px;
 }
 
-/* Scroll Down Button */
+.socials a:focus {
+  transition: 0s;
+  outline: #efc570 solid 3px;
+  border-radius: 5px;
+}
+
+
+
+
+
+/* Scroll Down Button Styles */
 
 .scrollBtn,
 .scrollBtn a {
