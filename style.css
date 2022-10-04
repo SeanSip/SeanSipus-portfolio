@@ -583,34 +583,38 @@ h1 {
   transition: ease-in-out 0.4s;
 }
 
+
 .logo.open {
   margin-top: 15px;
-  width: 11rem;
+  width: 10rem;
 }
 
 .logo:hover,
-.logo:focus {
+.logo a img:focus {
   opacity: 1;
 }
 
-.logoHidden {
-  width: 200px;
-  display: none;
-}
 
 /* Scroll Down Button */
 
-.scrollBtn {
-  position: absolute;
-  cursor: pointer;
-  bottom: 10%;
-  height: 80px;
-  width: 50px;
+.scrollBtn, .scrollBtn a {
   border: 3px solid #efc570;
+  height: 80px;
+  position: absolute;
+  width: 50px;
   left: 50%;
   margin-left: -25px;
   border-radius: 50px;
+}
+
+.scrollBtn {
+  cursor: pointer;
+  bottom: 10%;
   background-color: rgba(0, 0, 0, 0.446);
+}
+
+.scrollBtn a {
+  bottom: -4%;
 }
 
 .scrollBtn::before {
@@ -643,6 +647,12 @@ h1 {
   border-top: transparent;
   border-left: transparent;
   animation: scrollDownArrow 2s ease-in-out infinite;
+}
+
+.scrollBtn:hover,
+.scrollBtn a:focus {
+  box-shadow: #efc570 0px 0px 30px 10px;
+  outline: #efc570 solid 2px;
 }
 
 /* Scroll Button Key Frame Animations */
@@ -887,7 +897,6 @@ section#contact {
 
 .messageContainer i {
   font-size: xx-large;
-  
 }
 
 .messageContainer a {
