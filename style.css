@@ -444,12 +444,12 @@ li a:focus {
 
 .hamburgerMenu:hover,
 .hamburgerMenu:focus-visible {
-  transform: scale(110%);
-  outline: none;
+  transform: scale(120%);
 }
 
 .hamburgerMenu:focus-visible {
   background-color: #ffffff2d;
+  outline: #efc570 2px dotted;
 }
 
 .circle {
@@ -583,7 +583,6 @@ h1 {
   transition: ease-in-out 0.4s;
 }
 
-
 .logo.open {
   margin-top: 15px;
   width: 10rem;
@@ -594,10 +593,10 @@ h1 {
   opacity: 1;
 }
 
-
 /* Scroll Down Button */
 
-.scrollBtn, .scrollBtn a {
+.scrollBtn,
+.scrollBtn a {
   border: 3px solid #efc570;
   height: 80px;
   position: absolute;
