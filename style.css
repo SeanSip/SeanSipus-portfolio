@@ -1171,6 +1171,17 @@ span {
     background-attachment: scroll;
   }
 
+  .textHeadshotContainer {
+    flex-direction: column-reverse;
+  }
+
+  .headShot {
+    margin-left: 0px;
+    margin-bottom: 25px;
+    align-self: center;
+    width: 75%;
+  }
+
   /* Skill Section Media Queries */
 
   section#skills {
@@ -1213,6 +1224,7 @@ span {
 }
 
 @media (max-width: 750px) {
+  /* About Me Section Media Query */
   .portrait img {
     width: 90%;
   }
@@ -1293,6 +1305,12 @@ span {
 }
 
 @media (max-width: 459px) {
+  /* Header Section Media Query */
+
+  .headShot {
+    width: 60%;
+  }
+
   footer p {
     font-size: var(--font-size--tiny);
   }
@@ -1325,6 +1343,13 @@ span {
   /* header section */
   .textTwo h1 {
     font-size: 4.5rem;
+  }
+
+  .logo img,
+  a.logo {
+    margin-top: 15px;
+    width: 6rem;
+    height: 6rem;
   }
 
   /* project section */
