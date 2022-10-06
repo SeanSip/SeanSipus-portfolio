@@ -315,7 +315,7 @@ label {
 }
 
 .textThree span {
-  font-size: var(--font-size--medium);
+  font-size: var(--font-size--large);
 }
 
 .icons span {
@@ -329,6 +329,14 @@ p {
 /* General Font Stylings */
 span {
   color: #efc570;
+}
+
+header h1 span {
+  text-shadow: white 0px 4px;
+}
+
+header h1 {
+  text-shadow: #efc570 0px 3px;
 }
 
 h1,
@@ -369,7 +377,7 @@ header {
       rgba(5, 5, 0, 0.637),
       rgba(0, 0, 0, 0.568)
     ),
-    url(./assets/headerImg.jpg);
+    url(./assets/skillsBanner.jpg);
   width: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -382,25 +390,38 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-header h1 span {
-  text-shadow: white 0px 4px;
+.textHeadshotContainer {
+  display: flex;
 }
 
-header h1 {
-  text-shadow: #efc570 0px 3px;
+.textTwo {
+  display: flex;
+  flex-direction: column;
 }
 
-header p {
-  text-shadow: #efc570 1px 2px;
+.textTwo span {
+  flex-wrap: nowrap;
 }
 
-.textThree span {
-  color: #ffffff;
-  text-shadow: #efc570 1px 2px;
+.headShot {
+  max-width: 275px;
+  background-color: rgba(0, 0, 0, 0.446);
+  border-radius: 300px;
+  border: #efc570 5px solid;
+  box-shadow: #efc570 0px 0px 15px 2px;
+  align-self: flex-end;
+  margin-left: 50px;
 }
+
+.headShot img {
+  border-radius: 70px;
+}
+
+/* Nav Menu Styles */
 
 header ul {
   display: flex;
@@ -613,21 +634,21 @@ h1 {
 .scrollBtn a {
   border: 3px solid #efc570;
   height: 80px;
-  position: absolute;
   width: 50px;
-  left: 50%;
-  margin-left: -25px;
+  margin-top: 75px;
   border-radius: 50px;
 }
 
 .scrollBtn {
   cursor: pointer;
-  bottom: 10%;
   background-color: rgba(0, 0, 0, 0.446);
+  position: relative;
 }
 
 .scrollBtn a {
   bottom: -4%;
+  right: -5%;
+  position: absolute;
 }
 
 .scrollBtn::before {
@@ -843,7 +864,7 @@ section#skills {
       rgba(5, 5, 0, 0.637),
       rgba(0, 0, 0, 0.568)
     ),
-    url(./assets/skillsBanner.jpg);
+    url(./assets/headerImg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1050,7 +1071,7 @@ span {
 
 @media (max-width: 1188px) {
   .logo img {
-  width: 8rem;
+    width: 8rem;
   }
 
   a.logo {
