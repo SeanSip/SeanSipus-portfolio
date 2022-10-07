@@ -1,245 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/293860f06a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sean's Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-  <script src="https://kit.fontawesome.com/293860f06a.js" crossorigin="anonymous"></script>
-  <title>Sean's Portfolio</title>
-</head>
-
-<body>
-  <header>
-  <section id="home" class="home">
-  
-    <!-- Logo -->
-      <a class="logo" href="/assets/SeanSipusResume.pdf" download>
-        <img src="./assets/logo.png" alt="Logo consisting of the words Sean, web developer, and a cherry blossom leaf within a flag of the Canadian maple leaf" aria-label="to access my resume">
-      </a>
-      
-    <button class="hamburgerMenu" aria-label="open navigation menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <p class="closeTxt">close</p>
-    </button>
-    
-    
-    <div class="circle"></div>
-    <nav class="navMenu">
-      <ul>
-        <li class="select"><a href="#about">about</a></li>
-        <li class="select"><a href="#projects">projects</a></li>
-        <li class="select"><a href="#skills">skills</a></li>
-        <li class="select"><a href="#contact">contact</a></li>
-        <div class="socials">
-          <a href="https://github.com/SeanSip" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sean-sipus-1a536a223/?originalSubdomain=ca" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/SeanSip_Dev" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:sean.sipus@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="/assets/SeanSipusResume.pdf" download><i class="fas fa-file-download"></i></a>
-        </div>  
-      </ul>
-    </nav>
-    
-    <div class="wrapper">
-      <!-- Home Section Start -->
-      <div class="headerContainer">
-        <div class="textHeadshotContainer">
-          <div class="textTwo">
-            <p>Hi there!</p>
-            <h1>i'm <span>sean</span></h1>
-            <div class="textThree"><span class="typingAnimation"></span></div>
-          </div>
-          <div class="headShot">
-            <img src="/assets/profilePic2.png" alt="">
-          </div>
+  <body>
+    <header>
+      <section id="home" class="home">
+        <div class="navContainer">
+          <!-- Logo -->
+          <a class="logo" href="/assets/SeanSipusResume.pdf" download>
+            <img
+              src="./assets/logo.png"
+              alt="Logo consisting of the words Sean, web developer, and a cherry blossom leaf within a flag of the Canadian maple leaf"
+              aria-label="to access my resume"
+            />
+          </a>
+          <!-- Hamburger Menu -->
+          <button class="hamburgerMenu" aria-label="open navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <p class="closeTxt">close</p>
+          </button>
+          <div class="circle"></div>
         </div>
-        <!-- scroll down button -->
-      <div class="scrollBtn">
-        <a href="#about" aria-label="scroll down to about section"></a>
-      </div>
-      </div>
-    </div>
-  </section>  
-  </header>
-  <!-- End of Home Section -->
-
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="wrapper">
-      <h2>get to know more <span>about</span> me</h2>
-      
-      <div class="aboutMeContainer">
-        <div class="portrait">
-          <h3 class="animatedText">hello world, i'm:</h3>
-          <h3 class="animatedText"><span class="typingAnimationTwo"></span></h3>
-          <img class="topPhoto" src="./assets/aboutMePic4.jpg" alt="Portrait of the web developer who created this website.">
-          <div class="box"></div>
-        </div>
-        <div class="aboutText">
-          
-          <p>I'm a Front-end Web Developer based out of Markham, Ontario, with a background as an Electrician, an English teacher abroad in Japan, and Property Management. As a <a href ="https://junocollege.com/" target="_blank" >Juno College Web Development Immersive Bootcamp grad</a>, I learned to turn my passions toward creating meaningful websites and web applications by tapping into my creative side.</p>
-            
-          <p>Having the fortunate opportunity to live in Japan, I learned from the perspective of a new culture and how different cultures interact with technologies in fascinating ways and technology's role in making meaningful impacts on people's lives.</p>
-            
-          <p> I now strive to create and uphold accessible and responsive websites that can make a meaningful impact in your life... and your dog's life!</p>
-            
-          <p>When I'm not coding: you can find me on some frozen pond playing hockey, waiting patiently on G.R.R Martin and Patrick Rothfuss to release a new book, practicing Japanese with my wife, and eating her delicious food... I excel at this last part.</p>
-          
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End of About Me Section -->
-  
-<!-- Project Section -->
-  <section id="projects">
-    <div class="wrapper">
-      <h2>check out some of my <span>projects</span></h2>
-      <div class="projectContainer">
-        <div class="projectText fadeIn">
-          <h3>Captured</h3>
-          <p>Multi-paged, client-based project to design a responsive web page that implemented upon a design template that relates to photography.</p>
-          <div class="textIcons">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-sass"></i>
-          </div>
+        <nav class="navMenu">
           <ul>
-            <li><a class="btn" role="button" aria-label="to access link to project live site" href="https://confident-payne-40674c.netlify.app/" target="_blank">Live Site</a></li>
-            <li><a class="btn" role="button" aria-label="to access link to GitHub repository" href="https://github.com/SeanSip/Project1" target="_blank">GitHub</a></li>
+            <li class="select"><a href="#about">about</a></li>
+            <li class="select"><a href="#projects">projects</a></li>
+            <li class="select"><a href="#skills">skills</a></li>
+            <li class="select"><a href="#contact">contact</a></li>
+            <div class="socials">
+              <a href="https://github.com/SeanSip" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sean-sipus-1a536a223/?originalSubdomain=ca"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/SeanSip_Dev" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="mailto:sean.sipus@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a href="/assets/SeanSipusResume.pdf" download
+                ><i class="fas fa-file-download"></i
+              ></a>
+            </div>
           </ul>
-        </div>
-          <img class="project fadeIn slideIn fromRight" src="./assets/project1.png" alt="Laptop ontop of a desk displaying an image of my first project">
-      </div>
-      <div class="projectContainer">
-        <img class="project slideIn fromLeft" src="./assets/project2.png" alt="Close up of a hand holding a smartphone displaying an image of my second project">
-         <div class="projectText fadeIn">
-          <h3>Game of Thrones Trivia </h3>
-          <p class="collaberation">Quiz trivia-game based on the hit HBO show Game of Thrones, calling three separate APIs and dynamically adding and manipulating content to the DOM. Made in collaberation with: <a  href="https://saramunir.com/" target="_blank">Sara Munir</a></p>
-          <div class="textIcons">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-sass"></i>
-            <i class="fab fa-js-square"></i>
+        </nav>
+
+        <div class="wrapper">
+          <!-- Home Section Start -->
+          <div class="headerContainer">
+            <div class="textHeadshotContainer">
+              <div class="textTwo">
+                <p>Hi there!</p>
+                <h1>i'm <span>sean</span></h1>
+                <div class="textThree">
+                  <span class="typingAnimation"></span>
+                </div>
+              </div>
+              <div class="headShot">
+                <img src="/assets/profilePic2.png" alt="" />
+              </div>
+            </div>
+            <!-- scroll down button -->
+            <div class="scrollBtn">
+              <a href="#about" aria-label="scroll down to about section"></a>
+            </div>
           </div>
-          <ul>
-            <li><a class="btn" role="button" aria-label="to access link to project live site" aria-hidden="false" href="https://house-juno.github.io/SaraSeanProject2/" target="_blank">Live Site</a></li>
-            <li><a class="btn" role="button" aria-label="to access link to GitHub repository" href="https://github.com/House-Juno/SaraSeanProject2" target="_blank">GitHub</a></li>
-          </ul>
         </div>
-      </div>
-      <div class="projectContainer">
-        <div class="projectText fadeIn">
-          <h3>YBS Galatic</h3>
-          <p class="collaberation">Client-based project to design a responsive mockweb app. Uses NASA APIs as well as local storage for validation. Made in collaboration with: <a href="https://therealkristin.com/" target="_blank">kristin mcCollum,</a> <a  href="https://isabellawang.dev/" target="_blank">isabella wang,</a> <a  href="https://melissarichards.ca/" target="_blank">melissa richards</a></p>
-          <div class="textIcons">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-react"></i>
+      </section>
+    </header>
+    <!-- End of Home Section -->
+
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="wrapper">
+        <h2>get to know more <span>about</span> me</h2>
+
+        <div class="aboutMeContainer">
+          <div class="portrait">
+            <h3 class="animatedText">hello world, i'm:</h3>
+            <h3 class="animatedText">
+              <span class="typingAnimationTwo"></span>
+            </h3>
+            <img
+              class="topPhoto"
+              src="./assets/aboutMePic4.jpg"
+              alt="Portrait of the web developer who created this website."
+            />
+            <div class="box"></div>
           </div>
-          <ul>
-            <li><a class="btn" role="button" aria-label="to access link to project live site" href="https://ybs-galactic-tours.netlify.app/" target="_blank">Live Site</a></li>
-            <li><a class="btn" role="button" aria-label="to access link to GitHub repository" href="https://github.com/Yeeting-Billionaires-Into-Space/YBSGalacticTours" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-          <img class="project fadeIn slideIn fromRight" src="./assets/project3.png" alt="Computer screen ontop of a desk displaying an image of my third project">
-      </div>
-      <div class="projectContainer">
-        <img class="project fadeIn slideIn fromLeft" src="./assets/fullPlate.png" alt="web pages displayed side by side of the full plate web app">
-        <div class="projectText fadeIn">
-          <h3>Full Plate</h3>
-          <p class="collaberation">Work in progress web app being made in collaberation with an agile software development team.  Made in collaboration with: Kristelle Gumaru, <a  href="https://www.ngdelight.com/" target="_blank">Delight Ng,</a> <a  href="https://www.elletamcdaniel.com/index.html" target="_blank">Elleta McDaniel</a></p>
-          <div class="textIcons">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-react"></i>
+          <div class="aboutText">
+            <p>
+              I'm a Front-end Web Developer based out of Markham, Ontario, with
+              a background as an Electrician, an English teacher abroad in
+              Japan, and Property Management. As a
+              <a href="https://junocollege.com/" target="_blank"
+                >Juno College Web Development Immersive Bootcamp grad</a
+              >, I learned to turn my passions toward creating meaningful
+              websites and web applications by tapping into my creative side.
+            </p>
+
+            <p>
+              Having the fortunate opportunity to live in Japan, I learned from
+              the perspective of a new culture and how different cultures
+              interact with technologies in fascinating ways and technology's
+              role in making meaningful impacts on people's lives.
+            </p>
+
+            <p>
+              I now strive to create and uphold accessible and responsive
+              websites that can make a meaningful impact in your life... and
+              your dog's life!
+            </p>
+
+            <p>
+              When I'm not coding: you can find me on some frozen pond playing
+              hockey, waiting patiently on G.R.R Martin and Patrick Rothfuss to
+              release a new book, practicing Japanese with my wife, and eating
+              her delicious food... I excel at this last part.
+            </p>
           </div>
-          <ul>
-            <li><a class="btn" role="button" aria-label="to access link to project live site" href="https://full-plate.netlify.app/" target="_blank">Live Site</a></li>
-            <li><a class="btn" role="button" aria-label="to access link to GitHub repository" href="https://github.com/Full-Plate/full-plate" target="_blank">GitHub</a></li>
-          </ul>
         </div>
-          
       </div>
-    </div>
-  </section>
-<!-- End of Project Section -->
+    </section>
+    <!-- End of About Me Section -->
 
-
-  
-  <!-- Proficiencies Section -->
-  <section id="skills">
-    <div class="wrapper">
-      <div class="mySkills">
-        <h2>my evergrowing <span>toolkit</span></h2>
-        <ul class="icons">
-          <li><i class="fab fa-html5"></i><span>HTML 5</span></li>
-          <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
-          <li><i class="fab fa-sass"></i><span>Sass</span></li>
-          <li><i class="fab fa-js-square"></i><span>Javascript</span></li>
-          <li><i class="devicon-jquery-plain"></i><span>Jquery</span></li>
-          <li><i class="fab fa-react"></i><span>React</span></li>
-          <li><i class="devicon-firebase-plain"></i></i><span>Firebase</span></li>
-          <li><i class="fab fa-github"></i></i><span>Github</span></li>
-          <li><i class="fas fa-terminal"></i></i><span>Terminal</span></li>
-          <li><i class="fas fa-cog"></i></i><span>REST API</span></li>
-          <li><i class="fas fa-universal-access"></i></i><span>Accessibility</span></li>
-          <li><i class="fas fa-laptop-code"></i></i><span>Responsive Design</span></li>
-          <li><i class="devicon-vscode-plain"></i></i><span>VScode</span></li>
-        </ul>
-        <h3>more to come ...</h3>
+    <!-- Project Section -->
+    <section id="projects">
+      <div class="wrapper">
+        <h2>check out some of my <span>projects</span></h2>
+        <div class="projectContainer">
+          <div class="projectText fadeIn">
+            <h3>Captured</h3>
+            <p>
+              Multi-paged, client-based project to design a responsive web page
+              that implemented upon a design template that relates to
+              photography.
+            </p>
+            <div class="textIcons">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-sass"></i>
+            </div>
+            <ul>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to project live site"
+                  href="https://confident-payne-40674c.netlify.app/"
+                  target="_blank"
+                  >Live Site</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to GitHub repository"
+                  href="https://github.com/SeanSip/Project1"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <img
+            class="project fadeIn slideIn fromRight"
+            src="./assets/project1.png"
+            alt="Laptop ontop of a desk displaying an image of my first project"
+          />
+        </div>
+        <div class="projectContainer">
+          <img
+            class="project slideIn fromLeft"
+            src="./assets/project2.png"
+            alt="Close up of a hand holding a smartphone displaying an image of my second project"
+          />
+          <div class="projectText fadeIn">
+            <h3>Game of Thrones Trivia</h3>
+            <p class="collaberation">
+              Quiz trivia-game based on the hit HBO show Game of Thrones,
+              calling three separate APIs and dynamically adding and
+              manipulating content to the DOM. Made in collaberation with:
+              <a href="https://saramunir.com/" target="_blank">Sara Munir</a>
+            </p>
+            <div class="textIcons">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-js-square"></i>
+            </div>
+            <ul>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to project live site"
+                  aria-hidden="false"
+                  href="https://house-juno.github.io/SaraSeanProject2/"
+                  target="_blank"
+                  >Live Site</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to GitHub repository"
+                  href="https://github.com/House-Juno/SaraSeanProject2"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="projectContainer">
+          <div class="projectText fadeIn">
+            <h3>YBS Galatic</h3>
+            <p class="collaberation">
+              Client-based project to design a responsive mockweb app. Uses NASA
+              APIs as well as local storage for validation. Made in
+              collaboration with:
+              <a href="https://therealkristin.com/" target="_blank"
+                >kristin mcCollum,</a
+              >
+              <a href="https://isabellawang.dev/" target="_blank"
+                >isabella wang,</a
+              >
+              <a href="https://melissarichards.ca/" target="_blank"
+                >melissa richards</a
+              >
+            </p>
+            <div class="textIcons">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-react"></i>
+            </div>
+            <ul>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to project live site"
+                  href="https://ybs-galactic-tours.netlify.app/"
+                  target="_blank"
+                  >Live Site</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to GitHub repository"
+                  href="https://github.com/Yeeting-Billionaires-Into-Space/YBSGalacticTours"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <img
+            class="project fadeIn slideIn fromRight"
+            src="./assets/project3.png"
+            alt="Computer screen ontop of a desk displaying an image of my third project"
+          />
+        </div>
+        <div class="projectContainer">
+          <img
+            class="project fadeIn slideIn fromLeft"
+            src="./assets/fullPlate.png"
+            alt="web pages displayed side by side of the full plate web app"
+          />
+          <div class="projectText fadeIn">
+            <h3>Full Plate</h3>
+            <p class="collaberation">
+              Work in progress web app being made in collaberation with an agile
+              software development team. Made in collaboration with: Kristelle
+              Gumaru,
+              <a href="https://www.ngdelight.com/" target="_blank"
+                >Delight Ng,</a
+              >
+              <a
+                href="https://www.elletamcdaniel.com/index.html"
+                target="_blank"
+                >Elleta McDaniel</a
+              >
+            </p>
+            <div class="textIcons">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-react"></i>
+            </div>
+            <ul>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to project live site"
+                  href="https://full-plate.netlify.app/"
+                  target="_blank"
+                  >Live Site</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn"
+                  role="button"
+                  aria-label="to access link to GitHub repository"
+                  href="https://github.com/Full-Plate/full-plate"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    <!-- place all the icons for the languages I have learned  -->
-    </div>
-  </section>
-  <!-- End of Proficiencies Section -->
+    </section>
+    <!-- End of Project Section -->
 
-  <!-- Contact Section -->
-  <section id="contact">
-  <div class="wrapper">
-    <h2><span>contact</span> me!</h2>
-    <div class="contactContainer">
-      <div class="messageContainer">
-          <div class="socials">
-            <a href="https://github.com/SeanSip" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sean-sipus-1a536a223/?originalSubdomain=ca" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/SeanSip_Dev" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:sean.sipus@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="/assets/SeanSipusResume.pdf" download><i class="fas fa-file-download"></i></a>
-          </div>  
+    <!-- Proficiencies Section -->
+    <section id="skills">
+      <div class="wrapper">
+        <div class="mySkills">
+          <h2>my evergrowing <span>toolkit</span></h2>
+          <ul class="icons">
+            <li><i class="fab fa-html5"></i><span>HTML 5</span></li>
+            <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
+            <li><i class="fab fa-sass"></i><span>Sass</span></li>
+            <li><i class="fab fa-js-square"></i><span>Javascript</span></li>
+            <li><i class="devicon-jquery-plain"></i><span>Jquery</span></li>
+            <li><i class="fab fa-react"></i><span>React</span></li>
+            <li><i class="devicon-firebase-plain"></i><span>Firebase</span></li>
+            <li><i class="fab fa-github"></i><span>Github</span></li>
+            <li><i class="fas fa-terminal"></i><span>Terminal</span></li>
+            <li><i class="fas fa-cog"></i><span>REST API</span></li>
+            <li>
+              <i class="fas fa-universal-access"></i><span>Accessibility</span>
+            </li>
+            <li>
+              <i class="fas fa-laptop-code"></i><span>Responsive Design</span>
+            </li>
+            <li><i class="devicon-vscode-plain"></i><span>VScode</span></li>
+          </ul>
+          <h3>more to come ...</h3>
+        </div>
+        <!-- place all the icons for the languages I have learned  -->
       </div>
-      <div class="formContainer">
-        <form action="https://formspree.io/f/meqnqekk" method="post">
-          <label for="email" class="sr-only">Email</label>
-          <input name="Email" id="email" type="email" placeholder="Your email" required="">
-          <label for="name" class="sr-only">Name</label>
-          <input type="name" name="Name" id="name" placeholder="Your name" required="">
-          <label for="message" class="sr-only">Message</label>
-          <textarea type="message" name="Message" id="message" placeholder="<p> Looking forward to your message right here </p>" required=""></textarea>
-          <button type="submit">Submit</button>
-        </form>
+    </section>
+    <!-- End of Proficiencies Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="wrapper">
+        <h2><span>contact</span> me!</h2>
+        <div class="contactContainer">
+          <div class="messageContainer">
+            <div class="socials">
+              <a href="https://github.com/SeanSip" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sean-sipus-1a536a223/?originalSubdomain=ca"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/SeanSip_Dev" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="mailto:sean.sipus@gmail.com" target="_blank"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a href="/assets/SeanSipusResume.pdf" download
+                ><i class="fas fa-file-download"></i
+              ></a>
+            </div>
+          </div>
+          <div class="formContainer">
+            <form action="https://formspree.io/f/meqnqekk" method="post">
+              <label for="email" class="sr-only">Email</label>
+              <input
+                name="Email"
+                id="email"
+                type="email"
+                placeholder="Your email"
+                required=""
+              />
+              <label for="name" class="sr-only">Name</label>
+              <input
+                type="name"
+                name="Name"
+                id="name"
+                placeholder="Your name"
+                required=""
+              />
+              <label for="message" class="sr-only">Message</label>
+              <textarea
+                type="message"
+                name="Message"
+                id="message"
+                placeholder="<p> Looking forward to your message right here </p>"
+                required=""
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- end of wrapper div -->
-  </section>
+      <!-- end of wrapper div -->
+    </section>
 
-  <footer class="footer">
-    <p>Developed and designed by <span>Sean Sipus</span></p>
-  </footer>
-  <script src="./index.js"></script>
-  
-</body>
-
+    <footer class="footer">
+      <p>Developed and designed by <span>Sean Sipus</span></p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>

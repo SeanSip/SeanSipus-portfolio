@@ -386,6 +386,10 @@ header {
   background-attachment: fixed;
 }
 
+.navContainer {
+  display: flex;
+}
+
 .headerContainer {
   display: flex;
   flex-direction: column;
@@ -1172,7 +1176,7 @@ span {
   }
 
   .textHeadshotContainer {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .headShot {
