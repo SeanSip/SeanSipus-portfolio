@@ -377,7 +377,7 @@ header {
       rgba(5, 5, 0, 0.637),
       rgba(0, 0, 0, 0.568)
     ),
-    url(./assets/skillsBanner.jpg);
+    url(./assets/headerBackground1.jpg);
   width: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -845,7 +845,7 @@ section#skills {
       rgba(5, 5, 0, 0.637),
       rgba(0, 0, 0, 0.568)
     ),
-    url(./assets/headerImg.jpg);
+    url(./assets/headerBackground3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
