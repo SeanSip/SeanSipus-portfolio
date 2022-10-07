@@ -387,7 +387,12 @@ header {
 }
 
 .navContainer {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
 }
 
 .headerContainer {
@@ -450,7 +455,6 @@ li a:focus {
 
 a.logo,
 .logo img {
-  position: fixed;
   width: 13rem;
   z-index: 5;
   transition: ease-in-out 0.4s;
@@ -483,46 +487,43 @@ a.logo.open {
 /* Burger Menu Styles */
 
 .hamburgerMenu {
-  transition: 0.5s;
-  display: block;
-  margin-top: 35px;
-  margin-right: 10px;
-  padding: 20px;
-  position: fixed;
-  right: 0;
+  transition: all 0.2s ease-in-out;
   z-index: 100;
   cursor: pointer;
   border-radius: 50px;
   background: none;
   border-style: none;
+  margin-right: 20px;
+  opacity: 75%;
 }
 
 .hamburgerMenu.open {
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .hamburgerMenu:hover,
 .hamburgerMenu:focus-visible {
-  transform: scale(120%);
+  outline: #efc570 5px solid;
+  opacity: 100%;
+}
+
+.hamburgerMenu:hover {
+  transform: scale(110%);
 }
 
 .hamburgerMenu:focus-visible {
-  background-color: #ffffff2d;
-  outline: #efc570 2px dotted;
+  box-shadow: #efc570 0px 0px 120px 25px;
 }
 
 .circle {
-  position: fixed;
-  right: 0;
-  margin-top: 45px;
-  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 55px;
   height: 55px;
   background-color: black;
   border-radius: 40px;
   box-shadow: #efc570 0 0 0 5px;
-  opacity: 50%;
-  z-index: 2;
 }
 
 .bar {
@@ -530,33 +531,9 @@ a.logo.open {
   display: block;
   width: 35px;
   height: 5px;
-  margin: 5px auto;
+  margin: 3px auto;
   background-color: #efc570;
   border-radius: 10px;
-}
-
-.closeTxt {
-  font-size: 18px;
-  text-shadow: none;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-}
-
-.hamburgerMenu .closeTxt {
-  top: 39%;
-  right: -150%;
-  position: absolute;
-}
-
-.hamburgerMenu .closeTxt.open {
-  right: -30%;
-  top: 39%;
-  visibility: visible;
-}
-
-.hamburgerMenu .closeTxt.open:hover,
-.hamburgerMenu .closeTxt.open:focus {
-  color: #efc570;
 }
 
 nav {
@@ -586,7 +563,7 @@ nav {
 }
 
 .hamburgerMenu.open .bar:nth-child(3) {
-  transform: rotate(45deg) translate(1px);
+  transform: rotate(45deg) translatey(-7px) translateX(-7px);
 }
 
 .hamburgerMenu.open .bar:nth-child(2) {
@@ -595,7 +572,7 @@ nav {
 }
 
 .hamburgerMenu.open .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(1px);
+  transform: rotate(-45deg) translatey(8px) translateX(-9px);
 }
 
 header p {
@@ -1081,7 +1058,6 @@ span {
   a.logo {
     width: 8rem;
     height: 8rem;
-    margin-top: 20px;
   }
 }
 @media (max-width: 1164px) {
@@ -1175,13 +1151,16 @@ span {
     background-attachment: scroll;
   }
 
+  .textTwo {
+    align-items: center;
+  }
+
   .textHeadshotContainer {
     flex-direction: column;
   }
 
   .headShot {
-    margin-left: 0px;
-    margin-bottom: 25px;
+    margin: 25px 0px;
     align-self: center;
     width: 75%;
   }
@@ -1249,40 +1228,17 @@ span {
 
   .bar {
     width: 25px;
-    height: 4px;
-    margin: 4px auto;
-  }
-
-  .hamburgerMenu.open .bar:nth-child(3) {
-    transform: rotate(45deg) translate(0px);
-  }
-
-  .hamburgerMenu.open .bar:nth-child(2) {
-    transform: translatex(-30px);
-    background: transparent;
-  }
-
-  .hamburgerMenu.open .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(0px);
-  }
-
-  .closeTxt {
-    font-size: 13px;
+   
   }
 
   .hamburgerMenu {
-    padding: 15px;
+    margin-right: 10px;
   }
 
   .circle {
-    margin-top: 42px;
-    margin-right: 15px;
     width: 45px;
     height: 45px;
-    background-color: black;
-    border-radius: 40px;
     box-shadow: #efc570 0 0 0 3px;
-    opacity: 50%;
   }
 
   header li {
@@ -1343,8 +1299,13 @@ span {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 373px) {
   /* header section */
+
+  .navContainer {
+    margin-top: 10px;
+  }
+
   .textTwo h1 {
     font-size: 4.5rem;
   }
@@ -1368,8 +1329,8 @@ span {
     display: block;
   }
 
-  .socials i {
-    margin: 10px;
+  .socials i{
+   font-size:x-large;
   }
 
   footer p {
@@ -1377,7 +1338,7 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 324px) {
   .portrait .animatedText {
     font-size: var(--font-size--tiny);
   }
@@ -1395,6 +1356,6 @@ span {
   }
 
   .socials i {
-    font-size: 3.5rem;
+    font-size: larger;
   }
 }

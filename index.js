@@ -1,8 +1,8 @@
 const hamburgerMenu = document.querySelector('.hamburgerMenu');
 const menuItem = document.querySelectorAll('.select');
 const navMenu = document.querySelector('.navMenu');
-const logo = document.querySelector('.logo')
-const closeText = document.querySelector('.closeTxt')
+const logo = document.querySelector('.logo');
+
 
 
 // open nav menu
@@ -10,7 +10,6 @@ hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("open");
   navMenu.classList.toggle("open");
   logo.classList.toggle("open");
-  closeText.classList.toggle("open")
 });
 
 
@@ -20,7 +19,6 @@ for (i = 0; i < menuItem.length; i++) {
     hamburgerMenu.classList.toggle("open");
     navMenu.classList.toggle("open");
     logo.classList.toggle("open");
-    closeText.classList.toggle("open")
   })
 }
 
