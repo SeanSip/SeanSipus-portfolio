@@ -326,6 +326,10 @@ p {
   font-size: var(--font-size--default);
 }
 
+i {
+  font-size: 5rem;
+}
+
 /* General Font Stylings */
 span {
   color: #efc570;
@@ -358,6 +362,10 @@ li {
   list-style: none;
   text-decoration: none;
   color: #ffffff;
+}
+
+i {
+  color: #efc570;
 }
 
 a {
@@ -859,32 +867,26 @@ section#skills {
 
 .mySkills ul {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .icons li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 15%;
-  margin: 35px 0;
-}
-
-i {
-  font-size: 5rem;
-  color: #efc570;
+  width: 135px;
 }
 
 .icons span {
   font-size: 1.5rem;
   display: block;
-  margin-top: 20px;
   margin: 20px auto;
   padding: 5px;
   color: white;
   background: rgba(0, 0, 0, 0.602);
   border-radius: 10px;
+  text-align: center;
 }
 
 /* Contact Section */
@@ -1189,12 +1191,6 @@ span {
     margin: 0 auto;
   }
 
-  /* Skill Section Media Queries */
-
-  .icons li {
-    margin: 25px;
-  }
-
   /* Contact Section Media Queries */
 
   .contactContainer {
@@ -1214,10 +1210,6 @@ span {
 }
 
 @media (max-width: 634px) {
-  .icons li {
-    margin: 20px 10px;
-  }
-
   .icons i {
     font-size: 3.8rem;
   }
@@ -1228,7 +1220,6 @@ span {
 
   .bar {
     width: 25px;
-   
   }
 
   .hamburgerMenu {
@@ -1255,10 +1246,6 @@ span {
     font-size: var(--font-size--medium);
   }
 
-  .icons li {
-    margin: 10px 5px;
-  }
-
   .icons ul {
     width: 110%;
   }
@@ -1273,12 +1260,6 @@ span {
 
   footer p {
     font-size: var(--font-size--tiny);
-  }
-
-  /* Skills Section */
-
-  .icons li {
-    min-width: 35%;
   }
 }
 
@@ -1329,8 +1310,8 @@ span {
     display: block;
   }
 
-  .socials i{
-   font-size:x-large;
+  .socials i {
+    font-size: x-large;
   }
 
   footer p {
