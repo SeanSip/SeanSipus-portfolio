@@ -505,10 +505,6 @@ a.logo.open {
   opacity: 75%;
 }
 
-.hamburgerMenu.open {
-  /* margin-right: 50px; */
-}
-
 .hamburgerMenu:hover,
 .hamburgerMenu:focus-visible {
   outline: #efc570 5px solid;
