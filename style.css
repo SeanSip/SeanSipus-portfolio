@@ -1192,23 +1192,20 @@ span {
     background-attachment: scroll;
   }
 
-  .textTwo {
-    align-items: center;
-  }
-
-  .textHeadshotContainer {
-    flex-direction: column;
+  .headerContainer h1 {
+    font-size: 7.8rem;
   }
 
   .headShot {
-    margin: 25px 0px;
-    align-self: center;
-    width: 75%;
+    width: 50%;
   }
 
-  .downloadResumeContainer {
-    margin: -10px auto;
-    scale: 75%;
+  .innerContainer i {
+    font-size: 4rem;
+  }
+
+  .innerContainer p {
+    font-size: 16px;
   }
 
   /* Skill Section Media Queries */
@@ -1219,12 +1216,6 @@ span {
 }
 
 @media (max-width: 875px) {
-  /* Header Section Media Queries */
-
-  .headerContainer h1 {
-    font-size: 6.4rem;
-  }
-
   /* About Section Media Queries */
 
   .portrait img {
@@ -1243,6 +1234,32 @@ span {
 
   .formContainer {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 826px) {
+  /* Header Section Media Queries */
+
+  .headerContainer {
+    justify-content: flex-start;
+  }
+
+  .headShot {
+    margin: 25px 0px;
+    align-self: center;
+    width: 60%;
+  }
+
+  .textTwo {
+    align-items: center;
+  }
+
+  .textHeadshotContainer {
+    flex-direction: column;
+  }
+
+  .downloadResumeContainer {
+    scale: 85%;
   }
 }
 
@@ -1298,20 +1315,25 @@ span {
 @media (max-width: 459px) {
   /* Header Section Media Query */
 
-  .navStop {
-    height: 30px;
+  .headerContainer h1 {
+    font-size: 5rem;
   }
 
-  .headShot {
-    width: 60%;
-    margin: 15px 0;
+  .textOne,
+  .textThree .typingAnimation {
+    font-size: 2rem;
+  }
+
+  .navStop {
+    height: 50px;
   }
 
   .downloadResumeContainer {
-    scale: 60%;
+    scale: 70%;
+    margin: 10px 0;
   }
 
-  .scrollBtn{
+  .scrollBtn {
     scale: 70%;
   }
 
@@ -1328,18 +1350,9 @@ span {
 }
 
 @media (max-width: 394px) {
-  .headerContainer h1 {
-    font-size: 5rem;
-  }
-
-  .headerContainer p,
-  .headerContainer .textThree span {
-    font-size: 2rem;
-  }
-
   .downloadResumeContainer {
     scale: 50%;
-    margin: -25px 0;
+    margin: -15px 0;
   }
 }
 
@@ -1383,6 +1396,10 @@ span {
 }
 
 @media (max-width: 324px) {
+  .navStop {
+    height: 30px;
+  }
+
   .portrait .animatedText {
     font-size: var(--font-size--tiny);
   }
