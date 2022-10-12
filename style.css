@@ -597,8 +597,8 @@ header ul.open {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .textHeadshotContainer {
@@ -1202,8 +1202,6 @@ span {
     font-size: 7.8rem;
   }
 
-
-
   .innerContainer p {
     font-size: 16px;
   }
@@ -1216,7 +1214,6 @@ span {
 }
 
 @media (max-width: 875px) {
-
   /* About Section Media Queries */
 
   .portrait img {
@@ -1241,8 +1238,13 @@ span {
 @media (max-width: 826px) {
   /* Header Section Media Queries */
 
+  header {
+    min-height: auto;
+  }
+
   .headerContainer {
     justify-content: flex-start;
+    height: auto;
   }
 
   .headShot {
