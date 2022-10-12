@@ -1,6 +1,7 @@
 const hamburgerMenu = document.querySelector('.hamburgerMenu');
 const menuItem = document.querySelectorAll('.select');
 const navMenu = document.querySelector('.navMenu');
+const ul = document.querySelector('ul:not([class])');
 const logo = document.querySelector('.logo');
 
 
@@ -10,6 +11,7 @@ hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("open");
   navMenu.classList.toggle("open");
   logo.classList.toggle("open");
+  ul.classList.toggle("open");
 });
 
 
@@ -19,6 +21,7 @@ for (i = 0; i < menuItem.length; i++) {
     hamburgerMenu.classList.toggle("open");
     navMenu.classList.toggle("open");
     logo.classList.toggle("open");
+    ul.classList.toggle("open");
   })
 }
 
