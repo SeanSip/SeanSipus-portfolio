@@ -550,7 +550,7 @@ a.logo.open {
   flex-direction: column;
   width: 55px;
   height: 55px;
-  background-color: black;
+  background-color: #000;
   border-radius: 40px;
   box-shadow: #efc570 0 0 0 5px;
 }
@@ -599,6 +599,7 @@ header ul.open {
   align-items: center;
   height: 100vh;
   justify-content: center;
+  position: relative;
 }
 
 .textHeadshotContainer {
@@ -623,6 +624,7 @@ header ul.open {
   box-shadow: #efc570 0px 0px 15px 2px;
   align-self: flex-start;
   margin-left: 50px;
+  position: relative;
 }
 
 .headShot img {
@@ -632,7 +634,9 @@ header ul.open {
 
 .downloadResumeContainer {
   display: flex;
-  margin: 15px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .downloadResumeContainer p {
@@ -643,9 +647,9 @@ header ul.open {
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 3px #efc570 solid;
+  box-shadow: #efc570 0px 0px 10px 5px;
   padding: 2px 6px;
-  background-color: rgba(0, 0, 0, 0.446);
+  background-color: rgb(32, 31, 39);
   border-radius: 10px;
 }
 
@@ -1213,6 +1217,13 @@ span {
   }
 }
 
+@media (max-width: 950px) {
+  /* Header Section Media Queries */
+  .downloadResumeContainer {
+    margin-right: -20px;
+  }
+}
+
 @media (max-width: 875px) {
   /* About Section Media Queries */
 
@@ -1262,6 +1273,8 @@ span {
 
   .downloadResumeContainer {
     scale: 85%;
+    margin-bottom: 80px;
+    margin-right: -50px;
   }
 }
 
@@ -1309,6 +1322,14 @@ span {
 }
 
 @media (max-width: 518px) {
+  /* Header Section Media Queries */
+
+  .downloadResumeContainer {
+    scale: 75%;
+    margin-bottom: 70px;
+    margin-right: -40px;
+  }
+
   .portrait .animatedText {
     font-size: var(--font-size--medium);
   }
@@ -1335,8 +1356,8 @@ span {
   }
 
   .downloadResumeContainer {
+    margin-bottom: 55px;
     scale: 70%;
-    margin: 10px 0;
   }
 
   .scrollBtn {
@@ -1357,8 +1378,8 @@ span {
 
 @media (max-width: 394px) {
   .downloadResumeContainer {
-    scale: 50%;
-    margin: -15px 0;
+    scale: 60%;
+    margin-bottom: 30px;
   }
 }
 
