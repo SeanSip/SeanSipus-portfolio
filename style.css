@@ -633,7 +633,6 @@ header ul.open {
 }
 
 .downloadResumeContainer {
-  display: flex;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1219,6 +1218,7 @@ span {
 
 @media (max-width: 950px) {
   /* Header Section Media Queries */
+
   .downloadResumeContainer {
     margin-right: -20px;
   }
@@ -1273,8 +1273,8 @@ span {
 
   .downloadResumeContainer {
     scale: 85%;
-    margin-bottom: 80px;
-    margin-right: -50px;
+    margin-right: -35px;
+    top: 0;
   }
 }
 
@@ -1326,7 +1326,6 @@ span {
 
   .downloadResumeContainer {
     scale: 75%;
-    margin-bottom: 70px;
     margin-right: -40px;
   }
 
@@ -1356,7 +1355,7 @@ span {
   }
 
   .downloadResumeContainer {
-    margin-bottom: 55px;
+    margin-bottom: 100px;
     scale: 70%;
   }
 
@@ -1379,7 +1378,6 @@ span {
 @media (max-width: 394px) {
   .downloadResumeContainer {
     scale: 60%;
-    margin-bottom: 30px;
   }
 }
 
