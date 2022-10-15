@@ -670,21 +670,22 @@ header ul.open {
 
 .scrollBtn,
 .scrollBtn a {
-  border: 3px solid #efc570;
+  
   height: 80px;
   width: 50px;
   border-radius: 50px;
 }
 
 .scrollBtn {
+  border: 3px solid #efc570;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.446);
   position: relative;
 }
 
 .scrollBtn a {
-  bottom: -4%;
-  right: -7%;
+  bottom: -3px;
+  right: -3px;
   position: absolute;
 }
 
@@ -723,7 +724,7 @@ header ul.open {
 .scrollBtn:hover,
 .scrollBtn a:focus {
   box-shadow: #efc570 0px 0px 30px 10px;
-  outline: #efc570 solid 2px;
+  outline: #efc570 solid 4px;
 }
 
 /* Scroll Button Key Frame Animations */
@@ -1274,7 +1275,7 @@ span {
   .downloadResumeContainer {
     scale: 85%;
     margin-right: -35px;
-    top: 0;
+  
   }
 }
 
@@ -1355,7 +1356,7 @@ span {
   }
 
   .downloadResumeContainer {
-    margin-bottom: 100px;
+    margin-bottom: -10px;
     scale: 70%;
   }
 
