@@ -795,7 +795,7 @@ section#about {
   z-index: 1;
   align-items: center;
   flex-direction: column;
-  width: 1200px;
+  width: 3200px;
   max-width: 100%;
 }
 
@@ -804,23 +804,26 @@ section#about {
   border-radius: 5px;
 }
 
-.aboutText {
-  width: 100%;
+aside {
+  display: flex;
+}
+
+aside .aboutText {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
 }
 
-.aboutText p {
+aside .aboutText p {
   margin: auto;
   margin-bottom: 20px;
 }
 
-.aboutText p:last-of-type {
+aside .aboutText p:last-of-type {
   margin-bottom: 0;
 }
 
-.aboutText a {
+aside .aboutText a {
   color: #efc570;
 }
 
@@ -1138,7 +1141,7 @@ span {
     width: 75%;
   }
 
-  .aboutText {
+  aside .aboutText {
     margin-left: 0px;
     padding: 20px;
   }
