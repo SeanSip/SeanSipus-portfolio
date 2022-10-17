@@ -405,7 +405,7 @@ h1 {
 
 /* Nav Menu Styles */
 
-.navContainer {
+.fixedNavContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -454,13 +454,17 @@ li a:hover,
 li a:focus {
   color: #efc570;
   border-bottom: #efc570 5px solid;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Social Icon Styling (For nav menu & contact section)*/
 .socials {
   display: flex;
   flex-wrap: wrap;
+}
+
+.socials li a {
+  border-bottom: none;
 }
 
 .socials i {
@@ -670,7 +674,6 @@ header ul.open {
 
 .scrollBtn,
 .scrollBtn a {
-  
   height: 80px;
   width: 50px;
   border-radius: 50px;
@@ -1275,7 +1278,6 @@ span {
   .downloadResumeContainer {
     scale: 85%;
     margin-right: -35px;
-  
   }
 }
 
@@ -1385,7 +1387,7 @@ span {
 @media (max-width: 373px) {
   /* header section */
 
-  .navContainer {
+  .fixedNavContainer {
     margin-top: 10px;
   }
 
