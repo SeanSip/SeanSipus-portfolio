@@ -435,6 +435,8 @@ nav {
   z-index: 2;
   transition: all 0.3s ease;
   top: 0;
+  border-top: #efc570 10px solid;
+  border-bottom: #efc570 10px solid;
 }
 
 header ul {
@@ -573,8 +575,7 @@ a.logo.open {
 .navMenu.open {
   display: block;
   position: fixed;
-  border-top: #efc570 10px solid;
-  border-bottom: #efc570 10px solid;
+
   left: 0;
 }
 
