@@ -455,8 +455,17 @@ header li {
 li a:hover,
 li a:focus {
   color: #efc570;
-  border-bottom: #efc570 5px solid;
+  
+}
+
+li a:hover {
   border-radius: 5px;
+  border-bottom: #efc570 5px solid;
+}
+
+li a:focus {
+  outline: #efc570 solid 3px;
+  padding: 0px 25px;
 }
 
 /* Social Icon Styling (For nav menu & contact section)*/
@@ -465,8 +474,13 @@ li a:focus {
   flex-wrap: wrap;
 }
 
+.socials li {
+  display: flex;
+}
+
 .socials li a {
   border-bottom: none;
+  padding: 15% 0px 5% 0px;
 }
 
 .socials i {
@@ -487,7 +501,6 @@ li a:focus {
 .socials a:focus,
 .innerContainer:focus {
   transition: 0s;
-  outline: #efc570 solid 3px;
 }
 
 /* Logo Styles*/
