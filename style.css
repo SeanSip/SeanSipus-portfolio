@@ -377,6 +377,17 @@ h2 span {
   text-shadow: white 0px 2px;
 }
 
+/* General Hover and Focus Styles */
+li a:hover,
+li a:focus {
+  color: #efc570;
+}
+
+li a:focus,
+.socials a:focus {
+  outline: #efc570 solid 3px;
+}
+
 /* Header styles */
 
 header {
@@ -452,19 +463,12 @@ header li {
   font-size: 3.5rem;
 }
 
-li a:hover,
-li a:focus {
-  color: #efc570;
-  
-}
-
 li a:hover {
   border-radius: 5px;
   border-bottom: #efc570 5px solid;
 }
 
-li a:focus {
-  outline: #efc570 solid 3px;
+.select a:focus {
   padding: 0px 25px;
 }
 
