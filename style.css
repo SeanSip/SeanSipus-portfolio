@@ -346,7 +346,7 @@ header h1 {
 h1,
 h2 {
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 h2 {
@@ -373,8 +373,10 @@ a {
   color: #ffffff;
 }
 
-h2 span {
-  text-shadow: white 0px 2px;
+h2.freelance {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: x-large;
 }
 
 /* General Hover and Focus Styles */
@@ -434,7 +436,7 @@ nav {
   display: flex;
   margin: 0 auto;
   justify-content: flex-end;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .navMenu {
@@ -643,14 +645,14 @@ header ul.open {
   background-color: rgba(0, 0, 0, 0.446);
   border-radius: 300px;
   border: #efc570 5px solid;
-  box-shadow: #efc570 0px 0px 15px 2px;
+  box-shadow: #efc570 0px 0px 10px 2px;
   align-self: flex-start;
   margin-left: 50px;
   position: relative;
 }
 
 .headShot img {
-  border-radius: 70px;
+  border-radius: 100%;
   width: 100%;
 }
 
@@ -668,7 +670,7 @@ header ul.open {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: #efc570 0px 0px 10px 5px;
+  box-shadow: #efc570 0px 0px 0px 2px;
   padding: 2px 6px;
   background-color: rgb(32, 31, 39);
   border-radius: 10px;
@@ -854,6 +856,11 @@ section#projects {
   overflow-x: hidden;
 }
 
+.freelanceContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .projectContainer {
   display: flex;
   max-width: 100%;
@@ -876,12 +883,25 @@ section#projects {
   margin: 0 50px;
 }
 
-.textIcons {
-  display: flex;
+.textIcons .projectLogo img {
+  width: 40px;
+  height: auto;
 }
 
-.textIcons i {
+.projectText h3 {
+  text-transform: capitalize;
+}
+
+.textIcons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.textIcons i,
+.textIcons .projectLogo img {
   margin: 15px 15px;
+  border: none;
 }
 
 .projectText ul {
@@ -935,7 +955,6 @@ section#skills {
 }
 
 .mySkills h3 {
-  text-transform: uppercase;
   text-align: right;
 }
 
@@ -1027,7 +1046,7 @@ input:focus {
   padding: 15px;
   border: 2px solid #efc570;
   border-radius: 3px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
   margin-top: 10px;
 }
