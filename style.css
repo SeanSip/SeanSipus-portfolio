@@ -252,7 +252,7 @@ html {
 }
 
 section {
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 
 .navMenu a,
@@ -351,7 +351,7 @@ h2 {
 
 h2 {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 7rem;
 }
 
 p {
@@ -375,7 +375,7 @@ a {
 
 h2.freelance {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
   font-size: x-large;
 }
 
@@ -471,7 +471,7 @@ li a:hover {
 }
 
 .select a:focus {
-  padding: 0px 25px;
+  padding: 0rem 2.5rem;
 }
 
 /* Social Icon Styling (For nav menu & contact section)*/
@@ -486,13 +486,13 @@ li a:hover {
 
 .socials li a {
   border-bottom: none;
-  padding: 15% 0px 5% 0px;
+  padding: 15% 0rem 5% 0rem;
 }
 
 .socials i {
   color: white;
   transition: 0.2s ease-in;
-  padding: 0px 15px;
+  padding: 0rem 1.5rem;
 }
 
 .socials i:hover,
@@ -524,7 +524,7 @@ a.logo,
 
 a.logo {
   height: 13rem;
-  margin: 5px;
+  margin: 0.5rem;
 }
 
 a.logo.open {
@@ -551,7 +551,7 @@ a.logo.open {
   border-radius: 50px;
   background: none;
   border-style: none;
-  margin-right: 20px;
+  margin-right: 2rem;
   opacity: 75%;
 }
 
@@ -585,7 +585,7 @@ a.logo.open {
   display: block;
   width: 35px;
   height: 5px;
-  margin: 3px auto;
+  margin: 0.3rem auto;
   background-color: #efc570;
   border-radius: 10px;
 }
@@ -647,7 +647,7 @@ header ul.open {
   border: #efc570 5px solid;
   box-shadow: #efc570 0px 0px 10px 2px;
   align-self: flex-start;
-  margin-left: 50px;
+  margin-left: 5rem;
   position: relative;
 }
 
@@ -663,7 +663,7 @@ header ul.open {
 }
 
 .downloadResumeContainer p {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .innerContainer {
@@ -671,7 +671,7 @@ header ul.open {
   flex-direction: column;
   align-items: center;
   box-shadow: #efc570 0px 0px 0px 2px;
-  padding: 2px 6px;
+  padding: 0.2rem 0.6rem;
   background-color: rgb(32, 31, 39);
   border-radius: 10px;
 }
@@ -681,7 +681,7 @@ header ul.open {
 }
 
 .innerContainer a {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .innerContainer:hover,
@@ -721,7 +721,7 @@ header ul.open {
   background-color: #efc570;
   top: 10%;
   left: 50%;
-  margin-left: -7.5px;
+  margin-left: -0.75rem;
   border-radius: 8px;
   animation: scrollDown 2s ease-in-out infinite;
   animation-delay: 0.7s;
@@ -735,7 +735,7 @@ header ul.open {
   border: 2px solid #efc570;
   top: 10%;
   left: 50%;
-  margin-left: -7.5px;
+  margin-left: -0.75rem;
   border-radius: 2px;
   top: 30%;
   transform: rotate(45deg);
@@ -801,7 +801,7 @@ section#about {
 }
 
 .animatedText {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   font-size: var(--font-size--large);
 }
 
@@ -832,12 +832,12 @@ aside {
 aside .aboutText {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 5rem;
 }
 
 aside .aboutText p {
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 aside .aboutText p:last-of-type {
@@ -864,15 +864,15 @@ section#projects {
 .projectContainer {
   display: flex;
   max-width: 100%;
-  margin: 100px auto;
+  margin: 10rem auto;
 }
 
 .projectContainer:first-of-type {
-  margin-top: 0px;
+  margin-top: 0rem;
 }
 
 .projectContainer:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 
 .projectText {
@@ -880,7 +880,7 @@ section#projects {
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  margin: 0 50px;
+  margin: 0 5rem;
 }
 
 .textIcons .projectLogo img {
@@ -900,28 +900,28 @@ section#projects {
 
 .textIcons i,
 .textIcons .projectLogo img {
-  margin: 15px 15px;
+  margin: 1.5rem 1.5rem;
   border: none;
 }
 
 .projectText ul {
   display: flex;
   text-align: center;
-  margin: 50px 0;
+  margin: 2.5rem 0;
 }
 
 .btn {
-  margin: 10px;
+  margin: 1rem;
   border: 2px solid #efc570;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 1rem 2.5rem;
 }
 
 .collaberation a {
-  margin: 0px;
+  margin: 0rem;
   border: none;
   border-radius: 0px;
-  padding: 0px;
+  padding: 0rem;
   color: #efc570;
   text-transform: capitalize;
   text-decoration: underline;
@@ -935,7 +935,7 @@ section#projects {
 }
 
 .projectContainer img {
-  width: 500px;
+  width: 45rem;
   border: 8px #efc570 solid;
   border-radius: 5px;
 }
@@ -974,8 +974,8 @@ section#skills {
 .icons span {
   font-size: 1.5rem;
   display: block;
-  margin: 20px auto;
-  padding: 5px;
+  margin: 2rem auto;
+  padding: 0.5rem;
   color: white;
   background: rgba(0, 0, 0, 0.602);
   border-radius: 10px;
@@ -995,10 +995,9 @@ section#contact {
   margin: 0 auto;
   border: #efc5701f 1px solid;
   border-radius: 15px;
-  padding: 50px 0px;
+  padding: 5rem 0rem;
   background-color: rgb(32, 31, 39);
 }
-
 .messageContainer {
   display: flex;
   margin: 0 auto;
@@ -1010,7 +1009,7 @@ section#contact {
 }
 
 .messageContainer a {
-  margin: 0px 0px 25px 0;
+  margin: 0rem 0rem 2.5rem 0rem;
 }
 
 .formContainer {
@@ -1027,8 +1026,8 @@ section#contact {
 .formContainer textarea {
   resize: none;
   height: 200px;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 1rem;
+  margin-top: 0.5rem;
   border-radius: 5px;
   background-color: rgb(35, 35, 43);
   color: #ffffff;
@@ -1043,12 +1042,12 @@ input:focus {
 .formContainer button {
   background: none;
   color: white;
-  padding: 15px;
   border: 2px solid #efc570;
   border-radius: 3px;
   text-transform: capitalize;
   font-weight: 700;
-  margin-top: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
 }
 
 .formContainer button:hover,
@@ -1059,8 +1058,8 @@ input:focus {
 }
 
 .formContainer input {
-  margin: 5px 0;
-  padding: 10px;
+  margin: 0.5rem 0;
+  padding: 1rem;
   border-radius: 4px;
   background-color: rgb(35, 35, 43);
   color: #ffffff;
@@ -1172,7 +1171,7 @@ span {
 
   .portrait {
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
   }
 
   .portrait img {
@@ -1180,14 +1179,14 @@ span {
   }
 
   aside .aboutText {
-    margin-left: 0px;
-    padding: 20px;
+    margin-left: 0rem;
+    padding: 2rem;
   }
 
   /* Poject Section Media Queries */
 
   .projectContainer {
-    margin: 75px 0;
+    margin: 7.5rem 0;
   }
 
   .projectContainer:nth-child(2) {
@@ -1206,13 +1205,17 @@ span {
     flex-direction: column;
   }
 
+  .projectContainer:nth-child(6) {
+    flex-direction: column-reverse;
+  }
+
   .projectContainer li {
     flex: none;
   }
 
   .projectContainer img {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 
   .projectText {
@@ -1222,7 +1225,7 @@ span {
 
   .projectContainer img {
     width: 400px;
-    margin: 0px auto 50px auto;
+    margin: 0rem auto 5rem auto;
   }
 
   .projectText {
@@ -1231,7 +1234,7 @@ span {
   }
 
   .projectText p {
-    margin: 20px 0;
+    margin: 2rem 0;
   }
 
   .projectText ul {
@@ -1265,7 +1268,7 @@ span {
   /* Header Section Media Queries */
 
   .downloadResumeContainer {
-    margin-right: -20px;
+    margin-right: -2rem;
   }
 }
 
@@ -1287,7 +1290,7 @@ span {
   }
 
   .formContainer {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 }
 
@@ -1304,7 +1307,7 @@ span {
   }
 
   .headShot {
-    margin: 25px 0px;
+    margin: 2.5rem 0rem;
     align-self: center;
   }
 
@@ -1318,7 +1321,7 @@ span {
 
   .downloadResumeContainer {
     scale: 85%;
-    margin-right: -35px;
+    margin-right: -3.5rem;
   }
 }
 
@@ -1347,7 +1350,7 @@ span {
   }
 
   .hamburgerMenu {
-    margin-right: 10px;
+    margin-right: 1rem;
   }
 
   .circle {
@@ -1370,7 +1373,7 @@ span {
 
   .downloadResumeContainer {
     scale: 75%;
-    margin-right: -40px;
+    margin-right: -4rem;
   }
 
   .portrait .animatedText {
@@ -1399,7 +1402,7 @@ span {
   }
 
   .downloadResumeContainer {
-    margin-bottom: -10px;
+    margin-bottom: -1rem;
     scale: 70%;
   }
 
@@ -1429,7 +1432,7 @@ span {
   /* header section */
 
   .fixedNavContainer {
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 
   .textTwo h1 {
@@ -1444,7 +1447,7 @@ span {
 
   /* project section */
   .projectText li {
-    padding: 10px;
+    padding: 1rem;
   }
 
   .projectText ul {
@@ -1474,7 +1477,7 @@ span {
   }
 
   header ul {
-    margin-top: 50px;
+    margin-top: 5rem;
   }
 
   .icons i {
