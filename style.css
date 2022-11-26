@@ -418,15 +418,6 @@ h1 {
 
 /* Nav Menu Styles */
 
-.fixedNavContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 100;
-}
-
 .navStop {
   width: 100%;
   height: 70px;
@@ -518,55 +509,66 @@ a.logo,
   transition: ease-in-out 0.4s;
 }
 
-.logo img {
-  opacity: 0.5;
-}
-
 a.logo {
   height: 13rem;
   margin: 0.5rem;
+  position: fixed;
+  opacity: 0.3;
 }
 
 a.logo.open {
-  scale: 80%;
+  margin-top: 1.3rem;
+  width: 10rem;
+  opacity: 1;
+  pointer-events: none;
+  outline: none;
+  box-shadow: none;
 }
 
-.logo img:hover {
+a.logo.open:hover {
+  outline: none;
+}
+
+.logo:hover,
+.logo:focus {
   opacity: 1;
 }
 
 .logo:focus {
   outline: #efc570 5px solid;
   border-radius: 80px;
-  opacity: 1;
   box-shadow: #efc570 0px 0px 120px 25px;
 }
 
 /* Burger Menu Styles */
 
 .hamburgerMenu {
+  position: fixed;
+  right: 3rem;
+  top: 3rem;
   transition: all 0.2s ease-in-out;
   z-index: 100;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 100%;
   background: none;
   border-style: none;
-  margin-right: 2rem;
   opacity: 75%;
+  outline: #efc570 3px solid;
 }
 
 .hamburgerMenu:hover,
 .hamburgerMenu:focus-visible {
-  outline: #efc570 5px solid;
   opacity: 100%;
+  outline: #efc570 8px solid;
 }
 
-.hamburgerMenu:hover {
-  transform: scale(110%);
+.circle:hover,
+.hamburgerMenu:focus {
+  transform: scale(106%);
 }
 
 .hamburgerMenu:focus-visible {
-  box-shadow: #efc570 0px 0px 120px 25px;
+  box-shadow: #efc570 0px 0px 150px 20px;
 }
 
 .circle {
@@ -577,7 +579,7 @@ a.logo.open {
   height: 55px;
   background-color: #000;
   border-radius: 40px;
-  box-shadow: #efc570 0 0 0 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 .bar {
@@ -1156,6 +1158,7 @@ span {
   a.logo {
     width: 8rem;
     height: 8rem;
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 1164px) {
@@ -1350,12 +1353,16 @@ span {
     font-size: 1.3rem;
   }
 
-  .bar {
-    width: 25px;
+  .hamburgerMenu {
+    top: 2.5rem;
   }
 
-  .hamburgerMenu {
-    margin-right: 1rem;
+  a.logo {
+    margin-top: 0.5rem;
+  }
+
+  .bar {
+    width: 25px;
   }
 
   .circle {
@@ -1450,12 +1457,12 @@ span {
 @media (max-width: 373px) {
   /* header section */
 
-  .fixedNavContainer {
-    margin-top: 1rem;
-  }
-
   .textTwo h1 {
     font-size: 4.5rem;
+  }
+
+  a.logo {
+    margin-top: 1.8rem;
   }
 
   .logo img,
