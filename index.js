@@ -28,9 +28,9 @@ for (i = 0; i < menuItem.length; i++) {
 
 //Typing animation 
 const typed = new Typed(".typingAnimation", {
-strings: ["Front-end","","Web Developer", "", "", ""],
-typeSpeed: 40,
-backSpeed: 45,
+strings: ["Front-end","","Web Developer", "","Freelancer", "","Pet Detective", "", "", "Ramen Annihilator", "", ""],
+typeSpeed: 25,
+backSpeed: 55,
 loop: true
 });
 
