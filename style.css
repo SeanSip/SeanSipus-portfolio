@@ -335,14 +335,6 @@ span {
   color: #efc570;
 }
 
-header h1 span {
-  text-shadow: white 0px 4px;
-}
-
-header h1 {
-  text-shadow: #efc570 0px 3px;
-}
-
 h1,
 h2 {
   color: white;
