@@ -439,8 +439,8 @@ nav {
   z-index: 2;
   transition: all 0.3s ease;
   top: 0;
-  border-top: #efc570 10px solid;
-  border-bottom: #efc570 10px solid;
+  border-top: #efc570 5px solid;
+  border-bottom: #efc570 5px solid;
 }
 
 header ul {
@@ -506,7 +506,7 @@ a.logo,
 .logo img {
   width: 13rem;
   z-index: 5;
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.2s;
 }
 
 a.logo {
@@ -517,7 +517,6 @@ a.logo {
 }
 
 a.logo.open {
-  margin-top: 1.3rem;
   width: 10rem;
   opacity: 1;
   pointer-events: none;
@@ -544,8 +543,8 @@ a.logo.open:hover {
 
 .hamburgerMenu {
   position: fixed;
-  right: 3rem;
-  top: 3rem;
+  right: 1.8rem;
+  top: 1.8rem;
   transition: all 0.2s ease-in-out;
   z-index: 100;
   cursor: pointer;
@@ -596,7 +595,6 @@ a.logo.open:hover {
 .navMenu.open {
   display: block;
   position: fixed;
-
   left: 0;
 }
 
@@ -1151,14 +1149,14 @@ span {
 /* Start of Media Queries */
 
 @media (max-width: 1188px) {
-  .logo img {
-    width: 8rem;
-  }
-
   a.logo {
     width: 8rem;
     height: 8rem;
-    margin-top: 1.5rem;
+  }
+
+  a.logo.open {
+    width: 7rem;
+    height: 7rem;
   }
 }
 @media (max-width: 1164px) {
@@ -1353,14 +1351,6 @@ span {
     font-size: 1.3rem;
   }
 
-  .hamburgerMenu {
-    top: 2.5rem;
-  }
-
-  a.logo {
-    margin-top: 0.5rem;
-  }
-
   .bar {
     width: 25px;
   }
@@ -1461,14 +1451,10 @@ span {
     font-size: 4.5rem;
   }
 
-  a.logo {
-    margin-top: 1.8rem;
-  }
-
   .logo img,
   a.logo {
-    width: 6rem;
-    height: 6rem;
+    width: 6.8rem;
+    height: 6.8rem;
   }
 
   /* Project Media Query */
