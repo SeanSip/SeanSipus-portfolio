@@ -382,6 +382,25 @@ li a:focus,
   outline: #efc570 solid 3px;
 }
 
+/* Button Styles */
+button,
+.innerContainer {
+  color: white;
+  border: 2px solid #efc570;
+  text-transform: capitalize;
+  font-weight: 700;
+  background: none;
+}
+
+button:hover,
+button:focus,
+.innerContainer:hover,
+.innerContainer:focus {
+  cursor: pointer;
+  background-color: #efc570;
+  color: black;
+}
+
 /* Header styles */
 
 header {
@@ -479,9 +498,7 @@ li a:hover {
 }
 
 .socials i:hover,
-.socials i:focus,
-.innerContainer:hover,
-.innerContainer:focus {
+.socials i:focus {
   color: #efc570;
   cursor: pointer;
   text-shadow: #efc570 0px 0px 35px;
@@ -626,6 +643,7 @@ header ul.open {
 .textTwo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .textTwo span {
@@ -634,56 +652,59 @@ header ul.open {
 
 .headShot {
   max-width: 33%;
-  background-color: rgba(0, 0, 0, 0.446);
-  border-radius: 300px;
-  border: #efc570 5px solid;
-  box-shadow: #efc570 0px 0px 10px 2px;
   align-self: flex-start;
   margin-left: 5rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: #efc570 8px solid;
+  border-radius: 0.5rem;
 }
 
 .headShot img {
-  border-radius: 100%;
+  border-top-left-radius: 0.05rem;
+  border-top-right-radius: 0.05rem;
   width: 100%;
+  background-color: rgba(32, 31, 39, 0.409);
+  margin: 0 auto;
 }
 
 .downloadResumeContainer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.downloadResumeContainer p {
+  margin-bottom: 1rem;
+  width: 100%;
+  margin: 0 auto;
   font-size: 1.8rem;
 }
 
 .innerContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  box-shadow: #efc570 0px 0px 0px 2px;
-  padding: 0.2rem 0.6rem;
+  justify-content: center;
+  padding: 0.8rem 0.6rem;
   background-color: rgb(32, 31, 39);
-  border-radius: 10px;
+  border-bottom-right-radius: 0.05rem;
+  border-bottom-left-radius: 0.05rem;
+  border: none;
 }
 
 .innerContainer i {
-  font-size: 4rem;
+  font-size: xx-large;
+  margin-left: 1rem;
+  color: #efc570;
 }
 
-.innerContainer a {
-  padding: 1rem;
+.innerContainer:hover.innerContainer i,
+.innerContainer:focus.innerContainer i {
+  color: inherit;
 }
 
-.innerContainer:hover,
-.innerContainer:focus {
-  outline: #efc570 5px solid;
-  box-shadow: #efc570 0px 0px 30px 10px;
+.innerContainer:focus.innerContainer {
+  outline: none;
 }
 
 /* Scroll Down Button Styles */
-
 .scrollBtn,
 .scrollBtn a {
   height: 80px;
@@ -696,6 +717,8 @@ header ul.open {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.446);
   position: relative;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
 }
 
 .scrollBtn a {
@@ -1036,21 +1059,9 @@ input:focus {
 }
 
 .formContainer button {
-  background: none;
-  color: white;
-  border: 2px solid #efc570;
-  border-radius: 3px;
-  text-transform: capitalize;
-  font-weight: 700;
+  border-radius: 5px;
   padding: 1.5rem;
   margin-top: 1rem;
-}
-
-.formContainer button:hover,
-.formContainer button:focus {
-  cursor: pointer;
-  background-color: #efc570;
-  color: black;
 }
 
 .formContainer input {
@@ -1251,7 +1262,7 @@ span {
     font-size: 7.8rem;
   }
 
-  .innerContainer p {
+  .innerContainer {
     font-size: 16px;
   }
 
@@ -1259,14 +1270,6 @@ span {
 
   section#skills {
     background-attachment: scroll;
-  }
-}
-
-@media (max-width: 950px) {
-  /* Header Section Media Queries */
-
-  .downloadResumeContainer {
-    margin-right: -2rem;
   }
 }
 
@@ -1309,17 +1312,17 @@ span {
     align-self: center;
   }
 
+  .headShot img,
+  .downloadResumeContainer {
+    width: 100%;
+  }
+
   .textTwo {
     align-items: center;
   }
 
   .textHeadshotContainer {
     flex-direction: column;
-  }
-
-  .downloadResumeContainer {
-    scale: 85%;
-    margin-right: -3.5rem;
   }
 }
 
@@ -1365,11 +1368,6 @@ span {
 @media (max-width: 518px) {
   /* Header Section Media Queries */
 
-  .downloadResumeContainer {
-    scale: 75%;
-    margin-right: -4rem;
-  }
-
   .portrait .animatedText {
     font-size: var(--font-size--medium);
   }
@@ -1393,11 +1391,6 @@ span {
 
   .navStop {
     height: 50px;
-  }
-
-  .downloadResumeContainer {
-    margin-bottom: -1rem;
-    scale: 70%;
   }
 
   .scrollBtn {
@@ -1430,14 +1423,12 @@ span {
   }
 }
 
-@media (max-width: 394px) {
-  .downloadResumeContainer {
-    scale: 60%;
-  }
-}
-
 @media (max-width: 373px) {
   /* header section */
+
+  .innerContainer i {
+    font-size: x-large;
+  }
 
   .textTwo h1 {
     font-size: 4.5rem;
