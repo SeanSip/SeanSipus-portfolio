@@ -305,14 +305,20 @@ li {
   font-weight: 700;
 }
 
+.projectContainer li, select {
+  font-weight: 700;
+}
+
 a,
 label {
   color: white;
 }
 
-.projectText a {
+.projectText a, p, .btn, select {
   font-size: var(--font-size--default);
 }
+
+
 
 .textThree span {
   font-size: var(--font-size--large);
@@ -320,10 +326,6 @@ label {
 
 .icons span {
   font-weight: 300;
-}
-
-p {
-  font-size: var(--font-size--default);
 }
 
 i {
@@ -871,6 +873,7 @@ section#projects {
   overflow-x: hidden;
 }
 
+
 .freelanceContainer {
   display: flex;
   flex-direction: column;
@@ -929,10 +932,23 @@ section#projects {
   margin: 2.5rem 0;
 }
 
-.btn {
-  margin: 1rem;
+.customSelect {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0.5rem 2rem;
+}
+
+
+
+.btn, .customSelect {
   border: 2px solid #efc570;
   border-radius: 5px;
+  margin: 1rem ;
+}
+
+.btn {
   padding: 1rem 2.5rem;
 }
 
@@ -946,7 +962,8 @@ section#projects {
   text-decoration: underline;
   display: inline-block;
 }
-
+.customSelect:focus,
+.customSelect:hover,
 .projectText a:hover,
 .projectText a:focus {
   background-color: #efc570;
