@@ -305,7 +305,8 @@ li {
   font-weight: 700;
 }
 
-.projectContainer li, select {
+.projectContainer li,
+select {
   font-weight: 700;
 }
 
@@ -314,11 +315,12 @@ label {
   color: white;
 }
 
-.projectText a, p, .btn, select {
+.projectText a,
+p,
+.btn,
+select {
   font-size: var(--font-size--default);
 }
-
-
 
 .textThree span {
   font-size: var(--font-size--large);
@@ -403,6 +405,10 @@ button:focus,
   color: black;
 }
 
+.innerContainer:hover,
+.innerContainer:focus {
+  height: 100%;
+}
 /* Header styles */
 
 header {
@@ -506,8 +512,7 @@ li a:hover {
   text-shadow: #efc570 0px 0px 35px;
 }
 
-.socials a:focus,
-.innerContainer:focus {
+.socials a:focus {
   transition: 0s;
 }
 
@@ -662,6 +667,7 @@ header ul.open {
   flex-direction: column;
   border: #efc570 8px solid;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 .headShot img {
@@ -689,6 +695,11 @@ header ul.open {
   border-bottom-right-radius: 0.05rem;
   border-bottom-left-radius: 0.05rem;
   border: none;
+  position: absolute;
+  height: 6rem;
+  width: 100%;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
 }
 
 .innerContainer i {
@@ -873,7 +884,6 @@ section#projects {
   overflow-x: hidden;
 }
 
-
 .freelanceContainer {
   display: flex;
   flex-direction: column;
@@ -940,12 +950,11 @@ section#projects {
   padding: 0.5rem 2rem;
 }
 
-
-
-.btn, .customSelect {
+.btn,
+.customSelect {
   border: 2px solid #efc570;
   border-radius: 5px;
-  margin: 1rem ;
+  margin: 1rem;
 }
 
 .btn {
@@ -1327,6 +1336,7 @@ span {
   .headShot {
     margin: 2.5rem 0rem;
     align-self: center;
+    max-width: 65%;
   }
 
   .headShot img,
@@ -1351,10 +1361,6 @@ span {
 }
 
 @media (max-width: 634px) {
-  .headShot {
-    max-width: 43%;
-  }
-
   .icons i {
     font-size: 3.8rem;
   }
