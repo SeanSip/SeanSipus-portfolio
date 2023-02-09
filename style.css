@@ -318,6 +318,7 @@ label {
 .projectText a,
 p,
 .btn,
+.resumeText,
 select {
   font-size: var(--font-size--default);
 }
@@ -401,13 +402,28 @@ button:focus,
 .innerContainer:hover,
 .innerContainer:focus {
   cursor: pointer;
-  background-color: #efc570;
-  color: black;
+  color: #efc570;
+}
+
+.innerContainer:hover .resumeText,
+.innerContainer:focus .resumeText {
+  display: none;
+}
+
+.innerContainer:hover i,
+.innerContainer:focus i {
+  font-size: 10rem;
+  margin: 0rem;
+  text-shadow: #efc570 0 0 1rem;
+  background-color: rgb(32, 31, 39);
 }
 
 .innerContainer:hover,
 .innerContainer:focus {
   height: 100%;
+  background-image: url(./assets/resumeImg.png);
+  background-size: cover;
+  background-position: center;
 }
 /* Header styles */
 

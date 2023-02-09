@@ -113,7 +113,7 @@
                     href="/assets/SeanSipusResume.pdf"
                     download
                   >
-                    résumé
+                    <p class="resumeText">résumé</p>
                     <i class="fas fa-file-download"></i>
                   </a>
                 </div>
@@ -315,7 +315,9 @@
               <p>
                 Multi-paged, client-based project to design a responsive web
                 page that implemented upon a design template that relates to
-                photography. You can see the original <span>design templates</span> in the drop down menu below and compare them to the live site.
+                photography. You can see the original
+                <span>design templates</span> in the drop down menu below and
+                compare them to the live site.
               </p>
               <div class="textIcons">
                 <i class="fab fa-html5"></i>
@@ -343,11 +345,14 @@
                     >GitHub</a
                   >
                 </li>
-               
               </ul>
               <ul>
                 <li>
-                  <select id="templateSelection" class="customSelect" onchange="downloadFile(value)">
+                  <select
+                    id="templateSelection"
+                    class="customSelect"
+                    onchange="downloadFile(value)"
+                  >
                     <option value="">Design Templates</option>
                     <option value="Captured-home.png">Home page</option>
                     <option value="Captured-blog-post.png">Blog page</option>
