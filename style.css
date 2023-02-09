@@ -398,11 +398,10 @@ button,
 }
 
 button:hover,
-button:focus,
-.innerContainer:hover,
-.innerContainer:focus {
+button:focus {
   cursor: pointer;
-  color: #efc570;
+  color: #000;
+  background-color: #efc570;
 }
 
 .innerContainer:hover .resumeText,
@@ -416,6 +415,7 @@ button:focus,
   margin: 0rem;
   text-shadow: #efc570 0 0 1rem;
   background-color: rgb(32, 31, 39);
+  color: #efc570;
 }
 
 .innerContainer:hover,
@@ -424,6 +424,7 @@ button:focus,
   background-image: url(./assets/resumeImg.png);
   background-size: cover;
   background-position: center;
+  color: #efc570;
 }
 /* Header styles */
 
