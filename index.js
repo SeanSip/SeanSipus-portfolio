@@ -33,22 +33,9 @@ const downloadFile = (fileName) => {
   }
 };
 
-//Typing animation
+//Typing animation using a JS plugin
 const typed = new Typed(".typingAnimation", {
-  strings: [
-    "Front-end",
-    "",
-    "Web Developer",
-    "",
-    "Freelancer",
-    "",
-    "Pet Detective",
-    "",
-    "",
-    "Ramen Annihilator",
-    "",
-    "",
-  ],
+  strings: ["Front-end", "", "Web Developer", "", "Freelancer", "", ""],
   typeSpeed: 25,
   backSpeed: 55,
   loop: true,
