@@ -567,8 +567,9 @@ a.logo.open:hover {
 }
 
 .logo:focus {
-  outline: #efc570 5px solid;
-  border-radius: 80px;
+  border: #efc570 5px solid;
+  outline: none;
+  border-radius: 100%;
   box-shadow: #efc570 0px 0px 120px 25px;
 }
 
@@ -577,7 +578,7 @@ a.logo.open:hover {
 .hamburgerMenu {
   position: fixed;
   right: 1.8rem;
-  top: 1.8rem;
+  top: 1rem;
   transition: all 0.2s ease-in-out;
   z-index: 100;
   cursor: pointer;
@@ -586,17 +587,27 @@ a.logo.open:hover {
   border-style: none;
   opacity: 75%;
   border: #efc570 3px solid;
+  overflow: hidden;
+  padding: 0.6rem 0.6rem;
 }
 
-.hamburgerMenu:hover,
-.hamburgerMenu:focus-visible {
+.hamburgerMenu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #efc570;
+  border-radius: 100%;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburgerMenu:hover::after,
+.hamburgerMenu:focus-visible::after {
   opacity: 100%;
-  outline: #efc570 8px solid;
-}
-
-.circle:hover,
-.hamburgerMenu:focus {
-  transform: scale(106%);
+  transform: scale(1);
 }
 
 .hamburgerMenu:focus-visible {
@@ -607,8 +618,8 @@ a.logo.open:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 55px;
-  height: 55px;
+  width: 6rem;
+  height: 6rem;
   background-color: #000;
   border-radius: 40px;
   transition: all 0.2s ease-in-out;
@@ -791,8 +802,12 @@ header ul.open {
 
 .scrollBtn:hover,
 .scrollBtn a:focus {
-  box-shadow: #efc570 0px 0px 30px 10px;
-  outline: #efc570 solid 4px;
+  border: #efc570 solid 8px;
+  outline: none;
+}
+
+.scrollBtn a:active {
+  border: none;
 }
 
 /* Scroll Button Key Frame Animations */
