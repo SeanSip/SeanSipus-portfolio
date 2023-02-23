@@ -1218,11 +1218,6 @@ span {
     height: 8rem;
     margin-top: 0.75rem;
   }
-
-  a.logo.open {
-    width: 7rem;
-    height: 7rem;
-  }
 }
 @media (max-width: 1164px) {
   .wrapper {
