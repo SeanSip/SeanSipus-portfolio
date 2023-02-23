@@ -585,7 +585,7 @@ a.logo.open:hover {
   background: none;
   border-style: none;
   opacity: 75%;
-  outline: #efc570 3px solid;
+  border: #efc570 3px solid;
 }
 
 .hamburgerMenu:hover,
