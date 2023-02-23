@@ -546,7 +546,7 @@ a.logo {
   height: 13rem;
   margin: 0.5rem;
   position: fixed;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 a.logo.open {
@@ -586,28 +586,31 @@ a.logo.open:hover {
   background: none;
   border-style: none;
   opacity: 75%;
-  border: #efc570 3px solid;
   overflow: hidden;
   padding: 0.6rem 0.6rem;
 }
 
-.hamburgerMenu::after {
+.hamburgerMenu::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  border: 1px solid #efc570;
+  border: 10px solid #efc570;
   border-radius: 100%;
   transform: scale(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
-.hamburgerMenu:hover::after,
-.hamburgerMenu:focus-visible::after {
+.hamburgerMenu:hover::before,
+.hamburgerMenu:focus-visible::before {
   opacity: 100%;
   transform: scale(1);
+}
+button.hamburgerMenu:hover,
+button.hamburgerMenu:focus {
+  background-color: transparent;
 }
 
 .hamburgerMenu:focus-visible {
@@ -618,8 +621,8 @@ a.logo.open:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   background-color: #000;
   border-radius: 40px;
   transition: all 0.2s ease-in-out;
@@ -1213,6 +1216,7 @@ span {
   a.logo {
     width: 8rem;
     height: 8rem;
+    margin-top: 0.75rem;
   }
 
   a.logo.open {
@@ -1401,14 +1405,23 @@ span {
     font-size: 1.3rem;
   }
 
+  .logo img,
+  a.logo {
+    width: 6.8rem;
+    height: 6.8rem;
+  }
+
   .bar {
     width: 25px;
   }
 
   .circle {
-    width: 45px;
-    height: 45px;
-    box-shadow: #efc570 0 0 0 3px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .hamburgerMenu::before {
+    border: 6px solid #efc570;
   }
 
   header li {
@@ -1487,12 +1500,6 @@ span {
 
   .textTwo h1 {
     font-size: 4.5rem;
-  }
-
-  .logo img,
-  a.logo {
-    width: 6.8rem;
-    height: 6.8rem;
   }
 
   /* Project Media Query */
