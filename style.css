@@ -578,7 +578,7 @@ a.logo.open:hover {
 .hamburgerMenu {
   position: fixed;
   right: 1.8rem;
-  top: 1rem;
+  top: 1.8rem;
   transition: all 0.2s ease-in-out;
   z-index: 100;
   cursor: pointer;
@@ -1216,7 +1216,8 @@ span {
   a.logo {
     width: 8rem;
     height: 8rem;
-    margin-top: 0.75rem;
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
   }
 }
 @media (max-width: 1164px) {
@@ -1400,10 +1401,15 @@ span {
     font-size: 1.3rem;
   }
 
+  .hamburgerMenu {
+    right: 0.5rem;
+  }
+
   .logo img,
   a.logo {
     width: 6.8rem;
     height: 6.8rem;
+    margin-left: 0.5rem;
   }
 
   .bar {
