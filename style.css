@@ -909,6 +909,7 @@ aside .aboutText p:last-of-type {
 
 aside .aboutText a {
   color: #efc570;
+  text-decoration: underline;
 }
 
 /* Projects Section */
@@ -1014,7 +1015,6 @@ section#projects {
 .projectText a:focus {
   background-color: #efc570;
   color: black;
-  text-decoration: underline;
 }
 
 .projectContainer img {
