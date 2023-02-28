@@ -611,6 +611,7 @@ a.logo.open:hover {
 button.hamburgerMenu:hover,
 button.hamburgerMenu:focus {
   background-color: transparent;
+  opacity: 100%;
 }
 
 .hamburgerMenu:focus-visible {
