@@ -1074,6 +1074,7 @@ section#skills {
 }
 
 .mySkills h3 {
+  margin-top: 3rem;
   text-align: right;
 }
 
@@ -1401,6 +1402,12 @@ span {
 
   .topPhoto {
     margin: 0 auto;
+  }
+
+  /* My Skills Media Queries */
+
+  .mySkills h3 {
+    text-align: center;
   }
 
   /* Contact Section Media Queries */
