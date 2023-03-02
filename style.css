@@ -791,8 +791,8 @@ header ul.open {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.446);
   position: relative;
-  margin-top: 15rem;
-  margin-bottom: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .scrollBtn a {
@@ -1460,6 +1460,10 @@ span {
   .textHeadshotContainer {
     flex-direction: column;
   }
+
+  .scrollBtn {
+    margin-top: 3rem;
+    margin-bottom: 15rem;
 }
 
 @media (max-width: 750px) {
