@@ -486,6 +486,9 @@ nav {
       rgb(0, 0, 0)
     ),
     url(./assets/backgroundMenu.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 header ul {
@@ -657,6 +660,15 @@ button.hamburgerMenu:focus {
   display: block;
   position: fixed;
   left: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(5, 5, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgb(0, 0, 0)
+    ),
+    url(./assets/backgroundMenu.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -1252,8 +1264,14 @@ span {
   }
 
   .navMenu.open {
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(5, 5, 0),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5),
+        rgb(0, 0, 0)
+      ),
+      url(./assets/backgroundMenuMobile.jpg);
   }
 
   a.logo {
