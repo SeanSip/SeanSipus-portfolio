@@ -1464,171 +1464,172 @@ span {
   .scrollBtn {
     margin-top: 3rem;
     margin-bottom: 15rem;
-}
-
-@media (max-width: 750px) {
-  /* About Me Section Media Query */
-  .portrait img {
-    width: 90%;
-  }
-}
-
-@media (max-width: 634px) {
-  .icons i {
-    font-size: 3.8rem;
   }
 
-  .icons span {
-    font-size: 1.3rem;
+  @media (max-width: 750px) {
+    /* About Me Section Media Query */
+    .portrait img {
+      width: 90%;
+    }
   }
 
-  .hamburgerMenu {
-    right: 0.5rem;
+  @media (max-width: 634px) {
+    .icons i {
+      font-size: 3.8rem;
+    }
+
+    .icons span {
+      font-size: 1.3rem;
+    }
+
+    .hamburgerMenu {
+      right: 0.5rem;
+    }
+
+    .logo img,
+    a.logo {
+      width: 6.8rem;
+      height: 6.8rem;
+      margin-left: 0.5rem;
+    }
+
+    .bar {
+      width: 25px;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+    }
+
+    .hamburgerMenu::before {
+      border: 6px solid #efc570;
+    }
+
+    .navMenu .socials i {
+      font-size: 2.5rem;
+    }
   }
 
-  .logo img,
-  a.logo {
-    width: 6.8rem;
-    height: 6.8rem;
-    margin-left: 0.5rem;
+  @media (max-width: 518px) {
+    /* Header Section Media Queries */
+
+    .portrait .animatedText {
+      font-size: var(--font-size--medium);
+    }
+
+    .icons ul {
+      width: 110%;
+    }
   }
 
-  .bar {
-    width: 25px;
+  @media (max-width: 459px) {
+    /* Header Section Media Query */
+
+    .headerContainer h1 {
+      font-size: 5rem;
+    }
+
+    .textOne,
+    .textThree .typingAnimation {
+      font-size: 2rem;
+    }
+
+    .navStop {
+      height: 50px;
+    }
+
+    .scrollBtn {
+      scale: 70%;
+    }
+
+    /* Project Section Media Query */
+    .textIcons i,
+    .textIcons .projectLogo img {
+      margin: 0.5rem;
+    }
+
+    .textIcons i {
+      font-size: xx-large;
+    }
+
+    .textIcons .projectLogo img {
+      width: 2.5rem;
+    }
+
+    /* Footer Section Media Query */
+    footer p {
+      font-size: var(--font-size--tiny);
+    }
   }
 
-  .circle {
-    width: 50px;
-    height: 50px;
+  @media (max-width: 414px) {
+    .navMenu.open li {
+      font-size: var(--font-size--medium);
+    }
+
+    .portrait .animatedText {
+      font-size: var(--font-size--small);
+    }
   }
 
-  .hamburgerMenu::before {
-    border: 6px solid #efc570;
+  @media (max-width: 373px) {
+    /* header section */
+
+    .innerContainer i {
+      font-size: x-large;
+    }
+
+    .textTwo h1 {
+      font-size: 4.5rem;
+    }
+
+    /* Project Media Query */
+
+    .projectText ul {
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .projectText li a {
+      padding: 1rem;
+      margin: 0rem;
+    }
+
+    .socials i {
+      font-size: x-large;
+    }
+
+    /* Footer Media Query */
+    footer p {
+      font-size: var(--font-size--extraTiny);
+    }
   }
 
-  .navMenu .socials i {
-    font-size: 2.5rem;
-  }
-}
+  @media (max-width: 324px) {
+    .navStop {
+      height: 30px;
+    }
 
-@media (max-width: 518px) {
-  /* Header Section Media Queries */
+    .portrait .animatedText {
+      font-size: var(--font-size--tiny);
+    }
 
-  .portrait .animatedText {
-    font-size: var(--font-size--medium);
-  }
+    header ul {
+      margin-top: 5rem;
+    }
 
-  .icons ul {
-    width: 110%;
-  }
-}
+    .icons i {
+      font-size: 4rem;
+    }
 
-@media (max-width: 459px) {
-  /* Header Section Media Query */
+    .icons span {
+      font-size: 1.3rem;
+    }
 
-  .headerContainer h1 {
-    font-size: 5rem;
-  }
-
-  .textOne,
-  .textThree .typingAnimation {
-    font-size: 2rem;
-  }
-
-  .navStop {
-    height: 50px;
-  }
-
-  .scrollBtn {
-    scale: 70%;
-  }
-
-  /* Project Section Media Query */
-  .textIcons i,
-  .textIcons .projectLogo img {
-    margin: 0.5rem;
-  }
-
-  .textIcons i {
-    font-size: xx-large;
-  }
-
-  .textIcons .projectLogo img {
-    width: 2.5rem;
-  }
-
-  /* Footer Section Media Query */
-  footer p {
-    font-size: var(--font-size--tiny);
-  }
-}
-
-@media (max-width: 414px) {
-  .navMenu.open li {
-    font-size: var(--font-size--medium);
-  }
-
-  .portrait .animatedText {
-    font-size: var(--font-size--small);
-  }
-}
-
-@media (max-width: 373px) {
-  /* header section */
-
-  .innerContainer i {
-    font-size: x-large;
-  }
-
-  .textTwo h1 {
-    font-size: 4.5rem;
-  }
-
-  /* Project Media Query */
-
-  .projectText ul {
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .projectText li a {
-    padding: 1rem;
-    margin: 0rem;
-  }
-
-  .socials i {
-    font-size: x-large;
-  }
-
-  /* Footer Media Query */
-  footer p {
-    font-size: var(--font-size--extraTiny);
-  }
-}
-
-@media (max-width: 324px) {
-  .navStop {
-    height: 30px;
-  }
-
-  .portrait .animatedText {
-    font-size: var(--font-size--tiny);
-  }
-
-  header ul {
-    margin-top: 5rem;
-  }
-
-  .icons i {
-    font-size: 4rem;
-  }
-
-  .icons span {
-    font-size: 1.3rem;
-  }
-
-  .socials i {
-    font-size: larger;
+    .socials i {
+      font-size: larger;
+    }
   }
 }
