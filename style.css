@@ -431,10 +431,13 @@ button:focus {
 header {
   background-image: linear-gradient(
       to bottom,
-      rgba(5, 5, 0, 0.637),
-      rgba(0, 0, 0, 0.568)
+      rgb(5, 5, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5),
+      rgb(0, 0, 0)
     ),
-    url(./assets/headerBackground1.jpg);
+    url(./assets/desktopBackgroundHeader.jpg);
   width: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -490,6 +493,10 @@ header ul {
 
 header li {
   font-size: 3.5rem;
+}
+
+.navMenu.open li a {
+  text-shadow: #000 5px 5px 5px;
 }
 
 li a:hover {
@@ -644,6 +651,16 @@ button.hamburgerMenu:focus {
   display: block;
   position: fixed;
   left: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(5, 5, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgb(0, 0, 0)
+    ),
+    url(./assets/backgroundMenu.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 header ul.open {
@@ -676,13 +693,15 @@ header ul.open {
 
 .textHeadshotContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .textTwo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-shadow: #000 0px 5px 10px;
 }
 
 .textTwo span {
@@ -1028,14 +1047,21 @@ section#projects {
 section#skills {
   background-image: linear-gradient(
       to bottom,
-      rgba(5, 5, 0, 0.637),
-      rgba(0, 0, 0, 0.568)
+      rgb(5, 5, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.5),
+      rgb(0, 0, 0)
     ),
     url(./assets/headerBackground3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+.mySkills i {
+  text-shadow: #000 2px 2px 20px;
 }
 
 .mySkills h3 {
@@ -1217,6 +1243,19 @@ span {
 /* Start of Media Queries */
 
 @media (max-width: 1188px) {
+  .navMenu.open {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(5, 5, 0),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5),
+        rgb(0, 0, 0)
+      ),
+      url(./assets/backgroundMenuMobile.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
   a.logo {
     width: 8rem;
     height: 8rem;
@@ -1362,6 +1401,15 @@ span {
 
   header {
     min-height: auto;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(5, 5, 0),
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.15),
+        rgb(0, 0, 0)
+      ),
+      url(./assets/mobileHeaderBackground.jpg);
   }
 
   .headerContainer {
@@ -1372,7 +1420,7 @@ span {
   .headShot {
     margin: 2.5rem 0rem;
     align-self: center;
-    max-width: 65%;
+    max-width: 50%;
   }
 
   .headShot img,
@@ -1427,10 +1475,6 @@ span {
 
   .hamburgerMenu::before {
     border: 6px solid #efc570;
-  }
-
-  header li {
-    font-size: var(--font-size--small);
   }
 
   .navMenu .socials i {
@@ -1491,6 +1535,10 @@ span {
 }
 
 @media (max-width: 414px) {
+  .navMenu.open li {
+    font-size: var(--font-size--medium);
+  }
+
   .portrait .animatedText {
     font-size: var(--font-size--small);
   }
