@@ -478,8 +478,6 @@ nav {
   z-index: 2;
   transition: all 0.3s ease;
   top: 0;
-  border-top: #efc570 5px solid;
-  border-bottom: #efc570 5px solid;
   background-image: linear-gradient(
       to bottom,
       rgb(5, 5, 0),
@@ -1047,13 +1045,12 @@ section#projects {
 section#skills {
   background-image: linear-gradient(
       to bottom,
-      rgb(5, 5, 0),
+      rgb(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.5),
-      rgb(0, 0, 0)
+      rgb(0, 0, 0, 0.8)
     ),
-    url(./assets/headerBackground3.jpg);
+    url(./assets/skillsBackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1061,7 +1058,7 @@ section#skills {
 }
 
 .mySkills i {
-  text-shadow: #000 2px 2px 20px;
+  text-shadow: #000 2px 2px 5px;
 }
 
 .mySkills h3 {
