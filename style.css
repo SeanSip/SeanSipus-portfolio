@@ -480,6 +480,14 @@ nav {
   top: 0;
   border-top: #efc570 5px solid;
   border-bottom: #efc570 5px solid;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(5, 5, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgb(0, 0, 0)
+    ),
+    url(./assets/backgroundMenu.jpg);
 }
 
 header ul {
@@ -651,14 +659,6 @@ button.hamburgerMenu:focus {
   display: block;
   position: fixed;
   left: 0;
-  background-image: linear-gradient(
-      to bottom,
-      rgb(5, 5, 0),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5),
-      rgb(0, 0, 0)
-    ),
-    url(./assets/backgroundMenu.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1243,7 +1243,7 @@ span {
 /* Start of Media Queries */
 
 @media (max-width: 1188px) {
-  .navMenu.open {
+  .navMenu {
     background-image: linear-gradient(
         to bottom,
         rgb(5, 5, 0),
@@ -1252,6 +1252,9 @@ span {
         rgb(0, 0, 0)
       ),
       url(./assets/backgroundMenuMobile.jpg);
+  }
+
+  .navMenu.open {
     background-position: center;
     background-size: cover;
   }
