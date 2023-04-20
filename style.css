@@ -247,7 +247,7 @@ html {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 90%;
 }
 
@@ -957,8 +957,12 @@ section#projects {
 
 .projectContainer {
   display: flex;
+  justify-content: space-between;
   max-width: 100%;
   margin: 10rem auto;
+  border: #efc5701f 1px solid;
+  border-radius: 15px;
+  background-color: rgb(32, 31, 39);
 }
 
 .projectContainer:first-of-type {
@@ -1284,7 +1288,7 @@ span {
 }
 @media (max-width: 1164px) {
   .wrapper {
-    width: 85%;
+    width: 95%;
   }
 }
 
@@ -1314,26 +1318,31 @@ span {
   /* Poject Section Media Queries */
 
   .projectContainer {
-    margin: 7.5rem 0;
+    margin: 4rem 0;
+    padding: 4rem 0rem;
   }
 
   .projectContainer:nth-child(2) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .projectContainer:nth-child(3) {
-    flex-direction: column;
-  }
-
-  .projectContainer:nth-child(4) {
     flex-direction: column-reverse;
   }
 
-  .projectContainer:nth-child(5) {
+  .projectContainer:nth-child(4) {
     flex-direction: column;
   }
 
+  .projectContainer:nth-child(5) {
+    flex-direction: column-reverse;
+  }
+
   .projectContainer:nth-child(6) {
+    flex-direction: column;
+  }
+
+  .projectContainer:nth-child(7) {
     flex-direction: column-reverse;
   }
 
