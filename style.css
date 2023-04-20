@@ -1317,6 +1317,10 @@ span {
 
   /* Poject Section Media Queries */
 
+  .projectText h3 {
+    text-align: center;
+  }
+
   .projectContainer {
     margin: 4rem 0;
     padding: 4rem 0rem;
