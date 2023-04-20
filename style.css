@@ -1557,6 +1557,12 @@ span {
     }
 
     /* Project Section Media Query */
+
+    .projectContainer {
+      margin: 6rem 0;
+      padding: 0rem;
+    }
+
     .textIcons i,
     .textIcons .projectLogo img {
       margin: 0.5rem;
