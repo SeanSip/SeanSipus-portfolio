@@ -371,9 +371,10 @@ a {
 }
 
 h2.freelance {
-  text-align: center;
-  margin-bottom: 0rem;
+  text-align: left;
+  margin-bottom: 2rem;
   font-size: x-large;
+  text-decoration: underline;
 }
 
 /* General Hover and Focus Styles */
