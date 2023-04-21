@@ -12,7 +12,14 @@ const toggleNavMenu = function () {
   navMenu.classList.toggle('open');
   logo.classList.toggle('open');
   ul.classList.toggle('open');
+  stopScroll();
 };
+
+// Function to prevent user from scrolling through website in background while the navMenu is open
+const stopScroll = () =>
+  navMenu.classList.contains('open')
+    ? (document.body.style.overflow = 'hidden')
+    : (document.body.style.overflow = 'auto');
 
 // open nav menu using toggle variable's function
 hamburgerMenu.addEventListener('click', toggleNavMenu);
@@ -22,6 +29,20 @@ for (let i = 0; i < menuItem.length; i++) {
   // close nav menu using toggle variable's function
   menuItem[i].addEventListener('click', toggleNavMenu);
 }
+
+// Adding focusable elements inside of the nav menu when open so that keyboard accessible users can't focus on elements outside of the nav menu
+const focusableNavElements = navMenu.querySelectorAll(
+  '.navMenu a[href], .navMenu button, .hamburgerMenu'
+);
+const firstFocusableNavElement = focusableNavElements[0];
+const lastFocusableNavElement =
+  focusableNavElements[focusableNavElements.length - 1];
+document.addEventListener('focusin', function (e) {
+  if (!navMenu.contains(e.target) && e.target !== hamburgerMenu) {
+    firstFocusableNavElement.focus();
+  }
+});
+console.log(focusableNavElements);
 
 // simple function for the dropdown menu that when the user selects an option from drop-down menu; the 'openFile' function is called with the selected file name as the argument by getting the HTML option's value and passing into the function's argument (fileName)
 const openFile = function (fileName) {
