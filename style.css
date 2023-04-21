@@ -335,6 +335,11 @@ i {
   font-size: 5rem;
 }
 
+.socials a:focus i {
+  color: #efc570;
+  text-shadow: #efc570 0px 0px 35px;
+}
+
 /* General Font Stylings */
 span {
   color: #efc570;
@@ -383,9 +388,17 @@ li a:focus {
   color: #efc570;
 }
 
-li a:focus,
+.navMenu li a:focus,
+.navMenu .socials a:focus,
 .socials a:focus {
   outline: #efc570 solid 3px;
+  border-radius: 1rem;
+}
+
+.navMenu .socials a {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 
 /* Button Styles */
@@ -536,7 +549,7 @@ li a:hover {
 .socials i {
   color: white;
   transition: 0.2s ease-in;
-  padding: 0rem 1.5rem;
+  padding: 0.8rem 1.5rem;
 }
 
 .socials i:hover,
