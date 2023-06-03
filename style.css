@@ -684,6 +684,7 @@ button.hamburgerMenu:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 4;
 }
 
 header ul.open {
@@ -941,8 +942,8 @@ section#about {
 }
 
 .portrait img {
-  border: #efc570 7px solid;
-  border-radius: 5px;
+  border: #efc570 2px solid;
+  border-radius: 15px;
 }
 
 .codeText,
