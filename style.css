@@ -936,7 +936,7 @@ section#about {
 /* Portrait */
 .portrait {
   z-index: 1;
-  width: 650px;
+  width: 550px;
   max-width: 100%;
 }
 
@@ -1007,7 +1007,7 @@ section#about {
 .codeContainer {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1.4rem;
 }
 
 .codeContainer a {
@@ -1663,7 +1663,7 @@ span {
     }
     /* About Me Section Media Queries */
     .codeContainer {
-      padding: 1.5rem;
+      padding: 1rem;
     }
 
     .editorLine:after {
