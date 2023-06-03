@@ -7,7 +7,6 @@ body {
   margin: 0;
 }
 article,
-aside,
 footer,
 header,
 nav,
@@ -241,10 +240,6 @@ html {
 
 /* global styling */
 
-.aboutMeContainer a:focus {
-  outline: 2px #efc570 solid;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1300px;
@@ -298,6 +293,11 @@ h3 {
   font-size: var(--font-size--medium);
   color: #efc570;
   font-weight: 400;
+}
+
+.editor h3,
+.editor i {
+  font-size: var(--font-size--default);
 }
 
 li {
@@ -427,8 +427,7 @@ button:focus {
 .innerContainer:focus i {
   font-size: 10rem;
   margin: 0rem;
-  text-shadow: #efc570 0 0 1rem;
-  background-color: rgb(32, 31, 39);
+  text-shadow: #000 0 0 3.5rem;
   color: #efc570;
 }
 
@@ -907,25 +906,38 @@ section#about {
   border-bottom: rgba(128, 128, 128, 0.26) 1px solid;
 }
 
-.animatedText {
-  margin-bottom: 0.5rem;
-  font-size: var(--font-size--large);
+.editor,
+.editorReplacement,
+.editorReplacement img {
+  border-bottom-right-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+
+.editorReplacement {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.editorReplacementLogo {
+  width: 12%;
+  min-width: 8rem;
+  z-index: 5;
+  transition: ease-in-out 0.2s;
+  position: absolute;
+  top: 0;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  margin: auto auto;
 }
 
 /* Portrait */
-.aboutMeContainer {
-  display: flex;
-}
-
 .portrait {
-  display: flex;
   z-index: 1;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 3200px;
+  width: 650px;
   max-width: 100%;
-  position: relative;
 }
 
 .portrait img {
@@ -933,28 +945,155 @@ section#about {
   border-radius: 5px;
 }
 
-aside {
-  display: flex;
+.codeText,
+.editor h3,
+.editor p,
+.editor span,
+.editor i,
+.editorName {
+  font-family: monospace;
 }
 
-aside .aboutText {
+.editor h3 {
+  color: white;
+}
+
+/* Margin for anything inside of the editor container */
+.editor p,
+.editor h3,
+.portrait {
+  padding-left: 5rem;
+}
+
+.codeText {
+  color: rgb(240, 103, 103);
+  margin-left: 3rem;
+}
+
+.codeText .blue {
+  color: rgb(180, 180, 255);
+}
+.codeText .yellow {
+  color: rgb(253, 255, 139);
+  margin-left: -1rem;
+}
+
+.codeText .blue {
+  margin-left: 0rem;
+}
+
+.codeIndent {
+  margin-left: 2rem;
+}
+
+.editor {
+  background-color: #252d3b;
+  color: #d4d4d4;
+  max-width: 100%;
+  position: relative;
+}
+
+.editorLine:after {
+  content: '';
+  width: 0.1rem;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.179);
+  top: 0;
+  left: 3.8rem;
+  transform: rotate(180deg);
+}
+
+.codeContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
+  padding: 2rem;
 }
 
-aside .aboutText p {
-  margin: auto;
-  margin-bottom: 2rem;
-}
-
-aside .aboutText p:last-of-type {
-  margin-bottom: 0;
-}
-
-aside .aboutText a {
+.codeContainer a {
   color: #efc570;
   text-decoration: underline;
+}
+
+.lineNumber:last-of-type #text {
+  display: none;
+}
+
+.lineNumber.doubleDigit {
+  left: -1rem;
+}
+
+.titleBar {
+  height: 3rem;
+  border-top-right-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
+  background-color: #464646;
+  border-bottom: 0.1rem solid #b2b2b2;
+  position: relative;
+  z-index: 2;
+}
+
+.editorButtons {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.editorName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: var(--font-size--extraTiny);
+}
+
+.close,
+.minimize,
+.expand {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 0.8rem;
+}
+
+.close {
+  background-color: #ff5f57;
+}
+
+.minimize {
+  background-color: #ffbd2e;
+  margin-left: 0.75rem;
+}
+
+.expand {
+  background-color: #30d310;
+  margin-left: 0.75rem;
+}
+
+.lineContainer {
+  position: relative;
+}
+
+.lineNumber {
+  color: #6f6f6f;
+  display: flex;
+  position: absolute;
+}
+
+.codeContainer p {
+  text-align: left;
+  width: 100%;
+}
+
+.codeContainer .lineContainer p {
+  margin-bottom: 2.5rem;
+}
+
+.codeContainer .lineContainer:last-of-type p {
+  margin-bottom: 0;
 }
 
 /* Image Slider */
@@ -1075,12 +1214,13 @@ section#projects {
 }
 .customSelect:focus,
 .customSelect:hover,
-.aboutText a:hover,
-.aboutText a:focus,
 .projectText a:hover,
-.projectText a:focus {
+.projectText a:focus,
+.editor a:hover,
+.editor a:focus {
   background-color: #efc570;
   color: black;
+  outline: NONE;
 }
 
 .projectContainer img {
@@ -1324,28 +1464,6 @@ span {
 }
 
 @media (max-width: 1100px) {
-  .animatedText {
-    text-align: center;
-  }
-
-  .aboutMeContainer {
-    flex-direction: column;
-  }
-
-  .portrait {
-    margin: 0 auto;
-    padding-bottom: 1.5rem;
-  }
-
-  .portrait img {
-    width: 75%;
-  }
-
-  aside .aboutText {
-    margin-left: 0rem;
-    padding: 2rem;
-  }
-
   /* Poject Section Media Queries */
 
   .projectText h3 {
@@ -1438,16 +1556,6 @@ span {
 }
 
 @media (max-width: 875px) {
-  /* About Section Media Queries */
-
-  .portrait img {
-    z-index: 0;
-  }
-
-  .topPhoto {
-    margin: 0 auto;
-  }
-
   /* My Skills Media Queries */
 
   .mySkills h3 {
@@ -1510,13 +1618,6 @@ span {
     margin-bottom: 15rem;
   }
 
-  @media (max-width: 750px) {
-    /* About Me Section Media Query */
-    .portrait img {
-      width: 90%;
-    }
-  }
-
   @media (max-width: 634px) {
     .icons i {
       font-size: 3.8rem;
@@ -1557,13 +1658,20 @@ span {
 
   @media (max-width: 518px) {
     /* Header Section Media Queries */
-
-    .portrait .animatedText {
-      font-size: var(--font-size--medium);
-    }
-
     .icons ul {
       width: 110%;
+    }
+    /* About Me Section Media Queries */
+    .codeContainer {
+      padding: 1.5rem;
+    }
+
+    .editorLine:after {
+      left: 3.4rem;
+    }
+
+    .portrait {
+      width: 100%;
     }
   }
 
@@ -1617,10 +1725,6 @@ span {
     .navMenu.open li {
       font-size: var(--font-size--medium);
     }
-
-    .portrait .animatedText {
-      font-size: var(--font-size--small);
-    }
   }
 
   @media (max-width: 373px) {
@@ -1660,10 +1764,6 @@ span {
   @media (max-width: 324px) {
     .navStop {
       height: 30px;
-    }
-
-    .portrait .animatedText {
-      font-size: var(--font-size--tiny);
     }
 
     header ul {

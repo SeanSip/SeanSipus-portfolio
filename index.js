@@ -5,6 +5,30 @@ const menuItem = document.querySelectorAll('.select');
 const navMenu = document.querySelector('.navMenu');
 const ul = document.querySelector('ul:not([class])');
 const logo = document.querySelector('.logo');
+const editor = document.querySelector('.editor');
+const lines = editor.querySelectorAll('.codeText, p, h3');
+const closeBtn = document.querySelector('.close');
+const minimizeBtn = document.querySelector('.minimize');
+const expandBtn = document.querySelector('.expand');
+const codeContainer = document.querySelector('.codeContainer');
+const editorReplacement = document.querySelector('.editorReplacement');
+const editorLine = document.querySelector('.editorLine');
+
+let lineNumber = 1;
+lines.forEach(line => {
+  const lineNumberElement = document.createElement('span');
+
+  if (lineNumber >= 10) {
+    lineNumberElement.classList.add('lineNumber', 'doubleDigit');
+  } else {
+    lineNumberElement.classList.add('lineNumber');
+  }
+
+  lineNumberElement.textContent = `${lineNumber} `;
+  line.before(lineNumberElement);
+
+  lineNumber++;
+});
 
 // Assigning toggle variable for menu items
 const toggleNavMenu = function () {
@@ -104,3 +128,23 @@ fades.forEach(fade => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+// Function to toggle between open and close for about me text editor buttons
+function toggleEditor() {
+  if (codeContainer.style.display === 'none') {
+    codeContainer.style.display = 'block';
+    editorReplacement.style.display = 'none';
+    editorReplacement.style.scale = '0%';
+    editorLine.style.display = 'block';
+  } else {
+    codeContainer.style.display = 'none';
+    editorReplacement.style.display = 'flex';
+    editorReplacement.style.scale = '100%';
+    editorLine.style.display = 'none';
+  }
+}
+
+// Event listeners for about me buttons
+closeBtn.addEventListener('click', toggleEditor);
+minimizeBtn.addEventListener('click', toggleEditor);
+expandBtn.addEventListener('click', toggleEditor);
