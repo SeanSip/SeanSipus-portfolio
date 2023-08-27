@@ -438,6 +438,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   color: #efc570;
+  border-radius: 1rem;
 }
 /* Header styles */
 
@@ -740,14 +741,13 @@ header ul.open {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: #efc570 8px solid;
-  border-radius: 0.5rem;
+  border: #00000025 2px solid;
+  border-radius: 1.2rem;
   position: relative;
 }
 
 .headShot img {
-  border-top-left-radius: 0.05rem;
-  border-top-right-radius: 0.05rem;
+  border-radius: 1.2rem;
   width: 100%;
   background-color: rgba(32, 31, 39, 0.409);
   margin: 0 auto;
@@ -767,8 +767,8 @@ header ul.open {
   justify-content: center;
   padding: 0.8rem 0.6rem;
   background-color: rgb(32, 31, 39);
-  border-bottom-right-radius: 0.05rem;
-  border-bottom-left-radius: 0.05rem;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
   border: none;
   position: absolute;
   height: 6rem;
@@ -942,8 +942,7 @@ section#about {
 }
 
 .portrait img {
-  border: #efc570 2px solid;
-  border-radius: 15px;
+  border-radius: 0.65rem;
 }
 
 .codeText,
@@ -1327,12 +1326,18 @@ section#contact {
   border-radius: 5px;
   background-color: rgb(35, 35, 43);
   color: #ffffff;
-  border: #efc570 2px solid;
+}
+
+textarea,
+input,
+.formContainer button {
+  border: #efc570b0 2px solid;
 }
 
 textarea:focus,
 input:focus {
-  outline: #efc570 3px solid;
+  outline: none;
+  border: #efc570 2px solid;
 }
 
 .formContainer button {
@@ -1347,7 +1352,6 @@ input:focus {
   border-radius: 4px;
   background-color: rgb(35, 35, 43);
   color: #ffffff;
-  border: #efc570 2px solid;
 }
 
 /* Footer Styles */
