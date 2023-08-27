@@ -741,7 +741,6 @@ header ul.open {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: #00000025 2px solid;
   border-radius: 1.2rem;
   position: relative;
 }

@@ -89,7 +89,20 @@ const typingAnimations = function (selector, strings, typeSpeed, backSpeed) {
 // passing in the arguments to the typing animation function's parameters
 const typingAnimationOne = typingAnimations(
   '.typingAnimation',
-  ['Front-end', '', 'Web Developer', '', '', ''],
+  [
+    'Front-end',
+    '',
+    'Web Developer',
+    '',
+    '',
+    '',
+    'フロント エンド',
+    '',
+    'ウェブ 開発者',
+    '',
+    '',
+    '',
+  ],
   25,
   55
 );
